@@ -26,12 +26,6 @@ h1 {
 	text-align: center;
 }
 
-img {
-	width: 50%;
-	height: auto;
-	overflow: auto;
-}
-
 #banner img {
 	width: 100%;
 	height: auto;
@@ -45,4 +39,16 @@ img {
 p {
 	font-size: 14pt;
 	padding: 0 10%;
+}
+
+.half {
+	width: 50%;
+	height: auto;
+	overflow: auto;
+	float: left;
+}
+
+.half img {
+	margin-left: 30%;
+	border-radius: 50%;
 }
