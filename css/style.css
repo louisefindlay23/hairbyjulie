@@ -2,12 +2,12 @@
 /* CSS Document */
 
 @font-face {
-	src: url("/fonts/ropasoftpro-regular.woff");
+	src: url("./fonts/ropasoftpro-regular.woff");
 	font-family: "Ropa Soft Pro";
 }
 
 @font-face {
-	src: url("/fonts/nps_1935.woff");
+	src: url("./fonts/nps_1935.woff");
 	font-family: "NPS 1935";
 }
 
