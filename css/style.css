@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+	src: url("/fonts/ropasoftpro-regular.woff");
+	font-family: "Ropa Soft Pro";
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	color: #cfb53b;
+	background: #482e3b;
+	font-family: "Ropa Soft Pro";
+	max-width: 1920px;
+}
+
+div {
+	width: 100%;
+	height: auto;
+	overflow: auto;
+}
+
+h1 {
+	text-align: center;
+}
+
+img {
+	width: 50%;
+	height: auto;
+	overflow: auto;
+}
+
+#banner img {
+	width: 100%;
+	height: auto;
+	overflow: auto;
+}
+
+#history {
+	padding: 2.5% 0;
+}
+
+p {
+	font-size: 14pt;
+	padding: 0 10%;
+}
