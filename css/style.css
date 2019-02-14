@@ -6,6 +6,11 @@
 	font-family: "Ropa Soft Pro";
 }
 
+@font-face {
+	src: url("/fonts/nps_1935.woff");
+	font-family: "NPS 1935";
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -51,4 +56,9 @@ p {
 .half img {
 	margin-left: 30%;
 	border-radius: 50%;
+}
+
+span {
+	font-family: "NPS 1935";
+	margin-right: 5px;
 }
