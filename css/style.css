@@ -121,3 +121,15 @@ h3 {
 #client {
     padding: 2.5% 0;
 }
+
+#openingtimes h3 {
+    text-align: right;
+    margin-right: 20%;
+}
+
+footer img {
+    width: 25%;
+    height: auto;
+    overflow: auto;
+    border-radius: initial !important;
+}
