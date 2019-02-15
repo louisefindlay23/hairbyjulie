@@ -83,11 +83,19 @@ input {
 h2 {
 	text-align: center;
 	font-size: 30pt;
+    margin-bottom: 5%;
 }
 
 #pricelist div {
 	margin: 2.5% 0 2.5% 5%;
 	text-align: center;
+}
+
+#pricelist img {
+    width: 25%;
+    height: auto;
+    overflow: auto;
+    margin: 0 0 2.5% 37%;
 }
 
 #pricelist .half {
