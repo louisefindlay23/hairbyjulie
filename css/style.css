@@ -2,12 +2,12 @@
 /* CSS Document */
 
 @font-face {
-	src: url("./fonts/ropasoftpro-regular.woff");
+	src: url("../fonts/ropasoftpro-regular.woff");
 	font-family: "Ropa Soft Pro";
 }
 
 @font-face {
-	src: url("./fonts/nps_1935.woff");
+	src: url("../fonts/nps_1935.woff");
 	font-family: "NPS 1935";
 }
 
@@ -61,4 +61,20 @@ p {
 span {
 	font-family: "NPS 1935";
 	margin-right: 5px;
+}
+
+#products {
+	padding: 2.5% 0;
+}
+
+input {
+	margin: 2.5% 0 2.5% 50%;
+}
+
+.third {
+	width: 33%;
+	height: auto;
+	overflow: auto;
+	float: left;
+	text-align: center;
 }
