@@ -29,6 +29,7 @@ div {
 
 h1 {
 	text-align: center;
+	font-size: 35pt;
 }
 
 #banner img {
@@ -42,7 +43,7 @@ h1 {
 }
 
 p {
-	font-size: 14pt;
+	font-size: 16pt;
 	padding: 0 10%;
 }
 
@@ -77,4 +78,34 @@ input {
 	overflow: auto;
 	float: left;
 	text-align: center;
+}
+
+h2 {
+	text-align: center;
+	font-size: 30pt;
+}
+
+#pricelist div {
+	margin: 2.5% 0 2.5% 5%;
+	text-align: center;
+}
+
+#pricelist .half {
+	width: 40%;
+}
+
+h3 {
+	padding-left: 40px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	font-size: 16pt;
+}
+
+h3 {
+	font-size: 20pt;
 }
