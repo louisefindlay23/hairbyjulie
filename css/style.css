@@ -47,12 +47,6 @@ p {
 	padding: 0 10%;
 }
 
-#team {
- display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .half {
 	width: 50%;
 	height: auto;
@@ -61,8 +55,17 @@ p {
 }
 
 .half img {
-	margin-left: 30%;
+    width: 50%;
+    height: auto;
+    overflow: auto;
 	border-radius: 50%;
+    margin-left: 25%;
+}
+
+#team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 span {
@@ -118,6 +121,7 @@ ul {
 
 li {
 	font-size: 16pt;
+    padding: 2% 0;
 }
 
 h3 {
@@ -126,6 +130,9 @@ h3 {
 
 #client {
     padding: 2.5% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #openingtimes h3 {
@@ -133,9 +140,16 @@ h3 {
     margin-right: 20%;
 }
 
-footer img {
-    width: 25%;
+#footerimg {
+    width: 100%;
     height: auto;
     overflow: auto;
+}
+
+footer img {
+    width: 25% !important;
+    height: auto;
+    overflow: auto;
+    margin: 0 !important;
     border-radius: initial !important;
 }
