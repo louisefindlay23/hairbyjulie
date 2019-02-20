@@ -1,6 +1,8 @@
 @charset "utf-8";
 /* CSS Document */
 
+html { overflow-y: scroll; }
+
 @font-face {
 	src: url("../fonts/ropasoftpro-regular.woff");
 	font-family: "Ropa Soft Pro";
@@ -71,6 +73,14 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.flickity-prev-next-button.previous {
+    left: 20px;
+}
+
+.flickity-prev-next-button.next {
+    right: 20px;
 }
 
 span {

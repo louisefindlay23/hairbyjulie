@@ -4,7 +4,7 @@ $( document ).ready(function() {
     
     $('.main-carousel').flickity({
     
-      cellAlign: 'left',
+      cellAlign: 'center',
       wrapAround: true,
       autoPlay: 1500
 });
