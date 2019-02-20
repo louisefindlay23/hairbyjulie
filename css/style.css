@@ -140,16 +140,18 @@ h3 {
     margin-right: 20%;
 }
 
+footer .half {
+padding-bottom: 2.5%;
+}
+
 #footerimg {
-    width: 100%;
-    height: auto;
-    overflow: auto;
+    display: flex;
+    justify-content: space-around;
+    margin: 2.5% 0;
 }
 
 footer img {
-    width: 25% !important;
-    height: auto;
+    width: 20%;
+    height: 20%;
     overflow: auto;
-    margin: 0 !important;
-    border-radius: initial !important;
 }
