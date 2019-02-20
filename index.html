@@ -7,14 +7,22 @@
 <meta name="description" content="Hair by Julie is the oldest hairdressing business in Dufftown, Moray.">
 <meta name="keywords" content="Hair by Julie, hairdresser, hairdressing, beauty, Dufftown, Moray">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="js/script.js"></script>
 <title>Hair By Julie</title>
 	
 </head>
 	
 <header>
 
-	<h1><span id="hair">HAIR</span>by Julie</h1>
+	<a href="index.html">
+    
+        <h1><span id="hair">HAIR</span>by Julie</h1>
+        
+    </a>
 	
 </header>
     
@@ -55,32 +63,26 @@
 		<p>- Julie, Owner</p>
 	
 	</div>
-	
+    
 </div>
 	
 <div id="products">
-
-	<form>
-		
-		<input type="text" name="name" placeholder="Name">
-	
-	</form>
 	
 	<div class="third">
 	
-		<img src="img/product.jpg" alt="Product 1">
+		<img src="img/hairdryer_collection.jpg" alt="Product 1">
 		
 	</div>
 	
 	<div class="third">
 	
-		<img src="img/product.jpg" alt="Product 1">
+		<img src="img/loreal_collection.jpg" alt="Product 1">
 		
 	</div>
 	
 	<div class="third">
 	
-		<img src="img/product.jpg" alt="Product 1">
+		<img src="img/product_collection.jpg" alt="Product 1">
 		
 	</div>
 	
@@ -90,7 +92,7 @@
 	
 	<h2>Price List</h2>
     
-        <p>We also have a loyalty card scheme. Bring it with you and you'll receive 10% off when the card is full after ten transactions. Only purchases over £10 count.</p>
+        <p>We also have a loyalty card scheme. After you've become a customer, we'll give you your card. You'll receive 10% off when the card is full after ten transactions. Only purchases over £10 count.</p>
 	
 		<div class="half">
 	
@@ -246,6 +248,26 @@
 	</div>
 	
 </div>
+
+<form>
+		
+		<input type="text" name="name" placeholder="Name">
+        
+        <input type="email" name="email" placeholder="E-Mail">
+        
+        <select name="categories">
+        
+            <option value="Shop Appointment">Shop Appointment</option>
+
+            <option value="Home Visit">Home Visit</option>
+
+            <option value="Product Enquiry">Product Enquiry</option>
+  
+        </select>
+        
+        <textarea name="message" placeholder="Type your message here"></textarea>
+	
+	</form>
     
 <footer>
     
@@ -268,10 +290,18 @@
     </div>
     
     <div id="footerimg">
+    
+            <a href="https://www.nhf.info/home">
 
-            <img src="img/nhf_logo.jpg" alt="National Hairdresser Federation logo">
+                <img src="img/nhf_logo.jpg" alt="National Hairdresser Federation logo">
             
-            <img src="img/fsb_logo.jpg" alt="Federation of Small Businesses logo">
+            </a>
+            
+            <a href="https://www.fsb.org.uk">
+            
+                 <img src="img/fsb_logo.jpg" alt="Federation of Small Businesses logo">
+             
+            </a>
         
     </div>
     
