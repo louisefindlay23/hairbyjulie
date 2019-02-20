@@ -47,6 +47,12 @@ p {
 	padding: 0 10%;
 }
 
+#team {
+ display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .half {
 	width: 50%;
 	height: auto;
