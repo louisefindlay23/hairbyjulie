@@ -54,6 +54,34 @@ p {
 	padding: 0 10%;
 }
 
+.main-carousel {
+    width: 100%;
+    height: auto;
+    overflow: auto;
+}
+
+.carousel-cell {
+    width: 100%;
+    height: auto;
+    overflow: auto;
+}
+
+.carousel-cell img {
+    width: 25%;
+    height: auto;
+    overflow: auto;
+    border-radius: 50%;
+    float: left;
+    margin-left: 10%;
+}
+
+.carousel-cell p {
+    width: 50%;
+    height: auto;
+    overflow: auto;
+    padding-left: 5%;
+}
+
 .half {
 	width: 50%;
 	height: auto;
