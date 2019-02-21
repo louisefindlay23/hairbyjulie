@@ -78,6 +78,7 @@ p {
 .dotrow {
     display: flex;
     justify-content: center;
+    padding-bottom: 2.5%;
 }
 
 .dotrow i {
@@ -199,7 +200,7 @@ h3 {
 }
 
 footer .half {
-    padding-bottom: 2.5%;
+    padding-bottom: 5%;
 }
 
 #footerimg {
