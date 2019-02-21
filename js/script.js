@@ -19,7 +19,7 @@ $(document).ready(function() {
         
             $("#team2").fadeIn(1000);
 
-            $(".dotrow i").removeClass("pink");
+            $("#employee > i").removeClass("pink");
 
             $("#dot2").addClass("pink"); 
             
@@ -32,7 +32,7 @@ $(document).ready(function() {
         
             $("#team3").fadeIn(1000);
         
-            $(".dotrow i").removeClass("pink");
+            $("#employee > i").removeClass("pink");
         
             $("#dot3").addClass("pink"); 
             
@@ -44,7 +44,7 @@ $(document).ready(function() {
         
             $("#team1").fadeIn(1000);
         
-            $(".dotrow i").removeClass("pink");
+            $("#employee > i").removeClass("pink");
         
             $("#dot1").addClass("pink"); 
             
@@ -58,7 +58,7 @@ $(document).ready(function() {
         
             $("#client2").fadeIn(1000);
 
-            $(".dotrow i").removeClass("pink");
+            $("#customer > i").removeClass("pink");
 
             $("#dot5").addClass("pink"); 
             
@@ -71,7 +71,7 @@ $(document).ready(function() {
         
             $("#client3").fadeIn(1000);
         
-            $(".dotrow i").removeClass("pink");
+            $("#customer > i").removeClass("pink");
         
             $("#dot6").addClass("pink"); 
             
@@ -83,7 +83,7 @@ $(document).ready(function() {
         
             $("#client4").fadeIn(1000);
         
-            $(".dotrow i").removeClass("pink");
+            $("#customer > i").removeClass("pink");
         
             $("#dot7").addClass("pink"); 
             
@@ -95,7 +95,7 @@ $(document).ready(function() {
         
             $("#client1").fadeIn(1000);
         
-            $(".dotrow i").removeClass("pink");
+            $("#customer > i").removeClass("pink");
         
             $("#dot4").addClass("pink"); 
             
@@ -116,7 +116,7 @@ $(document).ready(function() {
         
         $("#team1").fadeIn(300);
         
-        $(".dotrow i").removeClass("pink");
+        $("#employee > i").removeClass("pink");
         
         $(this).addClass("pink");
         
@@ -135,7 +135,7 @@ $(document).ready(function() {
         
         $("#team2").fadeIn(300);
         
-        $(".dotrow i").removeClass("pink");
+        $("#employee > i").removeClass("pink");
         
         $(this).addClass("pink");
         
@@ -154,7 +154,7 @@ $(document).ready(function() {
         
         $("#team3").fadeIn(300);
         
-        $(".dotrow i").removeClass("pink");
+        $("#employee > i").removeClass("pink");
         
         $(this).addClass("pink");
         
@@ -177,7 +177,7 @@ $(document).ready(function() {
         
         $("#client1").fadeIn(300);
         
-        $(".dotrow i").removeClass("pink");
+        $("#customer > i").removeClass("pink");
         
         $(this).addClass("pink");
         
@@ -198,7 +198,7 @@ $(document).ready(function() {
         
         $("#client2").fadeIn(300);
         
-        $(".dotrow i").removeClass("pink");
+        $("#customer > i").removeClass("pink");
         
         $(this).addClass("pink");
         
@@ -219,7 +219,7 @@ $(document).ready(function() {
         
         $("#client3").fadeIn(300);
         
-        $(".dotrow i").removeClass("pink");
+        $("#customer > i").removeClass("pink");
         
         $(this).addClass("pink");
         
@@ -239,7 +239,7 @@ $(document).ready(function() {
         
         $("#client4").fadeIn(300);
         
-        $(".dotrow i").removeClass("pink");
+        $("#customer > i").removeClass("pink");
         
         $(this).addClass("pink");
         
