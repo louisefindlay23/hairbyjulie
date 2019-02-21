@@ -75,12 +75,13 @@ p {
     align-items: center;
 }
 
-.flickity-prev-next-button.previous {
-    left: 20px;
+.dotrow {
+    display: flex;
+    justify-content: center;
 }
 
-.flickity-prev-next-button.next {
-    right: 20px;
+.dotrow img {
+    padding: 0 2.5%;
 }
 
 span {
