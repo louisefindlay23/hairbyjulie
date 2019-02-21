@@ -80,12 +80,14 @@ p {
     justify-content: center;
 }
 
-.dotrow img {
+.dotrow i {
+    font-size: 30pt;
+    color: #cfb53b;
     padding: 0 2.5%;
 }
 
-.pink img {
-    color: #f19f94;
+.pink {
+    color: #f19f94 !important;
 }
 
 span {

@@ -1,8 +1,12 @@
 // JavaScript Document
 
-$( document ).ready(function() {
+$(document).ready(function() {
 
-    $("#team2").hide();
+
+    $(".team").hide();
+    
+    $("#team1").show();
+     
     
     $("#dot1").click(function(){
         
@@ -10,9 +14,12 @@ $( document ).ready(function() {
         
         $("#team1").show();
         
+        $(".dotrow i").removeClass("pink");
+        
         $(this).addClass("pink");
         
     });
+    
     
     $("#dot2").click(function(){
         
@@ -20,6 +27,24 @@ $( document ).ready(function() {
         
         $("#team2").show();
         
+        $(".dotrow i").removeClass("pink");
+        
+        $(this).addClass("pink");
+        
     });
+    
+    
+    $("#dot3").click(function(){
+        
+        $(".team").hide();
+        
+        $("#team3").show();
+        
+        $(".dotrow i").removeClass("pink");
+        
+        $(this).addClass("pink");
+        
+    });
+ 
  
 });
