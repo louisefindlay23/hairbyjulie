@@ -100,18 +100,19 @@ span {
 }
 
 form {
-    padding-bottom: 5%;
+    padding: 5% 0;
 }
 
 input, select, textarea {
     width: 50%;
 	margin: 2.5% 0 2.5% 25%;
-    padding: 2.5%;
+    padding: 1.5%;
     color: #000000;
     background: #f19f94;
     border: none;
     font-family: "Ropa Soft Pro";
     font-size: 16pt;
+    box-sizing: border-box;
 }
 
 ::placeholder {
@@ -120,9 +121,8 @@ input, select, textarea {
      color: #000000;
 }
 
-select {
-    width: 55%;
-    margin-bottom: 10%;
+select { 
+    margin-bottom: 5%;
 }
 
 input[type=text]:focus, input[type=email]:focus, textarea:focus {
@@ -130,7 +130,7 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
 }
 
 textarea {
-    padding: 10% 2.5%;
+    resize: none;
 }
 
 .third {
