@@ -9,7 +9,7 @@ $(document).ready(function() {
     
     // Autoplay slideshow
     
-        setInterval(function(){ 
+        var slideshow1 = setInterval(function(){ 
         
            $(".team").hide();
         
@@ -22,7 +22,7 @@ $(document).ready(function() {
         }, 10000);
         
         
-        setInterval(function(){ 
+        var slideshow2 = setInterval(function(){ 
         
             $(".team").hide();
         
@@ -34,7 +34,7 @@ $(document).ready(function() {
             
         }, 20000);
         
-        setInterval(function(){ 
+        var slideshow3 = setInterval(function(){ 
         
             $(".team").hide();
         
@@ -50,6 +50,12 @@ $(document).ready(function() {
     // Dot click slideshow 
     
     $("#dot1").click(function(){
+    
+        clearInterval(slideshow1);
+        
+        clearInterval(slideshow2);
+        
+        clearInterval(slideshow3);
         
         $(".team").hide();
         
@@ -63,6 +69,12 @@ $(document).ready(function() {
     
     
     $("#dot2").click(function(){
+    
+        clearInterval(slideshow1);
+        
+        clearInterval(slideshow2);
+        
+        clearInterval(slideshow3);
         
         $(".team").hide();
         
@@ -76,6 +88,12 @@ $(document).ready(function() {
     
     
     $("#dot3").click(function(){
+    
+        clearInterval(slideshow1);
+        
+        clearInterval(slideshow2);
+        
+        clearInterval(slideshow3);
         
         $(".team").hide();
         
