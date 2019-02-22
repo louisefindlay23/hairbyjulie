@@ -368,13 +368,13 @@
 
 </div>
 
-<form action="mailto:hairbyjulie.17@hotmail.com" method="POST">
+<form action="mailto:hairbyjulie.17@hotmail.com" method="POST" autocomplete="on">
 		
-		<input type="text" name="name" placeholder="Name">
+		<input id="name" type="text" name="name" placeholder="Name" required pattern="[a-zA-Z\s]+">
         
-        <input type="email" name="email" placeholder="E-Mail">
+        <input type="email" name="email" placeholder="E-Mail" required>
         
-        <select name="categories">
+        <select name="categories" required>
         
             <option value="Shop Appointment">Shop Appointment</option>
 
@@ -384,7 +384,7 @@
   
         </select>
         
-        <textarea name="message" placeholder="Type your message here" rows="10"></textarea>
+        <textarea name="message" placeholder="Type your message here" rows="10" required></textarea>
         
         <input type="submit" name="submit" placeholder="Submit">
 	
@@ -431,4 +431,13 @@
 </footer>
     
 </body>
+<script>
+
+    var inputname = document.getElementById('name');
+
+    inputname.oninvalid = function(event) {
+    
+    event.target.setCustomValidity('The name field should only contain letters. e.g. Julie');
+</script>
+}
 </html>
