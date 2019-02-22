@@ -78,6 +78,7 @@ p {
 .dotrow {
     display: flex;
     justify-content: center;
+    padding-bottom: 2.5%;
 }
 
 .dotrow i {
@@ -100,18 +101,19 @@ span {
 }
 
 form {
-    padding-bottom: 5%;
+    padding: 5% 0;
 }
 
 input, select, textarea {
     width: 50%;
 	margin: 2.5% 0 2.5% 25%;
-    padding: 2.5%;
+    padding: 1.5%;
     color: #000000;
     background: #f19f94;
     border: none;
     font-family: "Ropa Soft Pro";
     font-size: 16pt;
+    box-sizing: border-box;
 }
 
 ::placeholder {
@@ -120,9 +122,8 @@ input, select, textarea {
      color: #000000;
 }
 
-select {
-    width: 55%;
-    margin-bottom: 10%;
+select { 
+    margin-bottom: 5%;
 }
 
 input[type=text]:focus, input[type=email]:focus, textarea:focus {
@@ -130,7 +131,7 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
 }
 
 textarea {
-    padding: 10% 2.5%;
+    resize: none;
 }
 
 .third {
@@ -193,13 +194,22 @@ h3 {
     align-items: center;
 }
 
+iframe {
+    width: 50%;
+    height: 500px;
+    overflow: auto;
+    border: 0;
+    margin-left: 25%;
+    padding-bottom: 5%;
+}
+
 #openingtimes h3 {
     text-align: right;
     margin-right: 20%;
 }
 
 footer .half {
-    padding-bottom: 2.5%;
+    padding-bottom: 5%;
 }
 
 #footerimg {
