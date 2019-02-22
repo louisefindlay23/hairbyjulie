@@ -248,7 +248,6 @@ $(document).ready(function() {
 
 var modal1 = document.getElementById('modal1');
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
 var img1 = document.getElementById('product1');
 var modalImg1 = document.getElementById("modalimg1");
 var captionText1 = document.getElementById("caption1");
@@ -258,17 +257,14 @@ img1.onclick = function(){
   captionText1.innerHTML = this.alt;
 }
 
-// Get the <span> element that closes the modal
 var span1 = document.getElementById("close1");
 
-// When the user clicks on <span> (x), close the modal
 span1.onclick = function() { 
   modal1.style.display = "none";
 }
  
 var modal2 = document.getElementById('modal2');
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
 var img2 = document.getElementById('product2');
 var modalImg2 = document.getElementById("modalimg2");
 var captionText2 = document.getElementById("caption2");
@@ -278,17 +274,14 @@ img2.onclick = function(){
   captionText2.innerHTML = this.alt;
 }
  
-// Get the <span> element that closes the modal
 var span2 = document.getElementById("close2");
 
-// When the user clicks on <span> (x), close the modal
 span2.onclick = function() { 
   modal2.style.display = "none";
 } 
 
 var modal3 = document.getElementById('modal3');
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
 var img3 = document.getElementById('product3');
 var modalImg3 = document.getElementById("modalimg3");
 var captionText3 = document.getElementById("caption3");
@@ -297,11 +290,9 @@ img3.onclick = function(){
   modalImg3.src = this.src;
   captionText3.innerHTML = this.alt;
 }
- 
-// Get the <span> element that closes the modal
+
 var span3 = document.getElementById("close3");
 
-// When the user clicks on <span> (x), close the modal
 span3.onclick = function() { 
   modal3.style.display = "none";
 } 
