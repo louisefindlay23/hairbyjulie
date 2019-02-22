@@ -157,7 +157,7 @@ textarea {
 }
 
 /* Caption of Modal Image */
-#caption {
+.caption {
   margin: auto;
   display: block;
   width: 80%;
@@ -166,12 +166,12 @@ textarea {
   color: #cfb53b;
   font-family: "Ropa Soft Pro";
   font-size: 16pt;
-  padding: 10px 0;
-  height: 150px;
+  padding: 2.5% 0;
+  height: auto;
 }
 
 /* Add Animation */
-.modal-content, #caption {  
+.modal-content, .caption {  
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
   animation-name: zoom;
@@ -191,8 +191,8 @@ textarea {
 /* The Close Button */
 .close {
   position: absolute;
-  top: 15px;
-  right: 35px;
+  top: 2.5%;
+  right: 2.5%;
   color: #cfb53b;
   font-size: 40px;
   font-weight: bold;
