@@ -122,21 +122,49 @@
 	
 	<div class="third">
 	
-		<img src="img/hairdryer_collection.jpg" alt="Product 1">
+		<img id="product1" src="img/hairdryer_collection.jpg" alt="Hairdryer - £45 and other products available on request">
 		
 	</div>
+    
+    <div id="modal1" class="modal">
+      
+        <span id="close1" class="close">&times;</span>
+      
+        <img class="modal-content" id="modalimg1">
+      
+        <div id="caption1" class="caption"></div>
+</div>
+    
 	
 	<div class="third">
 	
-		<img src="img/loreal_collection.jpg" alt="Product 1">
+		<img id="product2" src="img/loreal_collection.jpg" alt="L'Oreal Silver Collection - Price available on request">
 		
 	</div>
+    
+    <div id="modal2" class="modal">
+      
+        <span id="close2" class="close">&times;</span>
+      
+        <img class="modal-content" id="modalimg2">
+      
+        <div id="caption2" class="caption"></div>
+    </div>
 	
 	<div class="third">
 	
-		<img src="img/product_collection.jpg" alt="Product 1">
+		<img id="product3" src="img/product_collection.jpg" alt="Milkshake, S4U, Coloursmash and Denman Ranges - Price available on request">
 		
 	</div>
+    
+    <div id="modal3" class="modal">
+      
+        <span id="close3" class="close">&times;</span>
+      
+        <img class="modal-content" id="modalimg3">
+      
+        <div id="caption3" class="caption"></div>
+    </div>
 	
 </div>
 	
@@ -440,6 +468,7 @@
     inputname.oninvalid = function(event) {
     
     event.target.setCustomValidity('The name field should only contain letters. e.g. Julie');
+    
+    }
 </script>
-}
 </html>
