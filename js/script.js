@@ -319,4 +319,14 @@ span3.onclick = function() {
 
 // Hide non-result images
  
+	$("#milk").click(function(){
+	
+	$("#producttwo").hide();
+		
+	$("#dropdownmenu").hide();
+		
+	$(".fa-times-circle").hide();
+		
+});
+
 });

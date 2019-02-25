@@ -167,6 +167,11 @@ a {
 	cursor: pointer;
 }
 
+#productcontainer {
+	display: flex;
+	justify-content: center;
+}
+
 .modal {
   display: none;
   position: fixed;
