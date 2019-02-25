@@ -326,6 +326,18 @@ span3.onclick = function() {
 	$("#dropdownmenu").hide();
 		
 	$(".fa-times-circle").hide();
+	
+	$("button").show();
+		
+});
+	
+// Show all product images
+	
+	$("button").click(function(){
+	
+	$("#productone, #producttwo, #productthree").show();
+		
+	$("button").hide();
 		
 });
 
