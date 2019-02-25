@@ -320,8 +320,108 @@ span3.onclick = function() {
 // Hide non-result images
  
 	$("#milk").click(function(){
+		
+	$("#productone, #productthree").show();
 	
 	$("#producttwo").hide();
+		
+	$("#dropdownmenu").hide();
+		
+	$(".fa-times-circle").hide();
+	
+	$("button").show();
+		
+});
+	
+	$("#schwarz").click(function(){
+		
+	$("#productone").show();
+	
+	$("#producttwo, #productthree").hide();
+		
+	$("#dropdownmenu").hide();
+		
+	$(".fa-times-circle").hide();
+	
+	$("button").show();
+		
+});
+	
+	$("#serie").click(function(){
+		
+	$("#productone").show();
+	
+	$("#producttwo, #productthree").hide();
+		
+	$("#dropdownmenu").hide();
+		
+	$(".fa-times-circle").hide();
+	
+	$("button").show();
+		
+});
+	
+	$("#veloce").click(function(){
+		
+	$("#productone").show();
+	
+	$("#producttwo, #productthree").hide();
+		
+	$("#dropdownmenu").hide();
+		
+	$(".fa-times-circle").hide();
+	
+	$("button").show();
+		
+});
+	
+	$("#gold").click(function(){
+		
+	$("#productone").show();
+	
+	$("#producttwo, #productthree").hide();
+		
+	$("#dropdownmenu").hide();
+		
+	$(".fa-times-circle").hide();
+	
+	$("button").show();
+		
+});
+	
+	$("#oreal").click(function(){
+		
+	$("#producttwo").show();
+	
+	$("#productone, #productthree").hide();
+		
+	$("#dropdownmenu").hide();
+		
+	$(".fa-times-circle").hide();
+	
+	$("button").show();
+		
+});
+	
+	$("#color").click(function(){
+		
+	$("#productthree").show();
+	
+	$("#productone, #producttwo").hide();
+		
+	$("#dropdownmenu").hide();
+		
+	$(".fa-times-circle").hide();
+	
+	$("button").show();
+		
+});
+	
+	$("#den").click(function(){
+		
+	$("#productthree").show();
+	
+	$("#productone, #producttwo").hide();
 		
 	$("#dropdownmenu").hide();
 		
