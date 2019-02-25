@@ -104,7 +104,7 @@ form {
     padding: 5% 0;
 }
 
-input, select, textarea {
+input, select, textarea, #dropdownmenu {
     width: 50%;
 	margin: 2.5% 0 2.5% 25%;
     padding: 1.5%;
@@ -132,6 +132,34 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
 
 textarea {
     resize: none;
+}
+
+#searchform {
+	padding-bottom: 0;
+}
+
+#dropdownmenu {
+	display: none;
+	margin-top: 0;
+}
+
+#dropdownmenu ul {
+	padding: 0;
+}
+
+#dropdownmenu li {
+	text-align: center;
+}
+
+.fa-times-circle {
+	display: none;
+	position: relative;
+	z-index: 1;
+	font-size: 32pt;
+	top: 10px;
+	right: 5%;
+	color: #000000;
+	cursor: pointer;
 }
 
 .modal {

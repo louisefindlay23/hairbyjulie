@@ -244,7 +244,21 @@ $(document).ready(function() {
         $(this).addClass("pink");
         
     });
+	
+$("#searchform input").click(function(){
+	
+	$(".fa-times-circle").show();
+	
+	$("#dropdownmenu").show();
+});
+	
     
+$(".fa-times-circle").click(function(){
+	
+	$(".fa-times-circle").hide();
+	
+	$("#dropdownmenu").hide();
+});
 
 var modal1 = document.getElementById('modal1');
 
