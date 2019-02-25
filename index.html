@@ -119,54 +119,92 @@
 </div>
 	
 <div id="products">
+
+   <form id="searchform">
+   
+   <input type="text" id="search" onkeyup="searchFunction()" name="search" autocomplete="off" placeholder="Search">
+	   
+	<i class="far fa-times-circle"></i>
+   
+   </form>
 	
-	<div class="third">
-	
-		<img id="product1" src="img/hairdryer_collection.jpg" alt="Hairdryer - £45 and other products available on request">
+	<div id="dropdownmenu">
+		
+		<ul id="droplist">
+			
+			<li id="milk"><a>Milkshake</a></li>
+			
+			<li id="schwarz"><a>Schwarzkopf</a></li>
+			
+			<li id="serie"><a>Serie Expert</a></li>
+			
+			<li id="veloce"><a>Veloce</a></li>
+			
+			<li id="gold"><a>Goldwell</a></li>
+			
+			<li id="oreal"><a>L'Oreal</a></li>
+			
+			<li id="color"><a>Colorsmash</a></li>
+			
+			<li id="den"><a>Denman</a></li>
+			
+		</ul>
 		
 	</div>
-    
-    <div id="modal1" class="modal">
-      
-        <span id="close1" class="close">&times;</span>
-      
-        <img class="modal-content" id="modalimg1">
-      
-        <div id="caption1" class="caption"></div>
-</div>
-    
 	
-	<div class="third">
+	<div id="productcontainer">
 	
-		<img id="product2" src="img/loreal_collection.jpg" alt="L'Oreal Silver Collection - Price available on request">
-		
+		<div id="productone" class="third">
+
+			<img id="product1" src="img/hairdryer_collection.jpg" alt="Hairdryer - £45 and other products available on request">
+
+		</div>
+
+		<div id="modal1" class="modal">
+
+			<span id="close1" class="close">&times;</span>
+
+			<img class="modal-content" id="modalimg1">
+
+			<div id="caption1" class="caption"></div>
 	</div>
-    
-    <div id="modal2" class="modal">
-      
-        <span id="close2" class="close">&times;</span>
-      
-        <img class="modal-content" id="modalimg2">
-      
-        <div id="caption2" class="caption"></div>
-    </div>
+
+
+		<div id="producttwo" class="third">
+
+			<img id="product2" src="img/loreal_collection.jpg" alt="L'Oreal Silver Collection - Price available on request">
+
+		</div>
+
+		<div id="modal2" class="modal">
+
+			<span id="close2" class="close">&times;</span>
+
+			<img class="modal-content" id="modalimg2">
+
+			<div id="caption2" class="caption"></div>
+		</div>
+
+		<div id="productthree" class="third">
+
+			<img id="product3" src="img/product_collection.jpg" alt="Milkshake, S4U, Coloursmash and Denman Ranges - Price available on request">
+
+		</div>
+
+		<div id="modal3" class="modal">
+
+			<span id="close3" class="close">&times;</span>
+
+			<img class="modal-content" id="modalimg3">
+
+			<div id="caption3" class="caption"></div>
+		</div>
 	
-	<div class="third">
-	
-		<img id="product3" src="img/product_collection.jpg" alt="Milkshake, S4U, Coloursmash and Denman Ranges - Price available on request">
-		
 	</div>
-    
-    <div id="modal3" class="modal">
-      
-        <span id="close3" class="close">&times;</span>
-      
-        <img class="modal-content" id="modalimg3">
-      
-        <div id="caption3" class="caption"></div>
-    </div>
 	
-</div>
+	<button>Show All Products</button>
+	
+	</div>
 	
 <div id="pricelist">
 	
@@ -470,5 +508,25 @@
     event.target.setCustomValidity('The name field should only contain letters. e.g. Julie');
     
     }
+	
+	function searchFunction() {
+  // Declare variables
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("search");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("droplist");
+  li = ul.getElementsByTagName("li");
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+	
 </script>
 </html>

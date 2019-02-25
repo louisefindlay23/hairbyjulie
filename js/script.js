@@ -1,6 +1,8 @@
-// JavaScript Document
+// Document ready
 
 $(document).ready(function() {
+	
+	// Show inital slides
 
     $(".team").hide();
     
@@ -244,7 +246,25 @@ $(document).ready(function() {
         $(this).addClass("pink");
         
     });
+	
+	// Dropdown menu
+	
+$("#searchform input").click(function(){
+	
+	$(".fa-times-circle").show();
+	
+	$("#dropdownmenu").show();
+});
+	
     
+$(".fa-times-circle").click(function(){
+	
+	$(".fa-times-circle").hide();
+	
+	$("#dropdownmenu").hide();
+});
+	
+	// Modal images
 
 var modal1 = document.getElementById('modal1');
 
@@ -295,6 +315,130 @@ var span3 = document.getElementById("close3");
 
 span3.onclick = function() { 
   modal3.style.display = "none";
-} 
+}
+
+// Hide non-result images
  
+	$("#milk").click(function(){
+		
+	$("#productone, #productthree").show();
+	
+	$("#producttwo").hide();
+		
+	$("#dropdownmenu").hide();
+		
+	$(".fa-times-circle").hide();
+	
+	$("button").show();
+		
+});
+	
+	$("#schwarz").click(function(){
+		
+	$("#productone").show();
+	
+	$("#producttwo, #productthree").hide();
+		
+	$("#dropdownmenu").hide();
+		
+	$(".fa-times-circle").hide();
+	
+	$("button").show();
+		
+});
+	
+	$("#serie").click(function(){
+		
+	$("#productone").show();
+	
+	$("#producttwo, #productthree").hide();
+		
+	$("#dropdownmenu").hide();
+		
+	$(".fa-times-circle").hide();
+	
+	$("button").show();
+		
+});
+	
+	$("#veloce").click(function(){
+		
+	$("#productone").show();
+	
+	$("#producttwo, #productthree").hide();
+		
+	$("#dropdownmenu").hide();
+		
+	$(".fa-times-circle").hide();
+	
+	$("button").show();
+		
+});
+	
+	$("#gold").click(function(){
+		
+	$("#productone").show();
+	
+	$("#producttwo, #productthree").hide();
+		
+	$("#dropdownmenu").hide();
+		
+	$(".fa-times-circle").hide();
+	
+	$("button").show();
+		
+});
+	
+	$("#oreal").click(function(){
+		
+	$("#producttwo").show();
+	
+	$("#productone, #productthree").hide();
+		
+	$("#dropdownmenu").hide();
+		
+	$(".fa-times-circle").hide();
+	
+	$("button").show();
+		
+});
+	
+	$("#color").click(function(){
+		
+	$("#productthree").show();
+	
+	$("#productone, #producttwo").hide();
+		
+	$("#dropdownmenu").hide();
+		
+	$(".fa-times-circle").hide();
+	
+	$("button").show();
+		
+});
+	
+	$("#den").click(function(){
+		
+	$("#productthree").show();
+	
+	$("#productone, #producttwo").hide();
+		
+	$("#dropdownmenu").hide();
+		
+	$(".fa-times-circle").hide();
+	
+	$("button").show();
+		
+});
+	
+// Show all product images
+	
+	$("button").click(function(){
+	
+	$("#productone, #producttwo, #productthree").show();
+		
+	$("button").hide();
+		
+});
+
 });
