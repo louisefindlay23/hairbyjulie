@@ -122,7 +122,7 @@
 
    <form id="searchform">
    
-   <input type="text" name="search" autocomplete="off" placeholder="Search">
+   <input type="text" id="search" onkeyup="searchFunction()" name="search" autocomplete="off" placeholder="Search">
 	   
 	<i class="far fa-times-circle"></i>
    
@@ -130,23 +130,23 @@
 	
 	<div id="dropdownmenu">
 		
-		<ul>
+		<ul id="droplist">
 			
-			<li>Milkshake</li>
+			<li><a>Milkshake</a></li>
 			
-			<li>Schwarzkopf</li>
+			<li><a>Schwarzkopf</a></li>
 			
-			<li>Serie Expert</li>
+			<li><a>Serie Expert</a></li>
 			
-			<li>Veloce</li>
+			<li><a>Veloce</a></li>
 			
-			<li>Goldwell</li>
+			<li><a>Goldwell</a></li>
 			
-			<li>L'Oreal</li>
+			<li><a>L'Oreal</a></li>
 			
-			<li>Colorsmash</li>
+			<li><a>Colorsmash</a></li>
 			
-			<li>Denman</li>
+			<li><a>Denman</a></li>
 			
 		</ul>
 		
@@ -500,5 +500,25 @@
     event.target.setCustomValidity('The name field should only contain letters. e.g. Julie');
     
     }
+	
+	function searchFunction() {
+  // Declare variables
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("search");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("droplist");
+  li = ul.getElementsByTagName("li");
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+	
 </script>
 </html>

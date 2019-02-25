@@ -1,6 +1,8 @@
-// JavaScript Document
+// Document ready
 
 $(document).ready(function() {
+	
+	// Show inital slides
 
     $(".team").hide();
     
@@ -245,6 +247,8 @@ $(document).ready(function() {
         
     });
 	
+	// Dropdown menu
+	
 $("#searchform input").click(function(){
 	
 	$(".fa-times-circle").show();
@@ -259,6 +263,8 @@ $(".fa-times-circle").click(function(){
 	
 	$("#dropdownmenu").hide();
 });
+	
+	// Modal images
 
 var modal1 = document.getElementById('modal1');
 
@@ -309,6 +315,8 @@ var span3 = document.getElementById("close3");
 
 span3.onclick = function() { 
   modal3.style.display = "none";
-} 
+}
+
+// Hide non-result images
  
 });

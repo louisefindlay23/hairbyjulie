@@ -85,6 +85,7 @@ p {
     font-size: 30pt;
     color: #cfb53b;
     padding: 0 2.5%;
+	cursor: pointer;
 }
 
 .pink {
@@ -149,6 +150,10 @@ textarea {
 
 #dropdownmenu li {
 	text-align: center;
+}
+
+a {
+	cursor: pointer;
 }
 
 .fa-times-circle {
