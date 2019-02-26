@@ -343,6 +343,23 @@ footer img {
     margin-left: 25%;
 }
 
+@media only screen and (max-width: 768px){
+	
+	.half img {
+    width: 60%;
+  }
+	
+  #julie {
+    width: 75%;
+	margin-left: 15%;
+  }
+	
+	.fa-times-circle {
+		right: 7.5%;
+	}
+	
+}
+
 @media only screen and (max-width: 700px){
   .modal-content {
     width: 100%;
