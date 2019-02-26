@@ -101,10 +101,10 @@ span {
 	padding: 2.5% 0;
 }
 
-input, select, textarea, button, #dropdownmenu{
-    width: 50%;
-	margin: 2.5% 0 2.5% 25%;
-    padding: 1.5%;
+input, select, textarea, button, #dropdownmenu {
+    width: 75%;
+	margin: 2.5% 0 2.5% 15%;
+    padding: 2.5%;
     color: #000000;
     background: #f19f94;
     border: none;
@@ -288,6 +288,10 @@ h2 {
 	width: 40%;
 }
 
+.tablet {
+	display: none;
+}
+
 h3 {
 	padding-left: 40px;
 }
@@ -349,13 +353,79 @@ footer img {
     width: 60%;
   }
 	
-  #julie {
+  #julie, #sharon {
     width: 75%;
 	margin-left: 15%;
   }
 	
 	.fa-times-circle {
 		right: 7.5%;
+	}
+	
+	input, select, textarea, button, #dropdownmenu {
+		margin-bottom: 5%;
+	}
+	
+	.client, .team {
+		padding-bottom: 5%;
+	}
+	
+	#productcontainer {
+		padding-top: 2.5%;
+	}
+	
+	.modal {
+		padding-top: 30%;
+	}
+	
+	#pricelist div {
+		margin: 0;
+	}
+	
+	#pricelist .half {
+		width: 50%;
+	}
+	
+	.desktop {
+		display: none;
+	}
+	
+	.tablet {
+		display: block;
+	}
+	
+	#contactform {
+		padding-top: 2.5%;
+	}
+	
+	input[type=submit] {
+		margin-bottom: 7.5%;
+	}
+	
+	ul {
+		padding-inline-start: 0;
+	}
+	
+	iframe {
+		width: 75%;
+		margin-left: 15%;
+	}
+	
+	h2 {
+		font-size: 25pt;
+	}
+	
+	h3 {
+		padding-left: 0;
+	}
+	
+	#openingtimes h3 {
+		margin-right: 3%;
+		padding-left: 40px;
+	}
+	
+	#shopinfo {
+		padding-top: 3%;
 	}
 	
 }
