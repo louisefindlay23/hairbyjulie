@@ -347,6 +347,10 @@ footer img {
     margin-left: 25%;
 }
 
+.mobile {
+    display: none;
+}
+
 @media only screen and (max-width: 768px){
 	
 	.half img {
@@ -431,7 +435,100 @@ footer img {
 }
 
 @media only screen and (max-width: 700px){
+
+    h1 {
+    font-size: 25pt;
+    }
+    
   .modal-content {
     width: 100%;
+  }
+  
+  .mobile {
+      display: block;
+  }
+  
+  .tablet {
+      display: block;
+  }
+  
+  .team {
+      display: block;
+  }
+  
+  .half {
+      width: 100%;
+  }
+  
+  .half img {
+      margin-left: 20%;
+  }
+  
+  #julie, #sharon {
+      margin-left: 10%;
+  }
+  
+  .dotrow {
+      padding-bottom: 7.5%;
+  }
+  
+  .fa-times-circle {
+      font-size: 28pt;
+      top: 0;
+      right: 0;
+      left: 76%;
+      bottom: 59px;
+  }
+  
+  #productcontainer {
+      display: block;
+  }
+  
+  .third {
+      width: 100%;
+  }
+  
+  .third img {
+      margin-bottom: 5%;
+  }
+  
+  .modal {
+      padding-top: 40%;
+  }
+  
+  .caption {
+      padding: 10% 0;
+  }
+  
+  .button {
+      width: 35%;
+      margin-left: 35%;
+  }
+  
+  .client {
+      display: block;
+  }
+  
+  #sharon, .client img {
+      width: 50%;
+      margin-left: 25%;
+  }
+  
+  iframe {
+      width: 100%;
+      margin-left: 0;
+  }
+  
+  #openingtimes h3 {
+      text-align: center;
+      padding-left: 0;
+  }
+  
+  #footerimg {
+      display: block;
+  }
+  
+  #footerimg img {
+      padding: 5% 0;
   }
 }
