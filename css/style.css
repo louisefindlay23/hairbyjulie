@@ -102,9 +102,9 @@ span {
 }
 
 input, select, textarea, button, #dropdownmenu {
-    width: 75%;
-	margin: 2.5% 0 2.5% 15%;
-    padding: 2.5%;
+    width: 50%;
+	margin: 2.5% 0 2.5% 25%;
+    padding: 1.5%;
     color: #000000;
     background: #f19f94;
     border: none;
@@ -170,6 +170,7 @@ a {
 #productcontainer {
 	display: flex;
 	justify-content: center;
+    padding-top: 2.5%;
 }
 
 .modal {
@@ -309,6 +310,10 @@ h3 {
 	font-size: 20pt;
 }
 
+#contactform {
+		padding-top: 2.5%;
+	}
+
 .client {
     padding: 2.5% 0;
     display: flex;
@@ -322,6 +327,7 @@ iframe {
     overflow: auto;
     border: 0;
     margin-left: 25%;
+    padding-top: 2.5%;
     padding-bottom: 5%;
 }
 
