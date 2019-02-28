@@ -1,7 +1,10 @@
 @charset "utf-8";
-/* CSS Document */
 
-html { overflow-y: scroll; }
+/* All CSS */
+
+html {
+    overflow-y: scroll;
+}
 
 @font-face {
 	src: url("../fonts/ropasoftpro-regular.woff");
@@ -27,6 +30,10 @@ div {
 	width: 100%;
 	height: auto;
 	overflow: auto;
+}
+
+.tablet, .mobile {
+    display: none;
 }
 
 h1 {
@@ -92,7 +99,7 @@ p {
     color: #f19f94 !important;
 }
 
-span {
+#hair {
 	font-family: "NPS 1935";
 	margin-right: 5px;
 }
@@ -289,10 +296,6 @@ h2 {
 	width: 40%;
 }
 
-.tablet {
-	display: none;
-}
-
 h3 {
 	padding-left: 40px;
 }
@@ -353,11 +356,17 @@ footer img {
     margin-left: 25%;
 }
 
-.mobile {
-    display: none;
-}
-
 @media only screen and (max-width: 768px){
+
+/* Tablet CSS */
+
+    .desktop {
+        display: none;
+    }
+
+    .tablet {
+        display: block;
+    }
 	
 	.half img {
     width: 60%;
@@ -379,14 +388,18 @@ footer img {
 	.client, .team {
 		padding-bottom: 5%;
 	}
-	
-	#productcontainer {
-		padding-top: 2.5%;
-	}
+    
+    .dotrow {
+        padding-bottom: 5%;
+    }
 	
 	.modal {
 		padding-top: 30%;
 	}
+    
+    #pricelist {
+        padding-bottom: 2.5%;
+    }
 	
 	#pricelist div {
 		margin: 0;
@@ -396,17 +409,16 @@ footer img {
 		width: 50%;
 	}
 	
-	.desktop {
-		display: none;
-	}
-	
-	.tablet {
-		display: block;
-	}
-	
 	#contactform {
 		padding-top: 2.5%;
 	}
+    
+    input, select, textarea, button, #dropdownmenu {
+        width: 75%;
+        margin-left: 15%;
+        padding: 2.5%;
+        margin-bottom: 5%;
+    }
 	
 	input[type=submit] {
 		margin-bottom: 7.5%;
@@ -442,20 +454,18 @@ footer img {
 
 @media only screen and (max-width: 700px){
 
+/* Mobile CSS */
+
+.mobile {
+    display: block;
+}
+
     h1 {
     font-size: 25pt;
     }
     
   .modal-content {
     width: 100%;
-  }
-  
-  .mobile {
-      display: block;
-  }
-  
-  .tablet {
-      display: block;
   }
   
   .team {
