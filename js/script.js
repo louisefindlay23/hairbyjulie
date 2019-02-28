@@ -441,14 +441,8 @@ span3.onclick = function() {
 		
 });
 
-// Home icon nav
-
-    $("#homeicon").click(function(){
-    
-    $(".dotrow, form, #products, #pricelist, iframe").hide();
-    
-    $("#history").show();
-    
+// NEED TO ADD IF STATEMENT THEN JQUERY NAV:VISIBLE
+ 
     clearInterval(slideshow1);
         
     clearInterval(slideshow2);
@@ -462,6 +456,16 @@ span3.onclick = function() {
     clearInterval(slideshow6);
     
     $(".team, .client").hide();
+    
+});
+
+// Home icon nav
+
+    $("#homeicon").click(function(){
+    
+    $(".dotrow, form, #products, #pricelist, iframe").hide();
+    
+    $("#history").show();
 
 });
 
@@ -472,6 +476,16 @@ span3.onclick = function() {
     $("form, #products, #pricelist, iframe, #history").hide();
     
     $("#client1, .dotrow, #team1").show();
+
+});
+
+// Products icon nav
+
+    $("#productsicon").click(function(){
+    
+    $(".team, .client, form, .dotrow, iframe, #history").hide();
+    
+    $("#products, #pricelist").show();
 
 });
 

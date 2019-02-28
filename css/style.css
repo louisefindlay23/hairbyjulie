@@ -572,4 +572,8 @@ footer img {
   #footerimg img {
       padding: 5% 0;
   }
+  
+  .remove {
+      display: none !important;
+  }
 }
