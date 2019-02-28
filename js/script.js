@@ -441,4 +441,39 @@ span3.onclick = function() {
 		
 });
 
+// Home icon nav
+
+    $("#homeicon").click(function(){
+    
+    $(".dotrow, form, #products, #pricelist, iframe").hide();
+    
+    $("#history").show();
+    
+    clearInterval(slideshow1);
+        
+    clearInterval(slideshow2);
+        
+    clearInterval(slideshow3);
+    
+    clearInterval(slideshow4);
+        
+    clearInterval(slideshow5);
+        
+    clearInterval(slideshow6);
+    
+    $(".team, .client").hide();
+
+});
+
+// Team icon nav
+
+    $("#teamicon").click(function(){
+    
+    $("form, #products, #pricelist, iframe, #history").hide();
+    
+    $("#client1, .dotrow, #team1").show();
+
+});
+
+
 });
