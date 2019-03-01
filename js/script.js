@@ -488,118 +488,11 @@ span3.onclick = function() {
     
     $("#teamicon").addClass("pink");
 
-    
-    
-        // Start slideshow autoplay again
-        
-    
-        var slideshow1 = setInterval(function(){ 
-        
-           $(".team").hide();
-        
-            $("#team2").fadeIn(1000);
-
-            $("#employee > i").removeClass("pink");
-
-            $("#dot2").addClass("pink"); 
-            
-        }, 10000);
-        
-        
-        var slideshow2 = setInterval(function(){ 
-        
-            $(".team").hide();
-        
-            $("#team3").fadeIn(1000);
-        
-            $("#employee > i").removeClass("pink");
-        
-            $("#dot3").addClass("pink"); 
-            
-        }, 20000);
-        
-        var slideshow3 = setInterval(function(){ 
-        
-            $(".team").hide();
-        
-            $("#team1").fadeIn(1000);
-        
-            $("#employee > i").removeClass("pink");
-        
-            $("#dot1").addClass("pink"); 
-            
-        }, 30000);
-        
-        // Autoplay client slideshow
-        
-        var slideshow4 = setInterval(function(){ 
-        
-           $(".client").hide();
-        
-            $("#client2").fadeIn(1000);
-
-            $("#customer > i").removeClass("pink");
-
-            $("#dot5").addClass("pink"); 
-            
-        }, 10000);
-        
-        
-        var slideshow5 = setInterval(function(){ 
-        
-            $(".client").hide();
-        
-            $("#client3").fadeIn(1000);
-        
-            $("#customer > i").removeClass("pink");
-        
-            $("#dot6").addClass("pink"); 
-            
-        }, 20000);
-        
-        var slideshow7 = setInterval(function(){ 
-        
-            $(".client").hide();
-        
-            $("#client4").fadeIn(1000);
-        
-            $("#customer > i").removeClass("pink");
-        
-            $("#dot7").addClass("pink"); 
-            
-        }, 30000);
-        
-        var slideshow6 = setInterval(function(){ 
-        
-            $(".client").hide();
-        
-            $("#client1").fadeIn(1000);
-        
-            $("#customer > i").removeClass("pink");
-        
-            $("#dot4").addClass("pink"); 
-            
-        }, 40000);
-
 });
 
 // Products icon nav
 
     $("#productsicon").click(function(){
-    
-        clearInterval(slideshow1);
-
-        clearInterval(slideshow2);
-
-        clearInterval(slideshow3);
-
-        clearInterval(slideshow4);
-
-        clearInterval(slideshow5);
-
-        clearInterval(slideshow6);
-        
-        clearInterval(slideshow7);
     
     $("#banner, .team, .client, form, .dotrow, iframe, #history").hide();
     
