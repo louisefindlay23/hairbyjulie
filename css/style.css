@@ -1,7 +1,10 @@
 @charset "utf-8";
-/* CSS Document */
 
-html { overflow-y: scroll; }
+/* All CSS */
+
+html {
+    overflow-y: scroll;
+}
 
 @font-face {
 	src: url("../fonts/ropasoftpro-regular.woff");
@@ -29,6 +32,10 @@ div {
 	overflow: auto;
 }
 
+.tablet, .mobile {
+    display: none;
+}
+
 h1 {
 	text-align: center;
 	font-size: 35pt;
@@ -37,6 +44,21 @@ h1 {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+nav i {
+    font-size: 30pt;
+    height: auto;
+    overflow: auto;
+    padding: 0 6%;
 }
 
 #banner img {
@@ -92,7 +114,7 @@ p {
     color: #f19f94 !important;
 }
 
-span {
+#hair {
 	font-family: "NPS 1935";
 	margin-right: 5px;
 }
@@ -289,10 +311,6 @@ h2 {
 	width: 40%;
 }
 
-.tablet {
-	display: none;
-}
-
 h3 {
 	padding-left: 40px;
 }
@@ -354,6 +372,16 @@ footer img {
 }
 
 @media only screen and (max-width: 768px){
+
+/* Tablet CSS */
+
+    .desktop {
+        display: none;
+    }
+
+    .tablet {
+        display: block;
+    }
 	
 	.half img {
     width: 60%;
@@ -375,14 +403,18 @@ footer img {
 	.client, .team {
 		padding-bottom: 5%;
 	}
-	
-	#productcontainer {
-		padding-top: 2.5%;
-	}
+    
+    .dotrow {
+        padding-bottom: 5%;
+    }
 	
 	.modal {
 		padding-top: 30%;
 	}
+    
+    #pricelist {
+        padding-bottom: 2.5%;
+    }
 	
 	#pricelist div {
 		margin: 0;
@@ -392,17 +424,16 @@ footer img {
 		width: 50%;
 	}
 	
-	.desktop {
-		display: none;
-	}
-	
-	.tablet {
-		display: block;
-	}
-	
 	#contactform {
 		padding-top: 2.5%;
 	}
+    
+    input, select, textarea, button, #dropdownmenu {
+        width: 75%;
+        margin-left: 15%;
+        padding: 2.5%;
+        margin-bottom: 5%;
+    }
 	
 	input[type=submit] {
 		margin-bottom: 7.5%;
@@ -437,7 +468,139 @@ footer img {
 }
 
 @media only screen and (max-width: 700px){
+
+/* Mobile CSS */
+
+.mobile {
+    display: block;
+}
+
+.dotrow, form, #products, #pricelist, iframe {
+    display: none;
+}
+
+    h1 {
+    font-size: 25pt;
+    }
+    
   .modal-content {
     width: 100%;
+  }
+  
+  .team {
+      display: block;
+      padding-top: 10%;
+  }
+  
+  .half {
+      width: 100%;
+  }
+  
+  .half img {
+      margin-left: 20%;
+  }
+  
+  #julie, #sharon {
+      margin-left: 10%;
+  }
+  
+  .dotrow {
+      padding-bottom: 15%;
+      text-align: center;
+  }
+  
+  .fa-times-circle {
+      font-size: 28pt;
+      top: -70px;
+      right: 0;
+      left: 76%;
+      bottom: 59px;
+  }
+  
+  #productcontainer {
+      display: block;
+  }
+  
+  .third {
+      width: 100%;
+  }
+  
+  .third img {
+      margin-bottom: 5%;
+  }
+  
+  .modal {
+      padding-top: 40%;
+  }
+  
+  .caption {
+      padding: 10% 0;
+  }
+  
+  .button {
+      width: 35%;
+      margin-left: 35%;
+  }
+  
+  .close {
+      top: -1%;
+      right: 3%;
+      font-size: 60pt;
+  }
+  
+  .client {
+      display: block;
+  }
+  
+  #sharon, .client img {
+      width: 50%;
+      margin-left: 25%;
+  }
+  
+  .pricelistcontainer {
+      width: 100% !important;
+  }
+  
+  #longlistleft {
+      width: 60% !important;
+  }
+  
+  #longlistright {
+      width: 40% !important;
+  }
+  
+  #productcontact {
+      padding-top: 10%;
+  }
+  
+  iframe {
+      width: 100%;
+      margin-left: 0;
+      padding-top: 10%;
+  }
+  
+  input, select, textarea {
+      margin-bottom: 7.5%;
+  }
+  
+  textarea {
+      margin-top: 25%;
+  }
+  
+  #openingtimes h3 {
+      text-align: center;
+      padding-left: 0;
+  }
+  
+  #footerimg {
+      display: block;
+  }
+  
+  #footerimg img {
+      padding: 5% 0;
+  }
+  
+  .remove {
+      display: none !important;
   }
 }

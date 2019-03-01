@@ -29,18 +29,33 @@
 </header>
     
 <body>
+
+<nav class="mobile">
+
+    <i id="homeicon" class="fas fa-home pink" alt="Home icon"></i>
+    
+    <i id="teamicon" class="fas fa-user" alt="Team icon"></i>
+    
+    <i id="productsicon" class="fas fa-cut" alt="A pair of scissors symbolising the products and services that Hair By Julie sells"></i>
+    
+    <i id="formicon" class="fab fa-wpforms" alt="Contact form icon"></i>
+
+</nav>
 	
 <div id="banner">
 	
 	<img src="img/shop_outside.jpg" alt="Outside of Hair By Julie's shop">	
 	
 </div>
+
 	
 <div id="history">
 
 	<p>Hair by Julie is the oldest unisex hairdresser in Dufftown, having existed for over fifty years. We pride ourselves on our friendly nature and walk-in approach.</p>
 	
-	<p>Just pop along and we can make a space for you whether you want your hair styled or to buy one of our products. If you’d rather have an appointment in the comfort of your own home we can arrange a home visit where one of our employees will come to you.</p>
+	<p>Just pop along and we can make a space for you whether you want your hair styled or to buy one of our products. <span class="desktop">If you’d rather have an appointment in the comfort of your own home we can arrange a home visit where one of our employees will come to you.</span></p>
+    
+    <p class="tablet">If you’d rather have an appointment in the comfort of your own home we can arrange a home visit where one of our employees will come to you.</p>
 	
 	<p>Hair by Julie is a part of the Hairdressers’ Federation and we receive the Hairdressers’ Journal in order to keep up with the latest trends.</p>
 	
@@ -50,13 +65,13 @@
     
     <div class="half">
         
-            <img id="julie" src="img/julie1.jpg" alt="Julie, the owner of Hair By Julie">
+            <img id="julie" src="img/julie.jpg" alt="Julie, the owner of Hair By Julie">
             
     </div>
     
     <div class="half">
 
-            <p>"I’ve been in the business for 25 years. I loved working for my old boss and was a bit apprehensive when he asked me to take over but I’m glad I did and never looked back.</p>
+            <p class="desktop">"I’ve been in the business for 25 years. I loved working for my old boss and was a bit apprehensive when he asked me to take over but I’m glad I did and never looked back.</p>
 
             <p>At Hair by Julie, we aim to exceed expectation of professionalism but with a relaxed atmosphere to make everyone feel welcome and to foster Dufftown’s community spirit.</p>
 
@@ -210,9 +225,11 @@
 	
 	<h2>Price List</h2>
     
-        <p>We also have a loyalty card scheme. After you've become a customer, we'll give you your card. You'll receive 10% off when the card is full after ten transactions. Only purchases over £10 count.</p>
+        <p>We also have a loyalty card scheme. After you've become a customer, we'll give you your card. <span class="desktop">You'll receive 10% off when the card is full after ten transactions. Only purchases over £10 count.</span></p>
+        
+        <p class="mobile">You'll receive 10% off when the card is full after ten transactions. Only purchases over £10 count.</p>
 	
-		<div class="half">
+		<div class="pricelistcontainer half">
 	
 			<h3>Men</h3>
 
@@ -245,7 +262,7 @@
 				</ul>
 	</div>
 	
-	<div class="half">
+	<div class="half pricelistcontainer">
 	
 			<h3>Women</h3>
 
@@ -278,7 +295,7 @@
 				</ul>
 	</div>
 	
-	<div class="half">
+	<div class="half pricelistcontainer">
 	
 			<h3>Home Visits</h3>
 
@@ -311,7 +328,7 @@
 				</ul>
 	</div>
 	
-	<div class="half">
+	<div class="half pricelistcontainer">
 	
 			<h3>Products</h3>
 
@@ -329,7 +346,7 @@
 
 				</ul>
 		
-				<ul class="half tablet">
+				<ul id="longlistleft" class="half tablet">
 
 					<li>Yodeyma Perfume - S</li>
 
@@ -343,7 +360,7 @@
 
 				</ul>
 
-				<ul class="half">
+				<ul id="longlistright" class="half">
 
 					<li>£4.50</li>
 
@@ -353,7 +370,7 @@
 
 					<li>£45.00</li>
 
-					<li>Contact us</li>
+					<li id="productcontact">Contact us</li>
 
 				</ul>
 	</div>
@@ -373,7 +390,9 @@
 		
 		<p>"They’re really friendly and nice. I moved here three years ago and didn’t know anyone but someone recommended them to them.</p>
 
-        <p>When I came, they introduced me to everyone and made me feel part of the community. Since then, I come in to get my hair cut and coloured every six weeks."</p>
+        <p>When I came, they introduced me to everyone and made me feel part of the community. <span class="desktop">Since then, I come in to get my hair cut and coloured every six weeks."</span></p>
+        
+        <p class="mobile">Since then, I come in to get my hair cut and coloured every six weeks."</p>
 
 		<p>- Sharon, Cut and Colour</p>
 	

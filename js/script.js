@@ -2,7 +2,7 @@
 
 $(document).ready(function() {
 	
-	// Show inital slides
+	// Show initial slides
 
     $(".team").hide();
     
@@ -439,6 +439,86 @@ span3.onclick = function() {
 		
 	$("button").hide();
 		
+});
+
+// Hide carousels on home mobile version
+
+    if($("nav").is(":visible")){
+ 
+        clearInterval(slideshow1);
+
+        clearInterval(slideshow2);
+
+        clearInterval(slideshow3);
+
+        clearInterval(slideshow4);
+
+        clearInterval(slideshow5);
+
+        clearInterval(slideshow6);
+        
+        clearInterval(slideshow7);
+
+        $(".team, .client").hide();
+}
+
+// Home icon nav
+
+    $("#homeicon").click(function(){
+    
+    $(".dotrow, form, #products, #pricelist, iframe").hide();
+    
+    $("#banner, #history").show();
+    
+    $("#homeicon").addClass("pink");
+    
+    $("#teamicon, #productsicon, #formicon").removeClass("pink");
+
+});
+
+// Team icon nav
+
+    $("#teamicon").click(function(){
+    
+    $("#banner, form, #products, #pricelist, iframe, #history").hide();
+    
+    $("#client1, .dotrow, #team1").show();
+    
+    $("#homeicon, #productsicon, #formicon").removeClass("pink");
+    
+    $("#teamicon").addClass("pink");
+
+});
+
+// Products icon nav
+
+    $("#productsicon").click(function(){
+    
+    $("#banner, .team, .client, form, .dotrow, iframe, #history").hide();
+    
+    $(".team, .client").hide();
+    
+    $("#searchform, #products, #pricelist").show();
+    
+    $("#homeicon, #teamicon, #formicon").removeClass("pink");
+    
+    $("#productsicon").addClass("pink");
+
+});
+
+
+// Contact icon nav
+
+    $("#formicon").click(function(){
+    
+    $(".dotrow, #banner, #history, #products, #pricelist").hide();
+    
+    $("form, iframe").show();
+    
+    $("#formicon").addClass("pink");
+    
+    $("#teamicon, #productsicon, #homeicon").removeClass("pink");
+
 });
 
 });
