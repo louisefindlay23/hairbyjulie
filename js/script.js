@@ -441,23 +441,24 @@ span3.onclick = function() {
 		
 });
 
-// NEED TO ADD IF STATEMENT THEN JQUERY NAV:VISIBLE
+// Hide carousels on non-team mobile selections
+
+    if($("nav").is(":visible")){
  
-    clearInterval(slideshow1);
-        
-    clearInterval(slideshow2);
-        
-    clearInterval(slideshow3);
-    
-    clearInterval(slideshow4);
-        
-    clearInterval(slideshow5);
-        
-    clearInterval(slideshow6);
-    
-    $(".team, .client").hide();
-    
-});
+        clearInterval(slideshow1);
+
+        clearInterval(slideshow2);
+
+        clearInterval(slideshow3);
+
+        clearInterval(slideshow4);
+
+        clearInterval(slideshow5);
+
+        clearInterval(slideshow6);
+
+        $(".team, .client").hide();
+}
 
 // Home icon nav
 
@@ -476,6 +477,99 @@ span3.onclick = function() {
     $("form, #products, #pricelist, iframe, #history").hide();
     
     $("#client1, .dotrow, #team1").show();
+    
+    
+        // Start slideshow autoplay again
+    
+        // Autoplay team slideshow
+    
+        var slideshow1 = setInterval(function(){ 
+        
+           $(".team").hide();
+        
+            $("#team2").fadeIn(1000);
+
+            $("#employee > i").removeClass("pink");
+
+            $("#dot2").addClass("pink"); 
+            
+        }, 10000);
+        
+        
+        var slideshow2 = setInterval(function(){ 
+        
+            $(".team").hide();
+        
+            $("#team3").fadeIn(1000);
+        
+            $("#employee > i").removeClass("pink");
+        
+            $("#dot3").addClass("pink"); 
+            
+        }, 20000);
+        
+        var slideshow3 = setInterval(function(){ 
+        
+            $(".team").hide();
+        
+            $("#team1").fadeIn(1000);
+        
+            $("#employee > i").removeClass("pink");
+        
+            $("#dot1").addClass("pink"); 
+            
+        }, 30000);
+        
+        // Autoplay client slideshow
+        
+        var slideshow4 = setInterval(function(){ 
+        
+           $(".client").hide();
+        
+            $("#client2").fadeIn(1000);
+
+            $("#customer > i").removeClass("pink");
+
+            $("#dot5").addClass("pink"); 
+            
+        }, 10000);
+        
+        
+        var slideshow5 = setInterval(function(){ 
+        
+            $(".client").hide();
+        
+            $("#client3").fadeIn(1000);
+        
+            $("#customer > i").removeClass("pink");
+        
+            $("#dot6").addClass("pink"); 
+            
+        }, 20000);
+        
+        var slideshow7 = setInterval(function(){ 
+        
+            $(".client").hide();
+        
+            $("#client4").fadeIn(1000);
+        
+            $("#customer > i").removeClass("pink");
+        
+            $("#dot7").addClass("pink"); 
+            
+        }, 30000);
+        
+        var slideshow6 = setInterval(function(){ 
+        
+            $(".client").hide();
+        
+            $("#client1").fadeIn(1000);
+        
+            $("#customer > i").removeClass("pink");
+        
+            $("#dot4").addClass("pink"); 
+            
+        }, 40000);
 
 });
 
@@ -488,6 +582,5 @@ span3.onclick = function() {
     $("#products, #pricelist").show();
 
 });
-
 
 });
