@@ -25,7 +25,7 @@ $(document).ready(function() {
 
             $("#dot2").addClass("pink"); 
             
-        }, 10000);
+        }, 35000);
         
         
         var slideshow2 = setInterval(function(){ 
@@ -38,7 +38,7 @@ $(document).ready(function() {
         
             $("#dot3").addClass("pink"); 
             
-        }, 20000);
+        }, 55000);
         
         var slideshow3 = setInterval(function(){ 
         
@@ -50,7 +50,7 @@ $(document).ready(function() {
         
             $("#dot1").addClass("pink"); 
             
-        }, 30000);
+        }, 85000);
         
         // Autoplay client slideshow
         
