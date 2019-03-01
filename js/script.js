@@ -2,7 +2,7 @@
 
 $(document).ready(function() {
 	
-	// Show inital slides
+	// Show initial slides
 
     $(".team").hide();
     
@@ -441,7 +441,7 @@ span3.onclick = function() {
 		
 });
 
-// Hide carousels on non-team mobile selections
+// Hide carousels on home mobile version
 
     if($("nav").is(":visible")){
  
@@ -456,6 +456,8 @@ span3.onclick = function() {
         clearInterval(slideshow5);
 
         clearInterval(slideshow6);
+        
+        clearInterval(slideshow7);
 
         $(".team, .client").hide();
 }
@@ -467,6 +469,11 @@ span3.onclick = function() {
     $(".dotrow, form, #products, #pricelist, iframe").hide();
     
     $("#history").show();
+    
+    $("#homeicon").addClass("pink");
+    
+    $("#teamicon, #productsicon, #formicon").removeClass("pink");
+
 
 });
 
@@ -474,14 +481,18 @@ span3.onclick = function() {
 
     $("#teamicon").click(function(){
     
-    $("form, #products, #pricelist, iframe, #history").hide();
+    $("#banner, form, #products, #pricelist, iframe, #history").hide();
     
     $("#client1, .dotrow, #team1").show();
     
+    $("#homeicon, #productsicon, #formicon").removeClass("pink");
+    
+    $("#teamicon").addClass("pink");
+
+    
     
         // Start slideshow autoplay again
-    
-        // Autoplay team slideshow
+        
     
         var slideshow1 = setInterval(function(){ 
         
@@ -577,9 +588,29 @@ span3.onclick = function() {
 
     $("#productsicon").click(function(){
     
-    $(".team, .client, form, .dotrow, iframe, #history").hide();
+        clearInterval(slideshow1);
+
+        clearInterval(slideshow2);
+
+        clearInterval(slideshow3);
+
+        clearInterval(slideshow4);
+
+        clearInterval(slideshow5);
+
+        clearInterval(slideshow6);
+        
+        clearInterval(slideshow7);
+    
+    $("#banner, .team, .client, form, .dotrow, iframe, #history").hide();
+    
+        $(".team, .client").hide();
     
     $("#products, #pricelist").show();
+    
+    $("#homeicon, #teamicon, #formicon").removeClass("pink");
+    
+    $("#productsicon").addClass("pink");
 
 });
 

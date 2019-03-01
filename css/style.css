@@ -54,15 +54,11 @@ nav {
     padding-bottom: 5%;
 }
 
-nav img {
-    width: 15%;
+nav i {
+    font-size: 30pt;
     height: auto;
     overflow: auto;
-    padding: 0 2.5%;
-}
-
-#teamicon {
-    width: 25%;
+    padding: 0 6%;
 }
 
 #banner img {
@@ -544,6 +540,12 @@ footer img {
   .button {
       width: 35%;
       margin-left: 35%;
+  }
+  
+  .close {
+      top: -1%;
+      right: 3%;
+      font-size: 60pt;
   }
   
   .client {
