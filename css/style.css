@@ -576,6 +576,15 @@ footer img {
   iframe {
       width: 100%;
       margin-left: 0;
+      padding-top: 10%;
+  }
+  
+  input, select, textarea {
+      margin-bottom: 7.5%;
+  }
+  
+  textarea {
+      margin-top: 25%;
   }
   
   #openingtimes h3 {

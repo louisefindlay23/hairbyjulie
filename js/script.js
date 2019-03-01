@@ -474,7 +474,6 @@ span3.onclick = function() {
     
     $("#teamicon, #productsicon, #formicon").removeClass("pink");
 
-
 });
 
 // Team icon nav
@@ -604,13 +603,28 @@ span3.onclick = function() {
     
     $("#banner, .team, .client, form, .dotrow, iframe, #history").hide();
     
-        $(".team, .client").hide();
+    $(".team, .client").hide();
     
     $("#searchform, #products, #pricelist").show();
     
     $("#homeicon, #teamicon, #formicon").removeClass("pink");
     
     $("#productsicon").addClass("pink");
+
+});
+
+
+// Contact icon nav
+
+    $("#formicon").click(function(){
+    
+    $(".dotrow, #banner, #history, #products, #pricelist").hide();
+    
+    $("form, iframe").show();
+    
+    $("#formicon").addClass("pink");
+    
+    $("#teamicon, #productsicon, #homeicon").removeClass("pink");
 
 });
 
