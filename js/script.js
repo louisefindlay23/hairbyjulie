@@ -468,7 +468,7 @@ span3.onclick = function() {
     
     $(".dotrow, form, #products, #pricelist, iframe").hide();
     
-    $("#history").show();
+    $("#banner, #history").show();
     
     $("#homeicon").addClass("pink");
     
@@ -606,7 +606,7 @@ span3.onclick = function() {
     
         $(".team, .client").hide();
     
-    $("#products, #pricelist").show();
+    $("#searchform, #products, #pricelist").show();
     
     $("#homeicon, #teamicon, #formicon").removeClass("pink");
     

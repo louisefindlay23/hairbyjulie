@@ -511,7 +511,7 @@ footer img {
   
   .fa-times-circle {
       font-size: 28pt;
-      top: 0;
+      top: -60px;
       right: 0;
       left: 76%;
       bottom: 59px;
@@ -555,6 +555,22 @@ footer img {
   #sharon, .client img {
       width: 50%;
       margin-left: 25%;
+  }
+  
+  .pricelistcontainer {
+      width: 100% !important;
+  }
+  
+  #longlistleft {
+      width: 60% !important;
+  }
+  
+  #longlistright {
+      width: 40% !important;
+  }
+  
+  #productcontact {
+      padding-top: 10%;
   }
   
   iframe {
