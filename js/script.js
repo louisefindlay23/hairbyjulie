@@ -64,7 +64,7 @@ $(document).ready(function() {
 
             $("#dot5").addClass("pink"); 
             
-        }, 10000);
+        }, 25000);
         
         
         var slideshow5 = setInterval(function(){ 
@@ -77,7 +77,7 @@ $(document).ready(function() {
         
             $("#dot6").addClass("pink"); 
             
-        }, 20000);
+        }, 50000);
         
         var slideshow7 = setInterval(function(){ 
         
@@ -89,7 +89,7 @@ $(document).ready(function() {
         
             $("#dot7").addClass("pink"); 
             
-        }, 30000);
+        }, 75000);
         
         var slideshow6 = setInterval(function(){ 
         
@@ -101,7 +101,7 @@ $(document).ready(function() {
         
             $("#dot4").addClass("pink"); 
             
-        }, 40000);
+        }, 100000);
         
     
     // Dot click team slideshow 
