@@ -32,10 +32,6 @@ div {
 	overflow: auto;
 }
 
-.tablet, .mobile {
-    display: none;
-}
-
 h1 {
 	text-align: center;
 	font-size: 35pt;
@@ -206,7 +202,7 @@ a {
   overflow: auto;
   background-color: #482e3b;
   opacity: 0.9;
-  padding-top: 7.5%;
+  padding-top: 15%;
 }
 
 .modal-content {
@@ -248,10 +244,10 @@ a {
 
 .close {
   position: absolute;
-  top: 2.5%;
+  top: 1%;
   right: 2.5%;
   color: #cfb53b;
-  font-size: 40px;
+  font-size: 60px;
   font-weight: bold;
   transition: 0.3s;
 }
@@ -371,6 +367,24 @@ footer img {
     margin-left: 25%;
 }
 
+/* Desktop only */
+
+@media (min-width: 769px) {
+	
+	.tablet, .mobile {
+    display: none !important;
+	}
+}
+
+/* Tablet only */
+
+@media (min-width: 500px) {
+	
+	.mobile {
+		display: none !important;
+	}
+}
+
 @media only screen and (max-width: 768px){
 
 /* Tablet CSS */
@@ -407,6 +421,11 @@ footer img {
     .dotrow {
         padding-bottom: 5%;
     }
+	
+	.close {
+		font-size: 80pt;
+		top: -0.5%;
+	}
 	
 	.modal {
 		padding-top: 30%;
