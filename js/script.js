@@ -269,52 +269,85 @@ $(".fa-times-circle").click(function(){
 var modal1 = document.getElementById('modal1');
 
 var img1 = document.getElementById('product1');
+var pointer1 = document.getElementById('pointer1');
 var modalImg1 = document.getElementById("modalimg1");
 var captionText1 = document.getElementById("caption1");
+	
 img1.onclick = function(){
   modal1.style.display = "block";
   modalImg1.src = this.src;
   captionText1.innerHTML = this.alt;
+	pointer1.style.display = "none";
+}
+
+pointer1.onclick = function(){
+  modal1.style.display = "block";
+  modalImg1.src = img1.src;
+  captionText1.innerHTML = img1.alt;
+	this.style.display = "none";
 }
 
 var span1 = document.getElementById("close1");
 
 span1.onclick = function() { 
   modal1.style.display = "none";
+	pointer1.style.display = "block";
 }
  
 var modal2 = document.getElementById('modal2');
 
 var img2 = document.getElementById('product2');
+var pointer2 = document.getElementById('pointer2');
 var modalImg2 = document.getElementById("modalimg2");
 var captionText2 = document.getElementById("caption2");
+	
 img2.onclick = function(){
   modal2.style.display = "block";
   modalImg2.src = this.src;
   captionText2.innerHTML = this.alt;
+	pointer2.style.display = "none";
+}
+
+pointer2.onclick = function(){
+  modal2.style.display = "block";
+  modalImg2.src = img2.src;
+  captionText2.innerHTML = img2.alt;
+	this.style.display = "none";
 }
  
 var span2 = document.getElementById("close2");
 
 span2.onclick = function() { 
   modal2.style.display = "none";
+	pointer2.style.display = "block";
 } 
 
 var modal3 = document.getElementById('modal3');
 
 var img3 = document.getElementById('product3');
+var pointer3 = document.getElementById('pointer3');
 var modalImg3 = document.getElementById("modalimg3");
 var captionText3 = document.getElementById("caption3");
+	
 img3.onclick = function(){
   modal3.style.display = "block";
   modalImg3.src = this.src;
   captionText3.innerHTML = this.alt;
+	pointer3.style.display = "none";
+}
+
+pointer3.onclick = function(){
+  modal3.style.display = "block";
+  modalImg3.src = img3.src;
+  captionText3.innerHTML = img3.alt;
+	this.style.display = "none";
 }
 
 var span3 = document.getElementById("close3");
 
 span3.onclick = function() { 
-  modal3.style.display = "none";
+	modal3.style.display = "none";
+	pointer3.style.display = "block";
 }
 
 // Hide non-result images
