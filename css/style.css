@@ -430,6 +430,20 @@ footer img {
 	.modal {
 		padding-top: 30%;
 	}
+	
+	.third img {
+		position: relative;
+    	margin-bottom: 5%;
+  }
+	
+	.fa-mouse-pointer {
+		position: absolute;
+		font-size: 35pt;
+		color: #f19f94;
+		z-index: 1;
+		transform: translate(400%, -300%);
+	}
+  
     
     #pricelist {
         padding-bottom: 2.5%;
@@ -543,17 +557,8 @@ footer img {
   .third {
       width: 100%;
   }
-  
-  .third img {
-	  position: relative;
-      margin-bottom: 5%;
-  }
 	
 	.fa-mouse-pointer {
-		position: absolute;
-		font-size: 35pt;
-		color: #f19f94;
-		z-index: 1;
 		transform: translate(600%, -400%);
 	}
   
