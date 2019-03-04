@@ -544,9 +544,9 @@ span6.onclick = function() {
 	
 	$("#schwarz").click(function(){
 		
-	$("#productone, #productfour, #productfive").show();
+	$("#productone, #productfour, #productfive, #productsix").show();
 	
-	$("#producttwo, #productthree, #productsix").hide();
+	$("#producttwo, #productthree").hide();
 		
 	$("#dropdownmenu").hide();
 		
