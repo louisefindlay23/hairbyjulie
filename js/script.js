@@ -532,7 +532,7 @@ span6.onclick = function() {
 		
 	$("#productone, #productthree").show();
 	
-	$("#producttwo").hide();
+	$("#producttwo, #productfour, #productfive, #productsix").hide();
 		
 	$("#dropdownmenu").hide();
 		
@@ -544,37 +544,9 @@ span6.onclick = function() {
 	
 	$("#schwarz").click(function(){
 		
-	$("#productone").show();
+	$("#productone, #productfour, #productfive").show();
 	
-	$("#producttwo, #productthree").hide();
-		
-	$("#dropdownmenu").hide();
-		
-	$(".fa-times-circle").hide();
-	
-	$("button").show();
-		
-});
-	
-	$("#veloce").click(function(){
-		
-	$("#productone").show();
-	
-	$("#producttwo, #productthree").hide();
-		
-	$("#dropdownmenu").hide();
-		
-	$(".fa-times-circle").hide();
-	
-	$("button").show();
-		
-});
-	
-	$("#gold").click(function(){
-		
-	$("#productone").show();
-	
-	$("#producttwo, #productthree").hide();
+	$("#producttwo, #productthree, #productsix").hide();
 		
 	$("#dropdownmenu").hide();
 		
@@ -586,37 +558,9 @@ span6.onclick = function() {
 	
 	$("#oreal").click(function(){
 		
-	$("#producttwo").show();
+	$("#productone, #producttwo, #productsix").show();
 	
-	$("#productone, #productthree").hide();
-		
-	$("#dropdownmenu").hide();
-		
-	$(".fa-times-circle").hide();
-	
-	$("button").show();
-		
-});
-	
-	$("#color").click(function(){
-		
-	$("#productthree").show();
-	
-	$("#productone, #producttwo").hide();
-		
-	$("#dropdownmenu").hide();
-		
-	$(".fa-times-circle").hide();
-	
-	$("button").show();
-		
-});
-	
-	$("#den").click(function(){
-		
-	$("#productthree").show();
-	
-	$("#productone, #producttwo").hide();
+	$("#productthree, #productfour, #productfive").hide();
 		
 	$("#dropdownmenu").hide();
 		
@@ -630,7 +574,7 @@ span6.onclick = function() {
 	
 	$("button").click(function(){
 	
-	$("#productone, #producttwo, #productthree").show();
+	$("#productone, #producttwo, #productthree, #productfour, #productfive, #productsix").show();
 		
 	$("button").hide();
 		
