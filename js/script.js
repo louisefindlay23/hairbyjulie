@@ -660,4 +660,158 @@ span6.onclick = function() {
 
 });
 
+// Team swipe gestures
+
+// Swipe (Left) Client 1 to 2
+
+$("#team1").swipe({
+  swipeLeft:function(event, direction, distance, duration, fingerCount) {
+    $(".team").hide();
+        
+        $("#team2").fadeIn(300);
+        
+        $("#employee > i").removeClass("pink");
+        
+        $("#dot2").addClass("pink");
+  }
+});
+
+// Swipe (Right) Client 2 to 1
+
+$("#team2").swipe({
+  swipeRight:function(event, direction, distance, duration, fingerCount) {
+    $(".team").hide();
+        
+        $("#team1").fadeIn(300);
+        
+        $("#employee > i").removeClass("pink");
+        
+        $("#dot1").addClass("pink");
+  }
+  
+});
+
+// Swipe (Left) Client 2 to Client 3
+
+$("#team2").swipe({
+  swipeLeft:function(event, direction, distance, duration, fingerCount) {
+    $(".team").hide();
+        
+        $("#team3").fadeIn(300);
+        
+        $("#employee > i").removeClass("pink");
+        
+        $("#dot3").addClass("pink");
+  }
+  
+});
+
+// Swipe (Right) Client 3 to Client 2
+
+$("#team3").swipe({
+  swipeRight:function(event, direction, distance, duration, fingerCount) {
+    $(".team").hide();
+        
+        $("#team2").fadeIn(300);
+        
+        $("#employee > i").removeClass("pink");
+        
+        $("#dot2").addClass("pink");
+  }
+  
+});
+
+// Client swipe gestures
+
+// Swipe (Left) Client 1 to Client 2
+
+$("#client1").swipe({
+  swipeLeft:function(event, direction, distance, duration, fingerCount) {
+    $(".client").hide();
+        
+        $("#client2").fadeIn(300);
+        
+        $("#customer > i").removeClass("pink");
+        
+        $("#dot5").addClass("pink");
+  }
+  
+});
+
+// Swipe (Right) Client 2 to Client 1
+
+$("#client2").swipe({
+  swipeRight:function(event, direction, distance, duration, fingerCount) {
+    $(".client").hide();
+        
+        $("#client1").fadeIn(300);
+        
+        $("#customer > i").removeClass("pink");
+        
+        $("#dot4").addClass("pink");
+  }
+  
+});
+
+// Swipe (Left) Client 2 to Client 3
+
+$("#client2").swipe({
+  swipeLeft:function(event, direction, distance, duration, fingerCount) {
+    $(".client").hide();
+        
+        $("#client3").fadeIn(300);
+        
+        $("#customer > i").removeClass("pink");
+        
+        $("#dot6").addClass("pink");
+  }
+  
+});
+
+// Swipe (Right) Client 3 to Client 2
+
+$("#client3").swipe({
+  swipeRight:function(event, direction, distance, duration, fingerCount) {
+    $(".client").hide();
+        
+        $("#client2").fadeIn(300);
+        
+        $("#customer > i").removeClass("pink");
+        
+        $("#dot5").addClass("pink");
+  }
+  
+});
+  
+// Swipe (Left) Client 3 to Client 4
+
+$("#client3").swipe({
+  swipeLeft:function(event, direction, distance, duration, fingerCount) {
+    $(".client").hide();
+        
+        $("#client4").fadeIn(300);
+        
+        $("#customer > i").removeClass("pink");
+        
+        $("#dot7").addClass("pink");
+  }
+  
+});
+
+// Swipe (Right) Client 4 to Client 3
+
+$("#client4").swipe({
+  swipeRight:function(event, direction, distance, duration, fingerCount) {
+    $(".client").hide();
+        
+        $("#client3").fadeIn(300);
+        
+        $("#customer > i").removeClass("pink");
+        
+        $("#dot6").addClass("pink");
+  }
+  
+});
+
+
 });
