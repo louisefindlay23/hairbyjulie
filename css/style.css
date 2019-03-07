@@ -409,11 +409,13 @@ footer img {
 	
 	.close {
 		font-size: 80pt;
-		top: -0.5%;
+		top: 15%;
+		left: 85%;
+		color: #f19f94 !important;
 	}
 	
 	.modal {
-		padding-top: 30%;
+		padding-top: 25%;
 	}
 	
 	.third img {
@@ -541,12 +543,12 @@ footer img {
       width: 35%;
       margin-left: 35%;
   }
-  
-  .close {
-      top: -1%;
-      right: 3%;
-      font-size: 60pt;
-  }
+	  
+.close {
+	font-size: 80pt;
+	top: 20%;
+	left: 85%;
+}
   
   .client {
       display: block;
