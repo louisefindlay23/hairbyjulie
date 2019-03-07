@@ -488,7 +488,7 @@ footer img {
     display: block;
 }
 
-.dotrow, form, #products, #pricelist, iframe {
+.dotrow, form, #products, #pricelist, .columns, iframe {
     display: none;
 }
 
@@ -530,8 +530,8 @@ footer img {
       bottom: 59px;
   }
   
-  #productcontainer {
-      display: block;
+  .containercolumn {
+      width: 100%;
   }
   
   .third {

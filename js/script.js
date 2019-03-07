@@ -637,7 +637,7 @@ span6.onclick = function() {
     
     $(".team, .client").hide();
     
-    $("#searchform, #products, #pricelist").show();
+    $("#searchform, #products, #pricelist, .columns").show();
     
     $("#homeicon, #teamicon, #formicon").removeClass("pink");
     
