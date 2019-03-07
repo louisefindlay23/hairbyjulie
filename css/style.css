@@ -209,7 +209,8 @@ a {
   margin: auto;
   display: block;
   width: 80%;
-  max-width: 700px;
+  max-width: 500px;
+  padding-top: 5%;
 }
 
 .caption {
@@ -286,29 +287,23 @@ button {
 }
 
 h2 {
-	text-align: center;
-	font-size: 30pt;
-    margin-bottom: 5%;
+    text-align: center;
+    font-size: 25pt;
 }
 
-#pricelist div {
-	margin: 2.5% 0 2.5% 5%;
-	text-align: center;
+#pricelist, footer {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
 }
 
-#pricelist img {
-    width: 25%;
+.columns {
+    width: 50%;
     height: auto;
     overflow: auto;
-    margin: 0 0 2.5% 37%;
-}
-
-#pricelist .half {
-	width: 40%;
-}
-
-h3 {
-	padding-left: 40px;
+    float: left;
+    justify-content: space-between;
 }
 
 ul {
@@ -345,15 +340,6 @@ iframe {
     padding-bottom: 5%;
 }
 
-#openingtimes h3 {
-    text-align: right;
-    margin-right: 20%;
-}
-
-footer .half {
-    padding-bottom: 5%;
-}
-
 #footerimg {
     display: flex;
     justify-content: space-between;
@@ -364,7 +350,6 @@ footer img {
     width: 50%;
     height: auto;
     overflow: auto;
-    margin-left: 25%;
 }
 
 /* Desktop only */
@@ -443,19 +428,6 @@ footer img {
 		z-index: 1;
 		transform: translate(400%, -300%);
 	}
-  
-    
-    #pricelist {
-        padding-bottom: 2.5%;
-    }
-	
-	#pricelist div {
-		margin: 0;
-	}
-	
-	#pricelist .half {
-		width: 50%;
-	}
 	
 	#contactform {
 		padding-top: 2.5%;
@@ -481,23 +453,9 @@ footer img {
 		margin-left: 15%;
 	}
 	
-	h2 {
-		font-size: 25pt;
-	}
-	
 	h3 {
 		padding-left: 0;
 	}
-	
-	#openingtimes h3 {
-		margin-right: 3%;
-		padding-left: 40px;
-	}
-	
-	#shopinfo {
-		padding-top: 3%;
-	}
-	
 }
 
 @media only screen and (max-width: 700px){
@@ -508,7 +466,7 @@ footer img {
     display: block;
 }
 
-.dotrow, form, #products, #pricelist, iframe {
+.dotrow, form, #products, #pricelist, #pricelist .columns, iframe {
     display: none;
 }
 
@@ -550,8 +508,8 @@ footer img {
       bottom: 59px;
   }
   
-  #productcontainer {
-      display: block;
+  .containercolumn {
+      width: 100%;
   }
   
   .third {
@@ -590,18 +548,6 @@ footer img {
       margin-left: 25%;
   }
   
-  .pricelistcontainer {
-      width: 100% !important;
-  }
-  
-  #longlistleft {
-      width: 60% !important;
-  }
-  
-  #longlistright {
-      width: 40% !important;
-  }
-  
   #productcontact {
       padding-top: 10%;
   }
@@ -620,9 +566,8 @@ footer img {
       margin-top: 25%;
   }
   
-  #openingtimes h3 {
-      text-align: center;
-      padding-left: 0;
+  footer .columns {
+      width: 100%;
   }
   
   #footerimg {
