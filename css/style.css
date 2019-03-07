@@ -316,7 +316,7 @@ li {
 }
 
 h3 {
-	font-size: 20pt;
+	font-size: 25pt;
 }
 
 #contactform {
@@ -324,7 +324,7 @@ h3 {
 	}
 
 .client {
-    padding: 2.5% 0;
+    padding: 5% 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -338,6 +338,10 @@ iframe {
     margin-left: 25%;
     padding-top: 2.5%;
     padding-bottom: 5%;
+}
+
+footer {
+	align-items: center;
 }
 
 #footerimg {
@@ -398,10 +402,6 @@ footer img {
 	input, select, textarea, button, #dropdownmenu {
 		margin-bottom: 5%;
 	}
-	
-	.client, .team {
-		padding-bottom: 5%;
-	}
     
     .dotrow {
         padding-bottom: 5%;
@@ -453,8 +453,16 @@ footer img {
 		margin-left: 15%;
 	}
 	
-	h3 {
-		padding-left: 0;
+	footer h3 {
+		font-size: 16pt;
+	}
+	
+	#contact-times h3 {
+		font-size: 20pt;
+	}
+	
+	li {
+		font-size: 13pt;
 	}
 }
 
@@ -480,6 +488,7 @@ footer img {
   
   .team {
       display: block;
+	  padding: 5% 0;
       padding-top: 10%;
   }
   
