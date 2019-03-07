@@ -298,6 +298,7 @@ h2 {
     display: flex;
     flex-flow: row wrap;
     text-align: center;
+    flex-shrink: 0
 }
 
 .columns {
@@ -306,6 +307,7 @@ h2 {
     overflow: auto;
     float: left;
     justify-content: space-between;
+    flex-shrink: 0
 }
 
 ul {
