@@ -287,9 +287,10 @@ button {
 
 h2 {
     text-align: center;
+    font-size: 25pt;
 }
 
-#pricelist {
+#pricelist, footer {
     width: 100%;
     display: flex;
     flex-flow: row wrap;
@@ -338,15 +339,6 @@ iframe {
     padding-bottom: 5%;
 }
 
-#openingtimes h3 {
-    text-align: right;
-    margin-right: 20%;
-}
-
-footer .half {
-    padding-bottom: 5%;
-}
-
 #footerimg {
     display: flex;
     justify-content: space-between;
@@ -357,7 +349,6 @@ footer img {
     width: 50%;
     height: auto;
     overflow: auto;
-    margin-left: 25%;
 }
 
 /* Desktop only */
@@ -461,23 +452,9 @@ footer img {
 		margin-left: 15%;
 	}
 	
-	h2 {
-		font-size: 25pt;
-	}
-	
 	h3 {
 		padding-left: 0;
 	}
-	
-	#openingtimes h3 {
-		margin-right: 3%;
-		padding-left: 40px;
-	}
-	
-	#shopinfo {
-		padding-top: 3%;
-	}
-	
 }
 
 @media only screen and (max-width: 700px){
@@ -488,7 +465,7 @@ footer img {
     display: block;
 }
 
-.dotrow, form, #products, #pricelist, .columns, iframe {
+.dotrow, form, #products, #pricelist, #pricelist .columns, iframe {
     display: none;
 }
 
@@ -588,9 +565,8 @@ footer img {
       margin-top: 25%;
   }
   
-  #openingtimes h3 {
-      text-align: center;
-      padding-left: 0;
+  footer .columns {
+      width: 100%;
   }
   
   #footerimg {
