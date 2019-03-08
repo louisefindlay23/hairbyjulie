@@ -651,11 +651,9 @@ span6.onclick = function() {
 
     $("#productsicon").click(function(){
     
-    $("#banner, .team, .client, form, .dotrow, iframe, #history").hide();
+    $("#banner, .team, .client, form, .dotrow, iframe, #history, #productfour, #productfive, #productsix").hide();
     
-    $(".team, .client").hide();
-    
-    $("#searchform, #products, #pricelist, .columns").show();
+    $("#searchform, #products, #pricelist, .columns, button").show();
     
     $("#homeicon, #teamicon, #formicon").removeClass("pink");
     

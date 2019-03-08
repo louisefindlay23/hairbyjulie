@@ -381,7 +381,7 @@ footer img {
 
 @media only screen and (max-width: 768px){
 
-/* Tablet CSS */
+/* Tablet CSS - main (portrait) */
 
     .desktop {
         display: none;
