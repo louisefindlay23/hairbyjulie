@@ -251,9 +251,9 @@ $(document).ready(function() {
 	
 $("#searchform input").click(function(){
 	
-	$(".fa-times-circle").show();
+	$(".fa-times-circle").toggle();
 	
-	$("#dropdownmenu").show();
+	$("#dropdownmenu").toggle();
 });
 	
     
