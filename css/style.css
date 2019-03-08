@@ -91,6 +91,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 2.5%;
 }
 
 .dotrow {
@@ -192,6 +193,10 @@ a {
     padding-top: 2.5%;
 }
 
+.modal-open {
+    overflow: hidden;
+}
+
 .modal {
   display: none;
   position: fixed;
@@ -210,7 +215,7 @@ a {
   display: block;
   width: 80%;
   max-width: 500px;
-  padding-top: 5%;
+  margin-top: 7.5%;
 }
 
 .caption {
@@ -248,7 +253,7 @@ a {
   top: 1%;
   right: 2.5%;
   color: #cfb53b;
-  font-size: 60px;
+  font-size: 80px;
   font-weight: bold;
   transition: 0.3s;
 }
@@ -408,15 +413,13 @@ footer img {
     }
 	
 	.close {
-		font-size: 80pt;
-		top: 15%;
-		left: 85%;
-		color: #f19f94 !important;
+		top: 0;
+		left: 92.5%;
 	}
-	
-	.modal {
-		padding-top: 25%;
-	}
+    
+    .modal-content {
+        margin-top: 25%;
+    }
 	
 	.third img {
 		position: relative;
@@ -530,10 +533,11 @@ footer img {
 	.fa-mouse-pointer {
 		transform: translate(600%, -400%);
 	}
-  
-  .modal {
-      padding-top: 40%;
-  }
+    
+    .close {
+	top: -2%;
+	left: 50%;
+}
   
   .caption {
       padding: 10% 0;
@@ -543,12 +547,6 @@ footer img {
       width: 35%;
       margin-left: 35%;
   }
-	  
-.close {
-	font-size: 80pt;
-	top: 20%;
-	left: 85%;
-}
   
   .client {
       display: block;

@@ -283,6 +283,7 @@ img1.onclick = function(){
 	pointer4.style.display = "none";
 	pointer5.style.display = "none";
 	pointer6.style.display = "none";
+    $("body").addClass("modal-open");
 }
 
 pointer1.onclick = function(){
@@ -295,6 +296,7 @@ pointer1.onclick = function(){
 	pointer4.style.display = "none";
 	pointer5.style.display = "none";
 	pointer6.style.display = "none";
+    $("body").addClass("modal-open");
 }
 
 var span1 = document.getElementById("close1");
@@ -307,6 +309,7 @@ span1.onclick = function() {
 	pointer4.style.display = "block";
 	pointer5.style.display = "block";
 	pointer6.style.display = "block";
+    $("body").removeClass("modal-open");
 }
  
 var modal2 = document.getElementById('modal2');
@@ -326,6 +329,7 @@ img2.onclick = function(){
 	pointer4.style.display = "none";
 	pointer5.style.display = "none";
 	pointer6.style.display = "none";
+    $("body").addClass("modal-open");
 }
 
 pointer2.onclick = function(){
@@ -338,6 +342,7 @@ pointer2.onclick = function(){
 	pointer4.style.display = "none";
 	pointer5.style.display = "none";
 	pointer6.style.display = "none";
+    $("body").addClass("modal-open");
 }
  
 var span2 = document.getElementById("close2");
@@ -350,6 +355,7 @@ span2.onclick = function() {
 	pointer4.style.display = "block";
 	pointer5.style.display = "block";
 	pointer6.style.display = "block";
+    $("body").removeClass("modal-open");
 } 
 
 var modal3 = document.getElementById('modal3');
@@ -369,6 +375,7 @@ img3.onclick = function(){
 	pointer4.style.display = "none";
 	pointer5.style.display = "none";
 	pointer6.style.display = "none";
+    $("body").addClass("modal-open");
 }
 
 pointer3.onclick = function(){
@@ -381,6 +388,7 @@ pointer3.onclick = function(){
 	pointer4.style.display = "none";
 	pointer5.style.display = "none";
 	pointer6.style.display = "none";
+    $("body").addClass("modal-open");
 }
 
 var span3 = document.getElementById("close3");
@@ -393,6 +401,7 @@ span3.onclick = function() {
 	pointer4.style.display = "block";
 	pointer5.style.display = "block";
 	pointer6.style.display = "block";
+    $("body").removeClass("modal-open");
 }
 
 // Second row of modal images
@@ -414,6 +423,7 @@ img4.onclick = function(){
 	pointer4.style.display = "none";
 	pointer5.style.display = "none";
 	pointer6.style.display = "none";
+    $("body").addClass("modal-open");
 }
 
 pointer4.onclick = function(){
@@ -426,6 +436,7 @@ pointer4.onclick = function(){
 	pointer3.style.display = "none";
 	pointer5.style.display = "none";
 	pointer6.style.display = "none";
+    $("body").addClass("modal-open");
 }
 
 var span4 = document.getElementById("close4");
@@ -438,6 +449,7 @@ span4.onclick = function() {
 	pointer4.style.display = "block";
 	pointer5.style.display = "block";
 	pointer6.style.display = "block";
+    $("body").removeClass("modal-open");
 }
 
 var modal5 = document.getElementById('modal5');
@@ -457,6 +469,7 @@ img5.onclick = function(){
 	pointer4.style.display = "none";
 	pointer5.style.display = "none";
 	pointer6.style.display = "none";
+    $("body").addClass("modal-open");
 }
 
 pointer5.onclick = function(){
@@ -469,6 +482,7 @@ pointer5.onclick = function(){
 	pointer3.style.display = "none";
 	pointer4.style.display = "none";
 	pointer6.style.display = "none";
+    $("body").addClass("modal-open");
 }
 
 var span5 = document.getElementById("close5");
@@ -481,6 +495,7 @@ span5.onclick = function() {
 	pointer4.style.display = "block";
 	pointer5.style.display = "block";
 	pointer6.style.display = "block";
+    $("body").removeClass("modal-open");
 }
 
 var modal6 = document.getElementById('modal6');
@@ -500,6 +515,7 @@ img6.onclick = function(){
 	pointer4.style.display = "none";
 	pointer5.style.display = "none";
 	pointer6.style.display = "none";
+    $("body").addClass("modal-open");
 }
 
 pointer6.onclick = function(){
@@ -512,6 +528,7 @@ pointer6.onclick = function(){
 	pointer3.style.display = "none";
 	pointer5.style.display = "none";
 	pointer6.style.display = "none";
+    $("body").addClass("modal-open");
 }
 
 var span6 = document.getElementById("close6");
@@ -524,6 +541,7 @@ span6.onclick = function() {
 	pointer4.style.display = "block";
 	pointer5.style.display = "block";
 	pointer6.style.display = "block";
+    $("body").removeClass("modal-open");
 }
 
 // Hide non-result images
