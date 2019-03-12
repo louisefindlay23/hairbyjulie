@@ -616,6 +616,15 @@ footer img {
 
 }
 
+@media only screen and (min-height: 700px) and (max-height: 740px) {
+	.fa-times-circle {
+		top: 7.5px;
+		right: 0;
+		left: -12.5%;
+		bottom: 0;
+	}
+}
+
 @media only screen and (max-height: 600px){
 
 /* Small Mobile CSS */
