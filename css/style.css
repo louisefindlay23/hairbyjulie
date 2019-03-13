@@ -289,6 +289,7 @@ button {
 	display: none;
 	width: 25%;
 	margin-left: 37.5%;
+	cursor: pointer;
 }
 
 h2 {
