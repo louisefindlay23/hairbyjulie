@@ -623,7 +623,7 @@ span6.onclick = function() {
 
     $("#homeicon").click(function(){
     
-    $(".dotrow, form, #products, #pricelist, iframe").hide();
+    $(".team, .dotrow, form, #products, #pricelist, .client, iframe").hide();
     
     $("#banner, #history").show();
     
