@@ -304,6 +304,10 @@ h2 {
     text-align: center;
 }
 
+hr {
+    visibility: hidden;
+}
+
 .columns {
     width: 50%;
     height: auto;
