@@ -52,6 +52,30 @@ $(document).ready(function() {
             
         }, 85000);
         
+        var slideshow8 = setInterval(function(){ 
+        
+            $(".team").hide();
+        
+            $("#team4").fadeIn(1000);
+        
+            $("#employee > i").removeClass("pink");
+        
+            $("#dot8").addClass("pink"); 
+            
+        }, 115000);
+        
+        var slideshow9 = setInterval(function(){ 
+        
+            $(".team").hide();
+        
+            $("#team5").fadeIn(1000);
+        
+            $("#employee > i").removeClass("pink");
+        
+            $("#dot9").addClass("pink"); 
+            
+        }, 115000);
+        
         // Autoplay client slideshow
         
         var slideshow4 = setInterval(function(){ 
@@ -114,6 +138,10 @@ $(document).ready(function() {
         
         clearInterval(slideshow3);
         
+        clearInterval(slideshow8);
+        
+        clearInterval(slideshow9);
+        
         $(".team").hide();
         
         $("#team1").fadeIn(300);
@@ -132,6 +160,10 @@ $(document).ready(function() {
         clearInterval(slideshow2);
         
         clearInterval(slideshow3);
+        
+        clearInterval(slideshow8);
+        
+        clearInterval(slideshow9);
         
         $(".team").hide();
         
@@ -152,6 +184,10 @@ $(document).ready(function() {
         
         clearInterval(slideshow3);
         
+        clearInterval(slideshow8);
+        
+        clearInterval(slideshow9);
+        
         $(".team").hide();
         
         $("#team3").fadeIn(300);
@@ -162,6 +198,49 @@ $(document).ready(function() {
         
     });
     
+    $("#dot8").click(function(){
+    
+        clearInterval(slideshow1);
+        
+        clearInterval(slideshow2);
+        
+        clearInterval(slideshow3);
+        
+        clearInterval(slideshow8);
+        
+        clearInterval(slideshow9);
+        
+        $(".team").hide();
+        
+        $("#team4").fadeIn(300);
+        
+        $("#employee > i").removeClass("pink");
+        
+        $(this).addClass("pink");
+        
+    });
+    
+    $("#dot9").click(function(){
+    
+        clearInterval(slideshow1);
+        
+        clearInterval(slideshow2);
+        
+        clearInterval(slideshow3);
+        
+        clearInterval(slideshow8);
+        
+        clearInterval(slideshow9);
+        
+        $(".team").hide();
+        
+        $("#team5").fadeIn(300);
+        
+        $("#employee > i").removeClass("pink");
+        
+        $(this).addClass("pink");
+        
+    });
     
     // Dot click client slideshow 
     
@@ -733,6 +812,66 @@ $("#team3").swipe({
         $("#employee > i").removeClass("pink");
         
         $("#dot2").addClass("pink");
+  }
+  
+});
+
+// Swipe (Left) Client 3 to Client 4 (8)
+
+$("#team3").swipe({
+  swipeLeft:function(event, direction, distance, duration, fingerCount) {
+    $(".team").hide();
+        
+        $("#team4").fadeIn(300);
+        
+        $("#employee > i").removeClass("pink");
+        
+        $("#dot8").addClass("pink");
+  }
+  
+});
+
+// Swipe (Right) Client 4 (8) to Client 3
+
+$("#team4").swipe({
+  swipeRight:function(event, direction, distance, duration, fingerCount) {
+    $(".team").hide();
+        
+        $("#team3").fadeIn(300);
+        
+        $("#employee > i").removeClass("pink");
+        
+        $("#dot3").addClass("pink");
+  }
+  
+});
+
+// Swipe (Left) Client 4 (8) to Client 5 (9)
+
+$("#team4").swipe({
+  swipeLeft:function(event, direction, distance, duration, fingerCount) {
+    $(".team").hide();
+        
+        $("#team5").fadeIn(300);
+        
+        $("#employee > i").removeClass("pink");
+        
+        $("#dot9").addClass("pink");
+  }
+  
+});
+
+// Swipe (Right) Client 5 (9) to Client 4 (8)
+
+$("#team5").swipe({
+  swipeRight:function(event, direction, distance, duration, fingerCount) {
+    $(".team").hide();
+        
+        $("#team4").fadeIn(300);
+        
+        $("#employee > i").removeClass("pink");
+        
+        $("#dot8").addClass("pink");
   }
   
 });
