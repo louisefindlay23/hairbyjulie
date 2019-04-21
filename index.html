@@ -179,36 +179,12 @@
 </div>
 	
 <div id="products">
-
-   <form id="searchform">
-   
-   <input type="text" id="search" onkeyup="searchFunction()" name="search" autocomplete="off" placeholder="Search">
-	   
-	<i class="far fa-times-circle"></i>
-   
-   </form>
-	
-	<div id="dropdownmenu">
-		
-		<ul id="droplist">
-			
-			<li id="milk"><a>Milkshake</a></li>
-			
-			<li id="oreal"><a>L'Oreal</a></li>
-			
-			<li id="schwarz"><a>Schwarzkopf</a></li>
-			
-		</ul>
-		
-	</div>
 	
 	<div id="productcontainer">
 		
 		<div id="productone" class="third">
 
 			<img id="product1" src="img/mythicoil.jpeg" alt="Mythic Oil Collection - Price available on request">
-			
-			<i id="pointer1" class="fas fa-mouse-pointer"></i>
 
 		</div>
 
@@ -216,40 +192,30 @@
 		<div id="producttwo" class="third">
 
 			<img id="product2" src="img/silvershampoo.jpeg" alt="Milkshake Silver Shampoo Range - Price available on request">
-			
-			<i id="pointer2" class="fas fa-mouse-pointer"></i>
 
 		</div>
 
 		<div id="productthree" class="third">
 
 			<img id="product3" src="img/schwarzkopf.jpeg" alt="Schwarzkopf Shampoo Collection - Price available on request">
-			
-			<i id="pointer3" class="fas fa-mouse-pointer"></i>
 
 		</div>
 		
 		<div id="productfour" class="third">
 
 			<img id="product4" src="img/serieexpert.jpeg" alt="L'Oreal SerieExpert Range - Price available on request">
-			
-			<i id="pointer4" class="fas fa-mouse-pointer"></i>
 
 		</div>
 
 		<div id="productfive" class="third">
 
 			<img id="product5" src="img/source.jpg" alt="L'Oreal Source Essentielle Collection - Price available on request">
-			
-			<i id="pointer5" class="fas fa-mouse-pointer"></i>
 
 		</div>
 
 		<div id="productsix" class="third">
 
 			<img id="product6" src="img/powermix.jpeg" alt="L'Oreal SerieExpert Powermix Range - Price available on request">
-			
-			<i id="pointer6" class="fas fa-mouse-pointer"></i>
 
 		</div>
 	
@@ -537,28 +503,6 @@
     <i id="dot7" class="fas fa-circle"></i>
 
 </div>
-
-<form id="contactform" action="mailto:hairbyjulie.17@hotmail.com" method="POST" autocomplete="on">
-		
-		<input id="name" type="text" name="name" placeholder="Name" required pattern="[a-zA-Z\s]+">
-        
-        <input type="email" name="email" placeholder="E-Mail" required>
-        
-        <select name="categories">
-        
-            <option value="Shop Appointment">Shop Appointment</option>
-
-            <option value="Home Visit">Home Visit</option>
-
-            <option value="Product Enquiry">Product Enquiry</option>
-  
-        </select>
-        
-        <textarea name="message" placeholder="Type your message here" rows="10" required></textarea>
-        
-        <input type="submit" name="submit">
-	
-	</form>
     
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2146.973750287889!2d-3.1295581840872906!3d57.444714281039516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4885a55dbb1bb497%3A0x6a5022153df8f1ae!2sHair+By+Julie!5e0!3m2!1sen!2suk!4v1550827516660" allowfullscreen></iframe>
     
@@ -657,27 +601,5 @@
 			<div id="caption6" class="caption"></div>
 		</div>
 
-<script>
-	
-	function searchFunction() {
-  // Declare variables
-  var input, filter, ul, li, a, i;
-  input = document.getElementById("search");
-  filter = input.value.toUpperCase();
-  ul = document.getElementById("droplist");
-  li = ul.getElementsByTagName("li");
-
-  // Loop through all list items, and hide those who don't match the search query
-  for (i = 0; i < li.length; i++) {
-    a = li[i].getElementsByTagName("a")[0];
-    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-      li[i].style.display = "";
-    } else {
-      li[i].style.display = "none";
-    }
-  }
-}
-	
-</script>  
 </body>
 </html>

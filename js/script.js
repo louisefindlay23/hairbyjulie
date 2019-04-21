@@ -4,13 +4,9 @@ $(document).ready(function() {
 	
 	// Show initial slides
 
-    $(".team").hide();
+    $(".team, .client").hide();
     
-    $("#team1").show();
-    
-    $(".client").hide();
-    
-    $("#client1").show();
+    $("#team1, #client1").show();
     
     
     // Autoplay team slideshow
@@ -326,29 +322,11 @@ $(document).ready(function() {
         
     });
 	
-	// Dropdown menu
-	
-$("#searchform input").click(function(){
-	
-	$(".fa-times-circle").toggle();
-	
-	$("#dropdownmenu").toggle();
-});
-	
-    
-$(".fa-times-circle").click(function(){
-	
-	$(".fa-times-circle").hide();
-	
-	$("#dropdownmenu").hide();
-});
-	
 	// Modal images
 
 var modal1 = document.getElementById('modal1');
 
 var img1 = document.getElementById('product1');
-var pointer1 = document.getElementById('pointer1');
 var modalImg1 = document.getElementById("modalimg1");
 var captionText1 = document.getElementById("caption1");
 	
@@ -356,25 +334,6 @@ img1.onclick = function(){
   modal1.style.display = "block";
   modalImg1.src = this.src;
   captionText1.innerHTML = this.alt;
-	pointer1.style.display = "none";
-	pointer2.style.display = "none";
-	pointer3.style.display = "none";
-	pointer4.style.display = "none";
-	pointer5.style.display = "none";
-	pointer6.style.display = "none";
-    $("body").addClass("modal-open");
-}
-
-pointer1.onclick = function(){
-  modal1.style.display = "block";
-  modalImg1.src = img1.src;
-  captionText1.innerHTML = img1.alt;
-	this.style.display = "none";
-	pointer2.style.display = "none";
-	pointer3.style.display = "none";
-	pointer4.style.display = "none";
-	pointer5.style.display = "none";
-	pointer6.style.display = "none";
     $("body").addClass("modal-open");
 }
 
@@ -382,19 +341,12 @@ var span1 = document.getElementById("close1");
 
 span1.onclick = function() { 
   modal1.style.display = "none";
-	pointer1.style.display = "block";
-	pointer2.style.display = "block";
-	pointer3.style.display = "block";
-	pointer4.style.display = "block";
-	pointer5.style.display = "block";
-	pointer6.style.display = "block";
     $("body").removeClass("modal-open");
 }
  
 var modal2 = document.getElementById('modal2');
 
 var img2 = document.getElementById('product2');
-var pointer2 = document.getElementById('pointer2');
 var modalImg2 = document.getElementById("modalimg2");
 var captionText2 = document.getElementById("caption2");
 	
@@ -402,45 +354,19 @@ img2.onclick = function(){
   modal2.style.display = "block";
   modalImg2.src = this.src;
   captionText2.innerHTML = this.alt;
-	pointer1.style.display = "none";
-	pointer2.style.display = "none";
-	pointer3.style.display = "none";
-	pointer4.style.display = "none";
-	pointer5.style.display = "none";
-	pointer6.style.display = "none";
-    $("body").addClass("modal-open");
-}
-
-pointer2.onclick = function(){
-  modal2.style.display = "block";
-  modalImg2.src = img2.src;
-  captionText2.innerHTML = img2.alt;
-	this.style.display = "none";
-	pointer1.style.display = "none";
-	pointer3.style.display = "none";
-	pointer4.style.display = "none";
-	pointer5.style.display = "none";
-	pointer6.style.display = "none";
-    $("body").addClass("modal-open");
+  $("body").addClass("modal-open");
 }
  
 var span2 = document.getElementById("close2");
 
 span2.onclick = function() { 
   modal2.style.display = "none";
-	pointer1.style.display = "block";
-	pointer2.style.display = "block";
-	pointer3.style.display = "block";
-	pointer4.style.display = "block";
-	pointer5.style.display = "block";
-	pointer6.style.display = "block";
-    $("body").removeClass("modal-open");
+  $("body").removeClass("modal-open");
 } 
 
 var modal3 = document.getElementById('modal3');
 
 var img3 = document.getElementById('product3');
-var pointer3 = document.getElementById('pointer3');
 var modalImg3 = document.getElementById("modalimg3");
 var captionText3 = document.getElementById("caption3");
 	
@@ -448,25 +374,6 @@ img3.onclick = function(){
   modal3.style.display = "block";
   modalImg3.src = this.src;
   captionText3.innerHTML = this.alt;
-	pointer1.style.display = "none";
-	pointer2.style.display = "none";
-	pointer3.style.display = "none";
-	pointer4.style.display = "none";
-	pointer5.style.display = "none";
-	pointer6.style.display = "none";
-    $("body").addClass("modal-open");
-}
-
-pointer3.onclick = function(){
-  modal3.style.display = "block";
-  modalImg3.src = img3.src;
-  captionText3.innerHTML = img3.alt;
-	this.style.display = "none";
-	pointer1.style.display = "none";
-	pointer2.style.display = "none";
-	pointer4.style.display = "none";
-	pointer5.style.display = "none";
-	pointer6.style.display = "none";
     $("body").addClass("modal-open");
 }
 
@@ -474,12 +381,6 @@ var span3 = document.getElementById("close3");
 
 span3.onclick = function() { 
 	modal3.style.display = "none";
-	pointer1.style.display = "block";
-	pointer2.style.display = "block";
-	pointer3.style.display = "block";
-	pointer4.style.display = "block";
-	pointer5.style.display = "block";
-	pointer6.style.display = "block";
     $("body").removeClass("modal-open");
 }
 
@@ -488,7 +389,6 @@ span3.onclick = function() {
 var modal4 = document.getElementById('modal4');
 
 var img4 = document.getElementById('product4');
-var pointer4 = document.getElementById('pointer4');
 var modalImg4 = document.getElementById("modalimg4");
 var captionText4 = document.getElementById("caption4");
 	
@@ -496,25 +396,6 @@ img4.onclick = function(){
   modal4.style.display = "block";
   modalImg4.src = this.src;
   captionText4.innerHTML = this.alt;
-	pointer1.style.display = "none";
-	pointer2.style.display = "none";
-	pointer3.style.display = "none";
-	pointer4.style.display = "none";
-	pointer5.style.display = "none";
-	pointer6.style.display = "none";
-    $("body").addClass("modal-open");
-}
-
-pointer4.onclick = function(){
-  modal4.style.display = "block";
-  modalImg4.src = img4.src;
-  captionText4.innerHTML = img4.alt;
-	this.style.display = "none";
-	pointer1.style.display = "none";
-	pointer2.style.display = "none";
-	pointer3.style.display = "none";
-	pointer5.style.display = "none";
-	pointer6.style.display = "none";
     $("body").addClass("modal-open");
 }
 
@@ -522,19 +403,12 @@ var span4 = document.getElementById("close4");
 
 span4.onclick = function() { 
 	modal4.style.display = "none";
-	pointer1.style.display = "block";
-	pointer2.style.display = "block";
-	pointer3.style.display = "block";
-	pointer4.style.display = "block";
-	pointer5.style.display = "block";
-	pointer6.style.display = "block";
     $("body").removeClass("modal-open");
 }
 
 var modal5 = document.getElementById('modal5');
 
 var img5 = document.getElementById('product5');
-var pointer5 = document.getElementById('pointer5');
 var modalImg5 = document.getElementById("modalimg5");
 var captionText5 = document.getElementById("caption5");
 	
@@ -542,25 +416,6 @@ img5.onclick = function(){
   modal5.style.display = "block";
   modalImg5.src = this.src;
   captionText5.innerHTML = this.alt;
-	pointer1.style.display = "none";
-	pointer2.style.display = "none";
-	pointer3.style.display = "none";
-	pointer4.style.display = "none";
-	pointer5.style.display = "none";
-	pointer6.style.display = "none";
-    $("body").addClass("modal-open");
-}
-
-pointer5.onclick = function(){
-  modal5.style.display = "block";
-  modalImg5.src = img5.src;
-  captionText5.innerHTML = img5.alt;
-	this.style.display = "none";
-	pointer1.style.display = "none";
-	pointer2.style.display = "none";
-	pointer3.style.display = "none";
-	pointer4.style.display = "none";
-	pointer6.style.display = "none";
     $("body").addClass("modal-open");
 }
 
@@ -568,19 +423,12 @@ var span5 = document.getElementById("close5");
 
 span5.onclick = function() { 
 	modal5.style.display = "none";
-	pointer1.style.display = "block";
-	pointer2.style.display = "block";
-	pointer3.style.display = "block";
-	pointer4.style.display = "block";
-	pointer5.style.display = "block";
-	pointer6.style.display = "block";
     $("body").removeClass("modal-open");
 }
 
 var modal6 = document.getElementById('modal6');
 
 var img6 = document.getElementById('product6');
-var pointer6 = document.getElementById('pointer6');
 var modalImg6 = document.getElementById("modalimg6");
 var captionText6 = document.getElementById("caption6");
 	
@@ -588,25 +436,6 @@ img6.onclick = function(){
   modal6.style.display = "block";
   modalImg6.src = this.src;
   captionText6.innerHTML = this.alt;
-	pointer1.style.display = "none";
-	pointer2.style.display = "none";
-	pointer3.style.display = "none";
-	pointer4.style.display = "none";
-	pointer5.style.display = "none";
-	pointer6.style.display = "none";
-    $("body").addClass("modal-open");
-}
-
-pointer6.onclick = function(){
-  modal6.style.display = "block";
-  modalImg6.src = img6.src;
-  captionText6.innerHTML = img6.alt;
-	this.style.display = "none";
-	pointer1.style.display = "none";
-	pointer2.style.display = "none";
-	pointer3.style.display = "none";
-	pointer5.style.display = "none";
-	pointer6.style.display = "none";
     $("body").addClass("modal-open");
 }
 
@@ -614,58 +443,8 @@ var span6 = document.getElementById("close6");
 
 span6.onclick = function() { 
 	modal6.style.display = "none";
-	pointer1.style.display = "block";
-	pointer2.style.display = "block";
-	pointer3.style.display = "block";
-	pointer4.style.display = "block";
-	pointer5.style.display = "block";
-	pointer6.style.display = "block";
     $("body").removeClass("modal-open");
 }
-
-// Hide non-result images
- 
-	$("#milk").click(function(){
-		
-	$("#productone, #productthree").show();
-	
-	$("#producttwo, #productfour, #productfive, #productsix").hide();
-		
-	$("#dropdownmenu").hide();
-		
-	$(".fa-times-circle").hide();
-	
-	$("button").show();
-		
-});
-	
-	$("#schwarz").click(function(){
-		
-	$("#productone, #productfour, #productfive, #productsix").show();
-	
-	$("#producttwo, #productthree").hide();
-		
-	$("#dropdownmenu").hide();
-		
-	$(".fa-times-circle").hide();
-	
-	$("button").show();
-		
-});
-	
-	$("#oreal").click(function(){
-		
-	$("#productone, #producttwo, #productsix").show();
-	
-	$("#productthree, #productfour, #productfive").hide();
-		
-	$("#dropdownmenu").hide();
-		
-	$(".fa-times-circle").hide();
-	
-	$("button").show();
-		
-});
 	
 // Show all product images
 	
