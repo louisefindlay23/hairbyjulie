@@ -353,13 +353,11 @@ footer {
 #footerimg {
     display: flex;
     justify-content: space-between;
-    margin: 2.5% 0;
+    margin: 2.5%;
 }
 
-footer img {
-    width: 50%;
-    height: auto;
-    overflow: auto;
+footer i {
+    font-size: 100pt;
 }
 
 /* Desktop only */
