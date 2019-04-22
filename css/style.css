@@ -120,7 +120,7 @@ p {
 	padding: 2.5% 0;
 }
 
-input, select, textarea, button, #dropdownmenu {
+button {
     width: 50%;
 	margin: 2.5% 0 2.5% 25%;
     padding: 1.5%;
@@ -136,39 +136,6 @@ input, select, textarea, button, #dropdownmenu {
     font-family: "Ropa Soft Pro";
     font-size: 16pt;
      color: #000000;
-}
-
-select { 
-    margin-bottom: 5%;
-}
-
-input[type=text]:focus, input[type=email]:focus, textarea:focus {
-  outline: none;
-}
-
-textarea {
-    resize: none;
-}
-
-input[type=submit] {
-	margin-bottom: 5%;
-}
-
-#searchform {
-	padding-bottom: 0;
-}
-
-#dropdownmenu {
-	display: none;
-	margin-top: 0;
-}
-
-#dropdownmenu ul {
-	padding: 0;
-}
-
-#dropdownmenu li {
-	text-align: center;
 }
 
 a {
@@ -329,10 +296,6 @@ h3 {
 	font-size: 25pt;
 }
 
-#contactform {
-		padding-top: 2.5%;
-	}
-
 .client {
     padding: 5% 0;
     display: flex;
@@ -373,12 +336,6 @@ footer i {
 	}
 }
 
-@media (min-width: 1366px) {
-    .fa-mouse-pointer {
-        display: none !important;
-    }
-}
-
 /* Tablet only */
 
 @media (min-width: 500px) {
@@ -386,26 +343,6 @@ footer i {
 	.mobile {
 		display: none !important;
 	}
-}
-
-/* Touch devices only */
-
-@media only screen {
-    .fa-mouse-pointer {
-        display: block;
-		position: absolute;
-		font-size: 35pt;
-		color: #f19f94;
-		z-index: 1;
-        transform: translate(500%, -400%);
-}
-
-@media only screen and (max-width: 1100px) and (orientation: landscape) {
-
-    #julie {
-        width: 75%;
-        margin-left: 15%;
-    }
 }
 
 @media only screen and (max-width: 900px){
@@ -424,16 +361,11 @@ footer i {
     width: 60%;
   }
 	
-  #julie, #sharon {
-    width: 75%;
-	margin-left: 15%;
-  }
-	
 	.fa-times-circle {
 		right: 7.5%;
 	}
 	
-	input, select, textarea, button, #dropdownmenu {
+	button {
 		margin-bottom: 5%;
 	}
     
@@ -454,25 +386,13 @@ footer i {
 		position: relative;
     	margin-bottom: 5%;
   }
-	
-	.fa-mouse-pointer {
-		transform: translate(400%, -300%);
-	}
-	
-	#contactform {
-		padding-top: 2.5%;
-	}
     
-    input, select, textarea, button, #dropdownmenu {
+    button {
         width: 75%;
         margin-left: 15%;
         padding: 2.5%;
         margin-bottom: 5%;
     }
-	
-	input[type=submit] {
-		margin-bottom: 7.5%;
-	}
 	
 	ul {
 		padding-inline-start: 0;
@@ -529,11 +449,7 @@ footer i {
   .half img {
       margin-left: 20%;
   }
-  
-  #julie, #sharon {
-      margin-left: 10%;
-  }
-  
+	
   .dotrow {
       padding-bottom: 15%;
       text-align: center;
@@ -554,12 +470,8 @@ footer i {
   .third {
       width: 100%;
   }
-	
-	.fa-mouse-pointer {
-		transform: translate(600%, -500%);
-	}
     
-    .close {
+  .close {
 	top: -2%;
 	left: 50%;
 }
@@ -577,7 +489,7 @@ footer i {
       display: block;
   }
   
-  #sharon, .client img {
+  .client img {
       width: 50%;
       margin-left: 25%;
   }
@@ -590,14 +502,6 @@ footer i {
       width: 100%;
       margin-left: 0;
       padding-top: 10%;
-  }
-  
-  input, select, textarea {
-      margin-bottom: 7.5%;
-  }
-  
-  textarea {
-      margin-top: 25%;
   }
   
   footer .columns {
@@ -617,9 +521,8 @@ footer i {
   }
 }
 
-}
-
 @media only screen and (min-height: 700px) and (max-height: 740px) {
+	
 	.fa-times-circle {
 		top: 7.5px;
 		right: 0;
@@ -634,10 +537,6 @@ footer i {
 
     .fa-times-circle {
         top: -65px;
-    }
-    
-    .fa-mouse-pointer {
-        transform: translate(500%, -450%);
-    }    
+    } 
 
 }
