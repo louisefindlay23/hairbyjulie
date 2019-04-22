@@ -66,7 +66,7 @@ nav {
 }
 
 nav i {
-    font-size: 30pt;
+    font-size: 40pt;
     height: auto;
     overflow: auto;
     padding: 0 6%;
@@ -107,6 +107,7 @@ nav i {
 .dotrow {
     display: flex;
     justify-content: center;
+	padding-top: 2.5%;
     padding-bottom: 2.5%;
 }
 
@@ -315,71 +316,25 @@ footer i {
     font-size: 100pt;
 }
 
-/* Desktop only */
+nav, .secondshow, .thirdshow, .fourthshow, .fifthshow {
+	display: none;
+}
 
-@media (min-width: 769px) {
+@media only screen and (max-width: 1400px) {
 	
-	.tablet, .mobile {
-    display: none !important;
+	.firsthide {
+		display: none;
 	}
 }
 
-/* Tablet only */
-
-@media (min-width: 500px) {
+@media only screen and (max-width: 1100px) {
 	
-	.mobile {
-		display: none !important;
-	}
-}
-
-@media only screen and (max-width: 900px){
-
-/* Tablet CSS - main (portrait) */
-
-    .desktop {
-        display: none;
-    }
-
-    .tablet {
-        display: block;
-    }
-	
-	.half img {
-    width: 60%;
-  }
-	
-	.fa-times-circle {
-		right: 7.5%;
+	.secondhide {
+		display: none;
 	}
 	
-	button {
-		margin-bottom: 5%;
-	}
-    
-    .dotrow {
-        padding-bottom: 5%;
-    }
-	
-	.close {
-		top: 0;
-		left: 92.5%;
-	}
-	
-	.third img {
-		position: relative;
-    	margin-bottom: 5%;
-  }
-    
-    button {
-        width: 75%;
-        margin-left: 15%;
-        padding: 2.5%;
-        margin-bottom: 5%;
-    }
-	
-	ul {
-		padding-inline-start: 0;
+	.secondshow {
+		display: block;
 	}
 	
 	iframe {
@@ -387,140 +342,64 @@ footer i {
 		margin-left: 15%;
 	}
 	
-	footer h2 {
-		font-size: 16pt;
-	}
-	
-	#contact-times h2 {
-		font-size: 20pt;
-	}
-	
-	li {
-		font-size: 13pt;
+	footer .columns {
+		width: 100%;
 	}
 }
 
-@media only screen and (max-width: 700px){
-
-/* Mobile CSS */
-
-.mobile {
-    display: block;
-}
-
-.dotrow, form, #products, #pricelist, #pricelist .columns, iframe {
-    display: none;
-}
-
-    h1 {
-    font-size: 25pt;
-    }
-    
-  .modal-content {
-    width: 100%;
-  }
-  
-  .team {
-      display: block;
-	  padding: 5% 0;
-      padding-top: 10%;
-  }
-  
-  .half {
-      width: 100%;
-  }
-  
-  .half img {
-      margin-left: 20%;
-  }
+@media only screen and (max-width: 950px) {
 	
-  .dotrow {
-      padding-bottom: 15%;
-      text-align: center;
-  }
-  
-  .fa-times-circle {
-      font-size: 28pt;
-      top: -70px;
-      right: 0;
-      left: 76%;
-      bottom: 59px;
-  }
-  
-  .containercolumn {
-      width: 100%;
-  }
-  
-  .third {
-      width: 100%;
-  }
-    
-  .close {
-	top: -2%;
-	left: 50%;
-}
-  
-  .caption {
-      padding: 10% 0;
-  }
-  
-  .button {
-      width: 35%;
-      margin-left: 35%;
-  }
-  
-  .client {
-      display: block;
-  }
-  
-  .client img {
-      width: 50%;
-      margin-left: 25%;
-  }
-  
-  #productcontact {
-      padding-top: 10%;
-  }
-  
-  iframe {
-      width: 100%;
-      margin-left: 0;
-      padding-top: 10%;
-  }
-  
-  footer .columns {
-      width: 100%;
-  }
-  
-  #footerimg {
-      display: block;
-  }
-  
-  #footerimg img {
-      padding: 5% 0;
-  }
-  
-  .remove {
-      display: none !important;
-  }
-}
-
-@media only screen and (min-height: 700px) and (max-height: 740px) {
+	.thirdhide {
+		display: none;
+	}
 	
-	.fa-times-circle {
-		top: 7.5px;
-		right: 0;
-		left: -12.5%;
-		bottom: 0;
+	.thirdshow {
+		display: block;
 	}
 }
 
-@media only screen and (max-height: 600px){
+@media only screen and (max-width: 890px) {
+	
+	.fourthhide {
+		display: none;
+	}
+	
+	.fourthshow {
+		display: block;
+	}
+}
 
-/* Small Mobile CSS */
+@media only screen and (max-width: 800px) {
+	
+	.fifthhide {
+		display: none;
+	}
+	
+	.fifthshow {
+		display: block;
+	}
+}
 
-    .fa-times-circle {
-        top: -65px;
-    } 
-
+@media only screen and (max-width: 750px) {
+	
+	nav, .team, .client {
+		display: block;
+	}
+	
+	.half {
+		width: 100%;
+	}
+	
+	.half img {
+		padding-top: 2.5%;
+		padding-bottom: 2.5%;
+	}
+	
+	.containercolumn {
+		width: 100%;
+	}
+	
+	li.fifthshow, li.secondshow {
+		display: none;
+	}
 }
