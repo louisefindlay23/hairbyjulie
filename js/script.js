@@ -474,7 +474,7 @@ span6.onclick = function() {
         
         clearInterval(slideshow7);
 
-        $(".team, .client").hide();
+        $(".team, .dotrow, .client, #products, #pricelist").hide();
 }
 
 // Home icon nav
@@ -487,7 +487,7 @@ span6.onclick = function() {
     
     $("#homeicon").addClass("pink");
     
-    $("#teamicon, #productsicon, #formicon").removeClass("pink");
+    $("#teamicon, #productsicon").removeClass("pink");
 
 });
 
@@ -499,7 +499,7 @@ span6.onclick = function() {
     
     $("#client1, .dotrow, #team1").show();
     
-    $("#homeicon, #productsicon, #formicon").removeClass("pink");
+    $("#homeicon, #productsicon").removeClass("pink");
     
     $("#teamicon").addClass("pink");
 
@@ -513,24 +513,9 @@ span6.onclick = function() {
     
     $("#searchform, #products, #pricelist, .columns, button").show();
     
-    $("#homeicon, #teamicon, #formicon").removeClass("pink");
+    $("#homeicon, #teamicon").removeClass("pink");
     
     $("#productsicon").addClass("pink");
-
-});
-
-
-// Contact icon nav
-
-    $("#formicon").click(function(){
-    
-    $(".dotrow, #banner, #history, #products, #pricelist").hide();
-    
-    $("form, iframe").show();
-    
-    $("#formicon").addClass("pink");
-    
-    $("#teamicon, #productsicon, #homeicon").removeClass("pink");
 
 });
 

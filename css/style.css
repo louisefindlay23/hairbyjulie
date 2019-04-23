@@ -34,7 +34,22 @@ div {
 
 h1 {
 	text-align: center;
-	font-size: 35pt;
+	font-size: 40pt;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30pt;
+	margin: 3% 0;
+}
+
+h3 {
+	font-size: 25pt;
+}
+
+p {
+	font-size: 16pt;
+	padding: 0 10%;
 }
 
 a {
@@ -51,7 +66,7 @@ nav {
 }
 
 nav i {
-    font-size: 30pt;
+    font-size: 40pt;
     height: auto;
     overflow: auto;
     padding: 0 6%;
@@ -65,11 +80,6 @@ nav i {
 
 #history {
 	padding: 2.5% 0;
-}
-
-p {
-	font-size: 16pt;
-	padding: 0 10%;
 }
 
 .half {
@@ -91,12 +101,13 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 2.5%;
+    padding-bottom: 1%;
 }
 
 .dotrow {
     display: flex;
     justify-content: center;
+	padding-top: 2.5%;
     padding-bottom: 2.5%;
 }
 
@@ -121,8 +132,10 @@ p {
 }
 
 button {
-    width: 50%;
-	margin: 2.5% 0 2.5% 25%;
+	display: none;
+	width: 25%;
+	cursor: pointer;
+	margin: 2.5% 0 5% 37.5%;
     padding: 1.5%;
     color: #000000;
     background: #f19f94;
@@ -157,7 +170,6 @@ a {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
-    padding-top: 2.5%;
 }
 
 .modal-open {
@@ -182,7 +194,9 @@ a {
   display: block;
   width: 80%;
   max-width: 500px;
-  margin-top: 7.5%;
+	position: relative;
+     top: 50%;
+     transform: perspective(1px) translateY(-50%);
 }
 
 .caption {
@@ -196,23 +210,9 @@ a {
   font-size: 16pt;
   padding: 2.5% 0;
   height: auto;
-}
-
-.modal-content, .caption {  
-  -webkit-animation-name: zoom;
-  -webkit-animation-duration: 0.6s;
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-
-@-webkit-keyframes zoom {
-  from {-webkit-transform:scale(0)} 
-  to {-webkit-transform:scale(1)}
-}
-
-@keyframes zoom {
-  from {transform:scale(0)} 
-  to {transform:scale(1)}
+  position: relative;
+  top: 35%;
+  transform: perspective(1px) translateY(-35%);
 }
 
 .close {
@@ -252,18 +252,6 @@ a {
     opacity: 0.7;
 }
 
-button {
-	display: none;
-	width: 25%;
-	margin-left: 37.5%;
-	cursor: pointer;
-}
-
-h2 {
-    text-align: center;
-    font-size: 25pt;
-}
-
 #pricelist, footer {
     width: 100%;
     display: flex;
@@ -292,12 +280,8 @@ li {
     padding: 2% 0;
 }
 
-h3 {
-	font-size: 25pt;
-}
-
 .client {
-    padding: 5% 0;
+    padding-top: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -309,7 +293,7 @@ iframe {
     overflow: auto;
     border: 0;
     margin-left: 25%;
-    padding-top: 2.5%;
+    padding-top: 5%;
     padding-bottom: 5%;
 }
 
@@ -327,75 +311,29 @@ footer i {
     font-size: 100pt;
 }
 
-/* Desktop only */
+#homeicon:hover, #teamicon:hover, #productsicon:hover {
+	cursor: pointer;
+}
 
-@media (min-width: 769px) {
+nav, .secondshow, .thirdshow, .fourthshow, .fifthshow, .sixthshow, .seventhshow {
+	display: none;
+}
+
+@media only screen and (max-width: 1400px) {
 	
-	.tablet, .mobile {
-    display: none !important;
+	.firsthide {
+		display: none;
 	}
 }
 
-/* Tablet only */
-
-@media (min-width: 500px) {
+@media only screen and (max-width: 1100px) {
 	
-	.mobile {
-		display: none !important;
-	}
-}
-
-@media only screen and (max-width: 900px){
-
-/* Tablet CSS - main (portrait) */
-
-    .desktop {
-        display: none;
-    }
-
-    .tablet {
-        display: block;
-    }
-	
-	.half img {
-    width: 60%;
-  }
-	
-	.fa-times-circle {
-		right: 7.5%;
+	.secondhide {
+		display: none;
 	}
 	
-	button {
-		margin-bottom: 5%;
-	}
-    
-    .dotrow {
-        padding-bottom: 5%;
-    }
-	
-	.close {
-		top: 0;
-		left: 92.5%;
-	}
-    
-    .modal-content {
-        margin-top: 25%;
-    }
-	
-	.third img {
-		position: relative;
-    	margin-bottom: 5%;
-  }
-    
-    button {
-        width: 75%;
-        margin-left: 15%;
-        padding: 2.5%;
-        margin-bottom: 5%;
-    }
-	
-	ul {
-		padding-inline-start: 0;
+	.secondshow {
+		display: block;
 	}
 	
 	iframe {
@@ -403,140 +341,178 @@ footer i {
 		margin-left: 15%;
 	}
 	
-	footer h3 {
-		font-size: 16pt;
+	footer .columns {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 950px) {
+	
+	.thirdhide {
+		display: none;
 	}
 	
-	#contact-times h3 {
-		font-size: 20pt;
+	.thirdshow {
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 890px) {
+	
+	.fourthhide {
+		display: none;
+	}
+	
+	.fourthshow {
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	
+	.fifthhide {
+		display: none;
+	}
+	
+	.fifthshow {
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 750px) {
+	
+	nav, .team, .client {
+		display: block;
+	}
+	
+	.half {
+		width: 100%;
+	}
+	
+	.half img {
+		padding-top: 5%;
+		padding-bottom: 5%;
+	}
+	
+	.containercolumn {
+		width: 100%;
+	}
+	
+	li.fifthshow, li.secondshow {
+		display: none;
+	}
+	
+	footer {
+		padding-top: 5%;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	
+	.third {
+		width: 70%;
+	}
+	
+}
+
+@media only screen and (max-width: 500px) {
+	
+	.sixthshow {
+		display: block;
+	}
+	
+	.sixthhide {
+		display: none;
+	}
+	
+	.caption {
+		top: 40%;
+		transform: perspective(1px) translateY(-40%);
+	}
+	
+	button {
+		margin-bottom: 7.5%;
+	}
+	
+	footer {
+		padding-top: 7.5%;
+	}
+	
+}
+
+@media only screen and (max-width: 450px) {
+	
+	h1 {
+	font-size: 30pt;
+}
+
+	h2 {
+    font-size: 25pt;
+}
+
+	h3 {
+	font-size: 20pt;
+}
+	
+	#julie p {
+		padding: 0 15%;
+	}
+	
+	iframe {
+		width: 100%;
+		margin-left: 0;
+	}
+	
+	footer i {
+		font-size: 75pt;
+	}
+	
+	button {
+		width: 50%;
+		margin-left: 25%;
+		margin-top: 5%;
+		margin-bottom: 10%;
+	}
+
+}
+
+@media only screen and (max-width: 380px) {
+	
+	li.seventhshow {
+		display: block;
+	}
+	
+	.seventhhide {
+		display: none;
+	}
+	
+	nav {
+		padding-bottom: 10%;
+	}
+	
+	p {
+		padding: 0 5%;
+	}
+	
+	.half img {
+		width: 75%;
+		margin-left: 15%;
+	}
+	
+	ul {
+		padding-left: 10%;
 	}
 	
 	li {
-		font-size: 13pt;
+		font-size: 14pt;
 	}
+
+	footer h2 {
+    font-size: 20pt;
 }
-
-@media only screen and (max-width: 700px){
-
-/* Mobile CSS */
-
-.mobile {
-    display: block;
-}
-
-.dotrow, form, #products, #pricelist, #pricelist .columns, iframe {
-    display: none;
-}
-
-    h1 {
-    font-size: 25pt;
-    }
-    
-  .modal-content {
-    width: 100%;
-  }
-  
-  .team {
-      display: block;
-	  padding: 5% 0;
-      padding-top: 10%;
-  }
-  
-  .half {
-      width: 100%;
-  }
-  
-  .half img {
-      margin-left: 20%;
-  }
 	
-  .dotrow {
-      padding-bottom: 15%;
-      text-align: center;
-  }
-  
-  .fa-times-circle {
-      font-size: 28pt;
-      top: -70px;
-      right: 0;
-      left: 76%;
-      bottom: 59px;
-  }
-  
-  .containercolumn {
-      width: 100%;
-  }
-  
-  .third {
-      width: 100%;
-  }
-    
-  .close {
-	top: -2%;
-	left: 50%;
-}
-  
-  .caption {
-      padding: 10% 0;
-  }
-  
-  .button {
-      width: 35%;
-      margin-left: 35%;
-  }
-  
-  .client {
-      display: block;
-  }
-  
-  .client img {
-      width: 50%;
-      margin-left: 25%;
-  }
-  
-  #productcontact {
-      padding-top: 10%;
-  }
-  
-  iframe {
-      width: 100%;
-      margin-left: 0;
-      padding-top: 10%;
-  }
-  
-  footer .columns {
-      width: 100%;
-  }
-  
-  #footerimg {
-      display: block;
-  }
-  
-  #footerimg img {
-      padding: 5% 0;
-  }
-  
-  .remove {
-      display: none !important;
-  }
-}
-
-@media only screen and (min-height: 700px) and (max-height: 740px) {
-	
-	.fa-times-circle {
-		top: 7.5px;
-		right: 0;
-		left: -12.5%;
-		bottom: 0;
+	footer i {
+		font-size: 50pt;
 	}
-}
-
-@media only screen and (max-height: 600px){
-
-/* Small Mobile CSS */
-
-    .fa-times-circle {
-        top: -65px;
-    } 
-
+	
 }
