@@ -132,8 +132,10 @@ nav i {
 }
 
 button {
-    width: 50%;
-	margin: 2.5% 0 2.5% 25%;
+	display: none;
+	width: 25%;
+	cursor: pointer;
+	margin: 2.5% 0 5% 37.5%;
     padding: 1.5%;
     color: #000000;
     background: #f19f94;
@@ -208,9 +210,9 @@ a {
   font-size: 16pt;
   padding: 2.5% 0;
   height: auto;
-	position: relative;
-     top: 35%;
-     transform: perspective(1px) translateY(-35%);
+  position: relative;
+  top: 35%;
+  transform: perspective(1px) translateY(-35%);
 }
 
 .close {
@@ -248,13 +250,6 @@ a {
 
 .third img:hover {
     opacity: 0.7;
-}
-
-button {
-	display: none;
-	width: 25%;
-	margin-left: 37.5%;
-	cursor: pointer;
 }
 
 #pricelist, footer {
@@ -316,7 +311,11 @@ footer i {
     font-size: 100pt;
 }
 
-nav, .secondshow, .thirdshow, .fourthshow, .fifthshow {
+#homeicon:hover, #teamicon:hover, #productsicon:hover {
+	cursor: pointer;
+}
+
+nav, .secondshow, .thirdshow, .fourthshow, .fifthshow, .sixthshow, .seventhshow {
 	display: none;
 }
 
@@ -391,8 +390,8 @@ nav, .secondshow, .thirdshow, .fourthshow, .fifthshow {
 	}
 	
 	.half img {
-		padding-top: 2.5%;
-		padding-bottom: 2.5%;
+		padding-top: 5%;
+		padding-bottom: 5%;
 	}
 	
 	.containercolumn {
@@ -402,4 +401,118 @@ nav, .secondshow, .thirdshow, .fourthshow, .fifthshow {
 	li.fifthshow, li.secondshow {
 		display: none;
 	}
+	
+	footer {
+		padding-top: 5%;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	
+	.third {
+		width: 70%;
+	}
+	
+}
+
+@media only screen and (max-width: 500px) {
+	
+	.sixthshow {
+		display: block;
+	}
+	
+	.sixthhide {
+		display: none;
+	}
+	
+	.caption {
+		top: 40%;
+		transform: perspective(1px) translateY(-40%);
+	}
+	
+	button {
+		margin-bottom: 7.5%;
+	}
+	
+	footer {
+		padding-top: 7.5%;
+	}
+	
+}
+
+@media only screen and (max-width: 450px) {
+	
+	h1 {
+	font-size: 30pt;
+}
+
+	h2 {
+    font-size: 25pt;
+}
+
+	h3 {
+	font-size: 20pt;
+}
+	
+	#julie p {
+		padding: 0 15%;
+	}
+	
+	iframe {
+		width: 100%;
+		margin-left: 0;
+	}
+	
+	footer i {
+		font-size: 75pt;
+	}
+	
+	button {
+		width: 50%;
+		margin-left: 25%;
+		margin-top: 5%;
+		margin-bottom: 10%;
+	}
+
+}
+
+@media only screen and (max-width: 380px) {
+	
+	li.seventhshow {
+		display: block;
+	}
+	
+	.seventhhide {
+		display: none;
+	}
+	
+	nav {
+		padding-bottom: 10%;
+	}
+	
+	p {
+		padding: 0 5%;
+	}
+	
+	.half img {
+		width: 75%;
+		margin-left: 15%;
+	}
+	
+	ul {
+		padding-left: 10%;
+	}
+	
+	li {
+		font-size: 14pt;
+	}
+
+	footer h2 {
+    font-size: 20pt;
+}
+	
+	footer i {
+		font-size: 50pt;
+	}
+	
 }
