@@ -252,7 +252,7 @@ a {
     opacity: 0.7;
 }
 
-#pricelist, footer {
+footer {
     width: 100%;
     display: flex;
     flex-flow: row wrap;
@@ -269,15 +269,6 @@ hr {
     overflow: auto;
     float: left;
     justify-content: space-between;
-}
-
-ul {
-	list-style-type: none;
-}
-
-li {
-	font-size: 16pt;
-    padding: 2% 0;
 }
 
 .client {
@@ -315,7 +306,7 @@ footer i {
 	cursor: pointer;
 }
 
-nav, .secondshow, .thirdshow, .fourthshow, .fifthshow, .sixthshow, .seventhshow {
+nav, .secondshow, .thirdshow, .fourthshow, .fifthshow, .sixthshow {
 	display: none;
 }
 
@@ -398,10 +389,6 @@ nav, .secondshow, .thirdshow, .fourthshow, .fifthshow, .sixthshow, .seventhshow 
 		width: 100%;
 	}
 	
-	li.fifthshow, li.secondshow {
-		display: none;
-	}
-	
 	footer {
 		padding-top: 5%;
 	}
@@ -478,10 +465,6 @@ nav, .secondshow, .thirdshow, .fourthshow, .fifthshow, .sixthshow, .seventhshow 
 
 @media only screen and (max-width: 380px) {
 	
-	li.seventhshow {
-		display: block;
-	}
-	
 	.seventhhide {
 		display: none;
 	}
@@ -497,14 +480,6 @@ nav, .secondshow, .thirdshow, .fourthshow, .fifthshow, .sixthshow, .seventhshow 
 	.half img {
 		width: 75%;
 		margin-left: 15%;
-	}
-	
-	ul {
-		padding-left: 10%;
-	}
-	
-	li {
-		font-size: 14pt;
 	}
 
 	footer h2 {
