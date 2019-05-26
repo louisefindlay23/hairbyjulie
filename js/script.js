@@ -473,6 +473,10 @@ span6.onclick = function() {
         clearInterval(slideshow6);
         
         clearInterval(slideshow7);
+        
+        clearInterval(slideshow8);
+        
+        clearInterval(slideshow9);
 
         $(".team, .dotrow, .client, #products, #pricelist").hide();
 }
