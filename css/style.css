@@ -7,49 +7,53 @@ html {
 }
 
 @font-face {
-	src: url("../fonts/ropasoftpro-regular.woff");
-	font-family: "Ropa Soft Pro";
+    src: url("../fonts/ropasoftpro-regular.woff");
+    font-family: "Ropa Soft Pro";
 }
 
 @font-face {
-	src: url("../fonts/nps_1935.woff");
-	font-family: "NPS 1935";
+    src: url("../fonts/nps_1935.woff");
+    font-family: "NPS 1935";
 }
 
 body {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	color: #cfb53b;
-	background: #482e3b;
-	font-family: "Ropa Soft Pro";
-	max-width: 1920px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: #cfb53b;
+    background: #482e3b;
+    font-family: "Ropa Soft Pro";
+    max-width: 1920px;
 }
 
 div {
-	width: 100%;
-	height: auto;
-	overflow: auto;
+    width: 100%;
+    height: auto;
+    overflow: auto;
 }
 
 h1 {
-	text-align: center;
-	font-size: 40pt;
+    text-align: center;
+    font-size: 40pt;
 }
 
 h2 {
     text-align: center;
     font-size: 30pt;
-	margin: 3% 0;
+    margin: 3% 0;
 }
 
 h3 {
-	font-size: 25pt;
+    font-size: 25pt;
+}
+
+h3 a:hover {
+    opacity: 50%;
 }
 
 p {
-	font-size: 16pt;
-	padding: 0 10%;
+    font-size: 16pt;
+    padding: 0 10%;
 }
 
 a {
@@ -73,27 +77,27 @@ nav i {
 }
 
 #banner img {
-	width: 100%;
-	height: auto;
-	overflow: auto;
+    width: 100%;
+    height: auto;
+    overflow: auto;
 }
 
 #history {
-	padding: 2.5% 0;
+    padding: 2.5% 0;
 }
 
 .half {
-	width: 50%;
-	height: auto;
-	overflow: auto;
-	float: left;
+    width: 50%;
+    height: auto;
+    overflow: auto;
+    float: left;
 }
 
 .half img {
     width: 50%;
     height: auto;
     overflow: auto;
-	border-radius: 50%;
+    border-radius: 50%;
     margin-left: 25%;
 }
 
@@ -107,7 +111,7 @@ nav i {
 .dotrow {
     display: flex;
     justify-content: center;
-	padding-top: 2.5%;
+    padding-top: 2.5%;
     padding-bottom: 2.5%;
 }
 
@@ -115,7 +119,7 @@ nav i {
     font-size: 30pt;
     color: #cfb53b;
     padding: 0 2.5%;
-	cursor: pointer;
+    cursor: pointer;
 }
 
 .pink {
@@ -123,19 +127,19 @@ nav i {
 }
 
 #hair {
-	font-family: "NPS 1935";
-	margin-right: 5px;
+    font-family: "NPS 1935";
+    margin-right: 5px;
 }
 
 #products {
-	padding: 2.5% 0;
+    padding: 2.5% 0;
 }
 
 button {
-	display: none;
-	width: 25%;
-	cursor: pointer;
-	margin: 2.5% 0 5% 37.5%;
+    display: none;
+    width: 25%;
+    cursor: pointer;
+    margin: 2.5% 0 5% 37.5%;
     padding: 1.5%;
     color: #000000;
     background: #f19f94;
@@ -148,28 +152,28 @@ button {
 ::placeholder {
     font-family: "Ropa Soft Pro";
     font-size: 16pt;
-     color: #000000;
+    color: #000000;
 }
 
 a {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 .fa-times-circle {
-	display: none;
-	position: relative;
-	z-index: 1;
-	font-size: 32pt;
-	top: 10px;
-	right: 5%;
-	color: #000000;
-	cursor: pointer;
+    display: none;
+    position: relative;
+    z-index: 1;
+    font-size: 32pt;
+    top: 10px;
+    right: 5%;
+    color: #000000;
+    cursor: pointer;
 }
 
 #productcontainer {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
 .modal-open {
@@ -177,66 +181,66 @@ a {
 }
 
 .modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: #482e3b;
-  opacity: 0.9;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #482e3b;
+    opacity: 0.9;
 }
 
 .modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 500px;
-	position: relative;
-     top: 50%;
-     transform: perspective(1px) translateY(-50%);
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 500px;
+    position: relative;
+    top: 50%;
+    transform: perspective(1px) translateY(-50%);
 }
 
 .caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #cfb53b;
-  font-family: "Ropa Soft Pro";
-  font-size: 16pt;
-  padding: 2.5% 0;
-  height: auto;
-  position: relative;
-  top: 35%;
-  transform: perspective(1px) translateY(-35%);
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #cfb53b;
+    font-family: "Ropa Soft Pro";
+    font-size: 16pt;
+    padding: 2.5% 0;
+    height: auto;
+    position: relative;
+    top: 35%;
+    transform: perspective(1px) translateY(-35%);
 }
 
 .close {
-  position: absolute;
-  top: 1%;
-  right: 2.5%;
-  color: #cfb53b;
-  font-size: 80px;
-  font-weight: bold;
-  transition: 0.3s;
+    position: absolute;
+    top: 1%;
+    right: 2.5%;
+    color: #cfb53b;
+    font-size: 80px;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 .close:hover,
 .close:focus {
-  color: #f19f94;
-  text-decoration: none;
-  cursor: pointer;
+    color: #f19f94;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .third {
-	width: 30%;
-	height: auto;
-	overflow: auto;
-	float: left;
+    width: 30%;
+    height: auto;
+    overflow: auto;
+    float: left;
     padding: 2.5% 1.5%;
     transition: 0.3s;
 }
@@ -289,205 +293,214 @@ iframe {
 }
 
 footer {
-	align-items: center;
+    align-items: center;
 }
 
 #footerimg {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 2.5%;
 }
 
 footer i {
-    font-size: 100pt;
+    font-size: 75pt;
 }
 
-#homeicon:hover, #teamicon:hover, #productsicon:hover {
-	cursor: pointer;
+#homeicon:hover,
+#teamicon:hover,
+#productsicon:hover {
+    cursor: pointer;
 }
 
-nav, .secondshow, .thirdshow, .fourthshow, .fifthshow, .sixthshow {
-	display: none;
+nav,
+.secondshow,
+.thirdshow,
+.fourthshow,
+.fifthshow,
+.sixthshow {
+    display: none;
 }
 
 @media only screen and (max-width: 1400px) {
-	
-	.firsthide {
-		display: none;
-	}
+
+    .firsthide {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 1100px) {
-	
-	.secondhide {
-		display: none;
-	}
-	
-	.secondshow {
-		display: block;
-	}
-	
-	iframe {
-		width: 75%;
-		margin-left: 15%;
-	}
-	
-	footer .columns {
-		width: 100%;
-	}
+
+    .secondhide {
+        display: none;
+    }
+
+    .secondshow {
+        display: block;
+    }
+
+    iframe {
+        width: 75%;
+        margin-left: 15%;
+    }
+
+    footer .columns {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 950px) {
-	
-	.thirdhide {
-		display: none;
-	}
-	
-	.thirdshow {
-		display: block;
-	}
+
+    .thirdhide {
+        display: none;
+    }
+
+    .thirdshow {
+        display: block;
+    }
 }
 
 @media only screen and (max-width: 890px) {
-	
-	.fourthhide {
-		display: none;
-	}
-	
-	.fourthshow {
-		display: block;
-	}
+
+    .fourthhide {
+        display: none;
+    }
+
+    .fourthshow {
+        display: block;
+    }
 }
 
 @media only screen and (max-width: 800px) {
-	
-	.fifthhide {
-		display: none;
-	}
-	
-	.fifthshow {
-		display: block;
-	}
+
+    .fifthhide {
+        display: none;
+    }
+
+    .fifthshow {
+        display: block;
+    }
 }
 
 @media only screen and (max-width: 750px) {
-	
-	nav, .team, .client {
-		display: block;
-	}
-	
-	.half {
-		width: 100%;
-	}
-	
-	.half img {
-		padding-top: 5%;
-		padding-bottom: 5%;
-	}
-	
-	.containercolumn {
-		width: 100%;
-	}
-	
-	footer {
-		padding-top: 5%;
-	}
+
+    nav,
+    .team,
+    .client {
+        display: block;
+    }
+
+    .half {
+        width: 100%;
+    }
+
+    .half img {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .containercolumn {
+        width: 100%;
+    }
+
+    footer {
+        padding-top: 5%;
+    }
 }
 
 @media only screen and (max-width: 700px) {
-	
-	.third {
-		width: 70%;
-	}
-	
+
+    .third {
+        width: 70%;
+    }
+
 }
 
 @media only screen and (max-width: 500px) {
-	
-	.sixthshow {
-		display: block;
-	}
-	
-	.sixthhide {
-		display: none;
-	}
-	
-	.caption {
-		top: 40%;
-		transform: perspective(1px) translateY(-40%);
-	}
-	
-	button {
-		margin-bottom: 7.5%;
-	}
-	
-	footer {
-		padding-top: 7.5%;
-	}
-	
+
+    .sixthshow {
+        display: block;
+    }
+
+    .sixthhide {
+        display: none;
+    }
+
+    .caption {
+        top: 40%;
+        transform: perspective(1px) translateY(-40%);
+    }
+
+    button {
+        margin-bottom: 7.5%;
+    }
+
+    footer {
+        padding-top: 7.5%;
+    }
+
 }
 
 @media only screen and (max-width: 450px) {
-	
-	h1 {
-	font-size: 30pt;
-}
 
-	h2 {
-    font-size: 25pt;
-}
+    h1 {
+        font-size: 30pt;
+    }
 
-	h3 {
-	font-size: 20pt;
-}
-	
-	#julie p {
-		padding: 0 15%;
-	}
-	
-	iframe {
-		width: 100%;
-		margin-left: 0;
-	}
-	
-	footer i {
-		font-size: 75pt;
-	}
-	
-	button {
-		width: 50%;
-		margin-left: 25%;
-		margin-top: 5%;
-		margin-bottom: 10%;
-	}
+    h2 {
+        font-size: 25pt;
+    }
+
+    h3 {
+        font-size: 20pt;
+    }
+
+    #julie p {
+        padding: 0 15%;
+    }
+
+    iframe {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    footer i {
+        font-size: 50pt;
+    }
+
+    button {
+        width: 50%;
+        margin-left: 25%;
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
 
 }
 
 @media only screen and (max-width: 380px) {
-	
-	.seventhhide {
-		display: none;
-	}
-	
-	nav {
-		padding-bottom: 10%;
-	}
-	
-	p {
-		padding: 0 5%;
-	}
-	
-	.half img {
-		width: 75%;
-		margin-left: 15%;
-	}
 
-	footer h2 {
-    font-size: 20pt;
-}
-	
-	footer i {
-		font-size: 50pt;
-	}
-	
+    .seventhhide {
+        display: none;
+    }
+
+    nav {
+        padding-bottom: 10%;
+    }
+
+    p {
+        padding: 0 5%;
+    }
+
+    .half img {
+        width: 75%;
+        margin-left: 15%;
+    }
+
+    footer h2 {
+        font-size: 20pt;
+    }
+
+    footer i {
+        font-size: 25pt;
+    }
+
 }
