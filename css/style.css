@@ -1,6 +1,12 @@
 @charset "utf-8";
 
-/* All CSS */
+/* Overall Styles */
+
+:root {
+    --bg-color: #3d5266;
+    --main-color: #cfa8a5;
+    --hover-color: #bc7c77;
+}
 
 html {
     overflow-y: scroll;
@@ -20,8 +26,8 @@ body {
     margin: 0;
     padding: 0;
     border: 0;
-    color: #cfb53b;
-    background: #482e3b;
+    color: var(--main-color);
+    background: var(--bg-color);
     font-family: "Ropa Soft Pro";
     max-width: 1920px;
 }
@@ -117,13 +123,13 @@ nav i {
 
 .dotrow i {
     font-size: 30pt;
-    color: #cfb53b;
+    color: var(--main-color);
     padding: 0 2.5%;
     cursor: pointer;
 }
 
 .pink {
-    color: #f19f94 !important;
+    color: var(--hover-color) !important;
 }
 
 #hair {
@@ -142,7 +148,7 @@ button {
     margin: 2.5% 0 5% 37.5%;
     padding: 1.5%;
     color: #000000;
-    background: #f19f94;
+    background: var(--hover-color);
     border: none;
     font-family: "Ropa Soft Pro";
     font-size: 16pt;
@@ -189,7 +195,7 @@ a {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: #482e3b;
+    background-color: var(--bg-color);
     opacity: 0.9;
 }
 
@@ -209,7 +215,7 @@ a {
     width: 80%;
     max-width: 700px;
     text-align: center;
-    color: #cfb53b;
+    color: --main-color;
     font-family: "Ropa Soft Pro";
     font-size: 16pt;
     padding: 2.5% 0;
@@ -223,7 +229,7 @@ a {
     position: absolute;
     top: 1%;
     right: 2.5%;
-    color: #cfb53b;
+    color: var(--main-color);
     font-size: 80px;
     font-weight: bold;
     transition: 0.3s;
@@ -231,7 +237,7 @@ a {
 
 .close:hover,
 .close:focus {
-    color: #f19f94;
+    color: var(--hover-color);
     text-decoration: none;
     cursor: pointer;
 }
@@ -320,6 +326,8 @@ nav,
 .sixthshow {
     display: none;
 }
+
+/* Media Queries */
 
 @media only screen and (max-width: 1400px) {
 
