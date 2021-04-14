@@ -324,7 +324,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   });
 
   const modal6 = document.getElementById('modal6');
-  document.getElementById('product6').addEventListener("click", (e) => { 
+  document.getElementById("product6").addEventListener("click", (e) => { 
     modal1.style.display = "block";
     document.getElementById("modalimg6").src = e.target.src;
     document.getElementById("caption6").innerHTML = e.target.alt;
@@ -335,82 +335,72 @@ document.addEventListener('DOMContentLoaded', (event) => {
     document.querySelector("body").classList.remove("modal-open");
   });
 	
-// Show all product images
-	
-	$("button").click(function(){
-	
-	$("#productone, #producttwo, #productthree, #productfour, #productfive, #productsix").show();
+  // Show all product images
+  document.getElementById("button").addEventListener("click", (e) => {
+    document.querySelectorAll("#productone, #producttwo, #productthree, #productfour, #productfive, #productsix").forEach((e) => {
+      e.style.display = "block";
+    });
+    this.hide();
+  });
 		
-	$("button").hide();
-		
 });
 
-// Hide carousels on home mobile version
+  // Hide carousels on home mobile version
+  if (document.querySelector("nav".style.display !== "none")) {
+    clearInterval(slideshow1);
+    clearInterval(slideshow2);
+    clearInterval(slideshow3);
+    clearInterval(slideshow4);
+    clearInterval(slideshow5);
+    clearInterval(slideshow6);
+    clearInterval(slideshow7);
+    clearInterval(slideshow8);
+    clearInterval(slideshow9);
+    document.querySelectorAll(".team, .dotrow, .client, #products, #pricelist").forEach((e) => {
+      e.style.display = "none";
+    });
+  }
 
-    if($("nav").is(":visible")){
- 
-        clearInterval(slideshow1);
+  // Home icon nav
+  document.getElementById("homeicon").addEventListener("click", (e) => {
+    document.querySelectorAll(".team, .dotrow, form, #products, #pricelist, .client, iframe").forEach((e) => {
+      e.style.display = "none";
+    });
+    document.querySelectorAll("#banner, #history").forEach((e) => {
+      e.style.display = "block";
+    });
+    document.getElementById("homeicon").classList.add("pink");
+    document.querySelectorAll("#teamicon, #productsicon").forEach((e) => {
+      e.classList.remove("pink");
+    });
 
-        clearInterval(slideshow2);
+  // Team icon nav
+  document.getElementById("teamicon").addEventListener("click", (e) => {
+    document.querySelectorAll("#banner, form, #products, #pricelist, iframe, #history").forEach((e) => {
+      e.style.display = "none";
+    });
+    document.querySelectorAll("#client1, .dotrow, #team1").forEach((e) => {
+      e.style.display = "block";
+    });
+    document.getElementById("teamicon").classList.add("pink");
+    document.querySelectorAll("#homeicon, #productsicon").forEach((e) => {
+      e.classList.remove("pink");
+    });
+  });
 
-        clearInterval(slideshow3);
-
-        clearInterval(slideshow4);
-
-        clearInterval(slideshow5);
-
-        clearInterval(slideshow6);
-        
-        clearInterval(slideshow7);
-        
-        clearInterval(slideshow8);
-        
-        clearInterval(slideshow9);
-
-        $(".team, .dotrow, .client, #products, #pricelist").hide();
-}
-
-// Home icon nav
-
-    $("#homeicon").click(function(){
-    
-    $(".team, .dotrow, form, #products, #pricelist, .client, iframe").hide();
-    
-    $("#banner, #history").show();
-    
-    $("#homeicon").addClass("pink");
-    
-    $("#teamicon, #productsicon").removeClass("pink");
-
-});
-
-// Team icon nav
-
-    $("#teamicon").click(function(){
-    
-    $("#banner, form, #products, #pricelist, iframe, #history").hide();
-    
-    $("#client1, .dotrow, #team1").show();
-    
-    $("#homeicon, #productsicon").removeClass("pink");
-    
-    $("#teamicon").addClass("pink");
-
-});
-
-// Products icon nav
-
-    $("#productsicon").click(function(){
-    
-    $("#banner, .team, .client, form, .dotrow, iframe, #history, #productfour, #productfive, #productsix").hide();
-    
-    $("#searchform, #products, #pricelist, .columns, button").show();
-    
-    $("#homeicon, #teamicon").removeClass("pink");
-    
-    $("#productsicon").addClass("pink");
-
-});
+  // Products icon nav
+  document.getElementById("teamicon").addEventListener("click", (e) => {
+    document.querySelectorAll("#banner, .team, .client, form, .dotrow, iframe, #history, #productfour, #productfive, #productsix").forEach((e) => {
+      e.style.display = "none";
+    });
+    document.querySelectorAll("#searchform, #products, #pricelist, .columns, button").forEach((e) => {
+      e.style.display = "block";
+    });
+    document.getElementById("productsicon").classList.add("pink");
+    document.querySelectorAll("#homeicon, #teamicon").forEach((e) => {
+      e.classList.remove("pink");
+    });
+  });
 
 // Team swipe gestures
 
