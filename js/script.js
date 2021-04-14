@@ -336,17 +336,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
   });
 	
   // Show all product images
-  document.getElementById("button").addEventListener("click", (e) => {
+  document.querySelector("button").addEventListener("click", (e) => {
     document.querySelectorAll("#productone, #producttwo, #productthree, #productfour, #productfive, #productsix").forEach((e) => {
       e.style.display = "block";
     });
     this.hide();
   });
-		
-});
 
   // Hide carousels on home mobile version
-  if (document.querySelector("nav".style.display !== "none")) {
+  if (window.getComputedStyle(document.querySelector("nav")).display !== "none") {
     clearInterval(slideshow1);
     clearInterval(slideshow2);
     clearInterval(slideshow3);
@@ -373,6 +371,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     document.querySelectorAll("#teamicon, #productsicon").forEach((e) => {
       e.classList.remove("pink");
     });
+  });
 
   // Team icon nav
   document.getElementById("teamicon").addEventListener("click", (e) => {
@@ -402,218 +401,160 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
   });
 
-// Team swipe gestures
+  // Team swipe gestures
+  document.getElementById("team1").addEventListener("swiped-left", (e) => {
+    document.querySelectorAll(".team").forEach((e) => {
+      e.style.display = "none";
+    });
+    fadeIn(document.getElementById("team2"));
+    document.querySelectorAll("#employee > i").forEach((e) => {
+      e.classList.remove("pink");
+    });
+    document.getElementById("dot2").addClass("pink");
+  });
 
-// Swipe (Left) Client 1 to 2
+  document.getElementById("team2").addEventListener("swiped-right", (e) => {
+    document.querySelectorAll(".team").forEach((e) => {
+      e.style.display = "none";
+    });
+    fadeIn(document.getElementById("team1"));
+    document.querySelectorAll("#employee > i").forEach((e) => {
+      e.classList.remove("pink");
+    });
+    document.getElementById("dot1").addClass("pink");
+  });
 
-$("#team1").swipe({
-  swipeLeft:function(event, direction, distance, duration, fingerCount) {
-    $(".team").hide();
-        
-        $("#team2").fadeIn(300);
-        
-        $("#employee > i").removeClass("pink");
-        
-        $("#dot2").addClass("pink");
-  }
-});
+  document.getElementById("team2").addEventListener("swiped-left", (e) => {
+    document.querySelectorAll(".team").forEach((e) => {
+      e.style.display = "none";
+    });
+    fadeIn(document.getElementById("team3"));
+    document.querySelectorAll("#employee > i").forEach((e) => {
+      e.classList.remove("pink");
+    });
+    document.getElementById("dot3").addClass("pink");
+  });
 
-// Swipe (Right) Client 2 to 1
+  document.getElementById("team3").addEventListener("swiped-right", (e) => {
+    document.querySelectorAll(".team").forEach((e) => {
+      e.style.display = "none";
+    });
+    fadeIn(document.getElementById("team2"));
+    document.querySelectorAll("#employee > i").forEach((e) => {
+      e.classList.remove("pink");
+    });
+    document.getElementById("dot2").addClass("pink");
+  });
 
-$("#team2").swipe({
-  swipeRight:function(event, direction, distance, duration, fingerCount) {
-    $(".team").hide();
-        
-        $("#team1").fadeIn(300);
-        
-        $("#employee > i").removeClass("pink");
-        
-        $("#dot1").addClass("pink");
-  }
-  
-});
+  document.getElementById("team3").addEventListener("swiped-left", (e) => {
+    document.querySelectorAll(".team").forEach((e) => {
+      e.style.display = "none";
+    });
+    fadeIn(document.getElementById("team4"));
+    document.querySelectorAll("#employee > i").forEach((e) => {
+      e.classList.remove("pink");
+    });
+    document.getElementById("dot8").addClass("pink");
+  });
 
-// Swipe (Left) Client 2 to Client 3
+  document.getElementById("team4").addEventListener("swiped-right", (e) => {
+    document.querySelectorAll(".team").forEach((e) => {
+      e.style.display = "none";
+    });
+    fadeIn(document.getElementById("team3"));
+    document.querySelectorAll("#employee > i").forEach((e) => {
+      e.classList.remove("pink");
+    });
+    document.getElementById("dot3").addClass("pink");
+  });
 
-$("#team2").swipe({
-  swipeLeft:function(event, direction, distance, duration, fingerCount) {
-    $(".team").hide();
-        
-        $("#team3").fadeIn(300);
-        
-        $("#employee > i").removeClass("pink");
-        
-        $("#dot3").addClass("pink");
-  }
-  
-});
+  document.getElementById("team4").addEventListener("swiped-left", (e) => {
+    document.querySelectorAll(".team").forEach((e) => {
+      e.style.display = "none";
+    });
+    fadeIn(document.getElementById("team5"));
+    document.querySelectorAll("#employee > i").forEach((e) => {
+      e.classList.remove("pink");
+    });
+    document.getElementById("dot9").addClass("pink");
+  });
 
-// Swipe (Right) Client 3 to Client 2
+  document.getElementById("team5").addEventListener("swiped-left", (e) => {
+    document.querySelectorAll(".team").forEach((e) => {
+      e.style.display = "none";
+    });
+    fadeIn(document.getElementById("team4"));
+    document.querySelectorAll("#employee > i").forEach((e) => {
+      e.classList.remove("pink");
+    });
+    document.getElementById("dot8").addClass("pink");
+  });
 
-$("#team3").swipe({
-  swipeRight:function(event, direction, distance, duration, fingerCount) {
-    $(".team").hide();
-        
-        $("#team2").fadeIn(300);
-        
-        $("#employee > i").removeClass("pink");
-        
-        $("#dot2").addClass("pink");
-  }
-  
-});
+  // Client swipe gestures
+  document.getElementById("client1").addEventListener("swiped-left", (e) => {
+    document.querySelectorAll(".client").forEach((e) => {
+      e.style.display = "none";
+    });
+    fadeIn(document.getElementById("client2"));
+    document.querySelectorAll("#customer > i").forEach((e) => {
+      e.classList.remove("pink");
+    });
+    document.getElementById("dot5").addClass("pink");
+  });
 
-// Swipe (Left) Client 3 to Client 4 (8)
+  document.getElementById("client2").addEventListener("swiped-right", (e) => {
+    document.querySelectorAll(".client").forEach((e) => {
+      e.style.display = "none";
+    });
+    fadeIn(document.getElementById("client1"));
+    document.querySelectorAll("#customer > i").forEach((e) => {
+      e.classList.remove("pink");
+    });
+    document.getElementById("dot4").addClass("pink");
+  });
 
-$("#team3").swipe({
-  swipeLeft:function(event, direction, distance, duration, fingerCount) {
-    $(".team").hide();
-        
-        $("#team4").fadeIn(300);
-        
-        $("#employee > i").removeClass("pink");
-        
-        $("#dot8").addClass("pink");
-  }
-  
-});
+  document.getElementById("client2").addEventListener("swiped-left", (e) => {
+    document.querySelectorAll(".client").forEach((e) => {
+      e.style.display = "none";
+    });
+    fadeIn(document.getElementById("client3"));
+    document.querySelectorAll("#customer > i").forEach((e) => {
+      e.classList.remove("pink");
+    });
+    document.getElementById("dot6").addClass("pink");
+  });
 
-// Swipe (Right) Client 4 (8) to Client 3
+  document.getElementById("client3").addEventListener("swiped-right", (e) => {
+    document.querySelectorAll(".client").forEach((e) => {
+      e.style.display = "none";
+    });
+    fadeIn(document.getElementById("client2"));
+    document.querySelectorAll("#customer > i").forEach((e) => {
+      e.classList.remove("pink");
+    });
+    document.getElementById("dot5").addClass("pink");
+  });
 
-$("#team4").swipe({
-  swipeRight:function(event, direction, distance, duration, fingerCount) {
-    $(".team").hide();
-        
-        $("#team3").fadeIn(300);
-        
-        $("#employee > i").removeClass("pink");
-        
-        $("#dot3").addClass("pink");
-  }
-  
-});
+  document.getElementById("client3").addEventListener("swiped-left", (e) => {
+    document.querySelectorAll(".client").forEach((e) => {
+      e.style.display = "none";
+    });
+    fadeIn(document.getElementById("client4"));
+    document.querySelectorAll("#customer > i").forEach((e) => {
+      e.classList.remove("pink");
+    });
+    document.getElementById("dot7").addClass("pink");
+  });
 
-// Swipe (Left) Client 4 (8) to Client 5 (9)
-
-$("#team4").swipe({
-  swipeLeft:function(event, direction, distance, duration, fingerCount) {
-    $(".team").hide();
-        
-        $("#team5").fadeIn(300);
-        
-        $("#employee > i").removeClass("pink");
-        
-        $("#dot9").addClass("pink");
-  }
-  
-});
-
-// Swipe (Right) Client 5 (9) to Client 4 (8)
-
-$("#team5").swipe({
-  swipeRight:function(event, direction, distance, duration, fingerCount) {
-    $(".team").hide();
-        
-        $("#team4").fadeIn(300);
-        
-        $("#employee > i").removeClass("pink");
-        
-        $("#dot8").addClass("pink");
-  }
-  
-});
-
-// Client swipe gestures
-
-// Swipe (Left) Client 1 to Client 2
-
-$("#client1").swipe({
-  swipeLeft:function(event, direction, distance, duration, fingerCount) {
-    $(".client").hide();
-        
-        $("#client2").fadeIn(300);
-        
-        $("#customer > i").removeClass("pink");
-        
-        $("#dot5").addClass("pink");
-  }
-  
-});
-
-// Swipe (Right) Client 2 to Client 1
-
-$("#client2").swipe({
-  swipeRight:function(event, direction, distance, duration, fingerCount) {
-    $(".client").hide();
-        
-        $("#client1").fadeIn(300);
-        
-        $("#customer > i").removeClass("pink");
-        
-        $("#dot4").addClass("pink");
-  }
-  
-});
-
-// Swipe (Left) Client 2 to Client 3
-
-$("#client2").swipe({
-  swipeLeft:function(event, direction, distance, duration, fingerCount) {
-    $(".client").hide();
-        
-        $("#client3").fadeIn(300);
-        
-        $("#customer > i").removeClass("pink");
-        
-        $("#dot6").addClass("pink");
-  }
-  
-});
-
-// Swipe (Right) Client 3 to Client 2
-
-$("#client3").swipe({
-  swipeRight:function(event, direction, distance, duration, fingerCount) {
-    $(".client").hide();
-        
-        $("#client2").fadeIn(300);
-        
-        $("#customer > i").removeClass("pink");
-        
-        $("#dot5").addClass("pink");
-  }
-  
-});
-  
-// Swipe (Left) Client 3 to Client 4
-
-$("#client3").swipe({
-  swipeLeft:function(event, direction, distance, duration, fingerCount) {
-    $(".client").hide();
-        
-        $("#client4").fadeIn(300);
-        
-        $("#customer > i").removeClass("pink");
-        
-        $("#dot7").addClass("pink");
-  }
-  
-});
-
-// Swipe (Right) Client 4 to Client 3
-
-$("#client4").swipe({
-  swipeRight:function(event, direction, distance, duration, fingerCount) {
-    $(".client").hide();
-        
-        $("#client3").fadeIn(300);
-        
-        $("#customer > i").removeClass("pink");
-        
-        $("#dot6").addClass("pink");
-  }
-  
-});
-
+  document.getElementById("client4").addEventListener("swiped-right", (e) => {
+    document.querySelectorAll(".client").forEach((e) => {
+      e.style.display = "none";
+    });
+    fadeIn(document.getElementById("client3"));
+    document.querySelectorAll("#customer > i").forEach((e) => {
+      e.classList.remove("pink");
+    });
+    document.getElementById("dot6").addClass("pink");
+  });
 
 });
