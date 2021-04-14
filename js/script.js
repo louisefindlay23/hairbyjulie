@@ -1,103 +1,102 @@
-// Document ready
+document.addEventListener('DOMContentLoaded', (event) => {
+  // Show initial slides
+  document.querySelectorAll(".team, .client").forEach((e) => {
+    e.style.display = "none";
+  });
+  document.getElementById("team1").style.display = "block";
+  document.getElementById("client1").style.display = "block";
 
-$(document).ready(function() {
-	
-	// Show initial slides
-
-    $(".team, .client").hide();
+  // Fade In function
+  function fadeIn(el) {
+    el.style.opacity = 0;
+    el.style.display = "block";
+    (function fade() {
+        var val = parseFloat(el.style.opacity);
+        if (!((val += .1) > 1)) {
+            el.style.opacity = val;
+            requestAnimationFrame(fade);
+        }
+    })();
+};
     
-    $("#team1, #client1").show();
-    
-    
-    // Autoplay team slideshow
-    
-        var slideshow1 = setInterval(function(){ 
+  // Autoplay team slideshow
+  const slideshow1 = setInterval(function(){ 
+    document.querySelectorAll(".team").forEach((e) => {
+      e.style.display = "none";
+    });
+    fadeIn(document.getElementById("team2"));
+    document.querySelectorAll("#employee > i").forEach((e) => {
+      e.classList.remove("pink");
+    });
+    document.getElementById("dot2").classList.add("pink");
+  }, 35000);
+  
+  const slideshow2 = setInterval(function(){ 
+    document.querySelectorAll(".team").forEach((e) => {
+      e.style.display = "none";
+    });
+    fadeIn(document.getElementById("team3"));
+    document.querySelectorAll("#employee > i").forEach((e) => {
+      e.classList.remove("pink");
+    });
+    document.getElementById("dot3").classList.add("pink");
+  }, 55000);
         
-           $(".team").hide();
+  const slideshow3 = setInterval(function(){ 
+    document.querySelectorAll(".team").forEach((e) => {
+      e.style.display = "none";
+    });
+    fadeIn(document.getElementById("team1"));
+    document.querySelectorAll("#employee > i").forEach((e) => {
+      e.classList.remove("pink");
+    });
+    document.getElementById("dot1").classList.add("pink");
+  }, 85000);
         
-            $("#team2").fadeIn(1000);
+  const slideshow8 = setInterval(function(){ 
+    document.querySelectorAll(".team").forEach((e) => {
+      e.style.display = "none";
+    });
+    fadeIn(document.getElementById("team4"));
+    document.querySelectorAll("#employee > i").forEach((e) => {
+      e.classList.remove("pink");
+    });
+    document.getElementById("dot8").classList.add("pink");
+  }, 115000);
+        
+  const slideshow9 = setInterval(function(){ 
+    document.querySelectorAll(".team").forEach((e) => {
+      e.style.display = "none";
+    });
+    fadeIn(document.getElementById("team5"));
+    document.querySelectorAll("#employee > i").forEach((e) => {
+      e.classList.remove("pink");
+    });
+    document.getElementById("dot9").classList.add("pink");
+  }, 145000);
+        
+  // Autoplay client slideshow
+  const slideshow4 = setInterval(function(){ 
+    document.querySelectorAll(".client").forEach((e) => {
+      e.style.display = "none";
+    });
+    fadeIn(document.getElementById("client2"));
+    document.querySelectorAll("#customer > i").forEach((e) => {
+      e.classList.remove("pink");
+    });
+    document.getElementById("dot5").classList.add("pink");
+  }, 25000);
 
-            $("#employee > i").removeClass("pink");
-
-            $("#dot2").addClass("pink"); 
-            
-        }, 35000);
-        
-        
-        var slideshow2 = setInterval(function(){ 
-        
-            $(".team").hide();
-        
-            $("#team3").fadeIn(1000);
-        
-            $("#employee > i").removeClass("pink");
-        
-            $("#dot3").addClass("pink"); 
-            
-        }, 55000);
-        
-        var slideshow3 = setInterval(function(){ 
-        
-            $(".team").hide();
-        
-            $("#team1").fadeIn(1000);
-        
-            $("#employee > i").removeClass("pink");
-        
-            $("#dot1").addClass("pink"); 
-            
-        }, 85000);
-        
-        var slideshow8 = setInterval(function(){ 
-        
-            $(".team").hide();
-        
-            $("#team4").fadeIn(1000);
-        
-            $("#employee > i").removeClass("pink");
-        
-            $("#dot8").addClass("pink"); 
-            
-        }, 115000);
-        
-        var slideshow9 = setInterval(function(){ 
-        
-            $(".team").hide();
-        
-            $("#team5").fadeIn(1000);
-        
-            $("#employee > i").removeClass("pink");
-        
-            $("#dot9").addClass("pink"); 
-            
-        }, 115000);
-        
-        // Autoplay client slideshow
-        
-        var slideshow4 = setInterval(function(){ 
-        
-           $(".client").hide();
-        
-            $("#client2").fadeIn(1000);
-
-            $("#customer > i").removeClass("pink");
-
-            $("#dot5").addClass("pink"); 
-            
-        }, 25000);
-        
-        
-        var slideshow5 = setInterval(function(){ 
-        
-            $(".client").hide();
-        
-            $("#client3").fadeIn(1000);
-        
-            $("#customer > i").removeClass("pink");
-        
-            $("#dot6").addClass("pink"); 
-            
-        }, 50000);
+  const slideshow5 = setInterval(function(){ 
+    document.querySelectorAll(".client").forEach((e) => {
+      e.style.display = "none";
+    });
+    fadeIn(document.getElementById("client3"));
+    document.querySelectorAll("#customer > i").forEach((e) => {
+      e.classList.remove("pink");
+    });
+    document.getElementById("dot6").classList.add("pink");
+  }, 50000);
         
         var slideshow7 = setInterval(function(){ 
         
