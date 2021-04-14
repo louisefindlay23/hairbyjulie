@@ -375,6 +375,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
   // Team icon nav
   document.getElementById("teamicon").addEventListener("click", (e) => {
+    console.info("True");
     document.querySelectorAll("#banner, form, #products, #pricelist, iframe, #history").forEach((e) => {
       e.style.display = "none";
     });
@@ -388,7 +389,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   });
 
   // Products icon nav
-  document.getElementById("teamicon").addEventListener("click", (e) => {
+  document.getElementById("productsicon").addEventListener("click", (e) => {
     document.querySelectorAll("#banner, .team, .client, form, .dotrow, iframe, #history, #productfour, #productfive, #productsix").forEach((e) => {
       e.style.display = "none";
     });
@@ -410,7 +411,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     document.querySelectorAll("#employee > i").forEach((e) => {
       e.classList.remove("pink");
     });
-    document.getElementById("dot2").addClass("pink");
+    document.getElementById("dot2").classList.add("pink");
   });
 
   document.getElementById("team2").addEventListener("swiped-right", (e) => {
@@ -421,7 +422,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     document.querySelectorAll("#employee > i").forEach((e) => {
       e.classList.remove("pink");
     });
-    document.getElementById("dot1").addClass("pink");
+    document.getElementById("dot1").classList.add("pink");
   });
 
   document.getElementById("team2").addEventListener("swiped-left", (e) => {
@@ -432,7 +433,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     document.querySelectorAll("#employee > i").forEach((e) => {
       e.classList.remove("pink");
     });
-    document.getElementById("dot3").addClass("pink");
+    document.getElementById("dot3").classList.add("pink");
   });
 
   document.getElementById("team3").addEventListener("swiped-right", (e) => {
@@ -443,7 +444,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     document.querySelectorAll("#employee > i").forEach((e) => {
       e.classList.remove("pink");
     });
-    document.getElementById("dot2").addClass("pink");
+    document.getElementById("dot2").classList.add("pink");
   });
 
   document.getElementById("team3").addEventListener("swiped-left", (e) => {
@@ -454,7 +455,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     document.querySelectorAll("#employee > i").forEach((e) => {
       e.classList.remove("pink");
     });
-    document.getElementById("dot8").addClass("pink");
+    document.getElementById("dot8").classList.add("pink");
   });
 
   document.getElementById("team4").addEventListener("swiped-right", (e) => {
@@ -465,7 +466,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     document.querySelectorAll("#employee > i").forEach((e) => {
       e.classList.remove("pink");
     });
-    document.getElementById("dot3").addClass("pink");
+    document.getElementById("dot3").classList.add("pink");
   });
 
   document.getElementById("team4").addEventListener("swiped-left", (e) => {
@@ -476,7 +477,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     document.querySelectorAll("#employee > i").forEach((e) => {
       e.classList.remove("pink");
     });
-    document.getElementById("dot9").addClass("pink");
+    document.getElementById("dot9").classList.add("pink");
   });
 
   document.getElementById("team5").addEventListener("swiped-left", (e) => {
@@ -487,7 +488,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     document.querySelectorAll("#employee > i").forEach((e) => {
       e.classList.remove("pink");
     });
-    document.getElementById("dot8").addClass("pink");
+    document.getElementById("dot8").classList.add("pink");
   });
 
   // Client swipe gestures
@@ -499,7 +500,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     document.querySelectorAll("#customer > i").forEach((e) => {
       e.classList.remove("pink");
     });
-    document.getElementById("dot5").addClass("pink");
+    document.getElementById("dot5").classList.add("pink");
   });
 
   document.getElementById("client2").addEventListener("swiped-right", (e) => {
@@ -510,7 +511,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     document.querySelectorAll("#customer > i").forEach((e) => {
       e.classList.remove("pink");
     });
-    document.getElementById("dot4").addClass("pink");
+    document.getElementById("dot4").classList.add("pink");
   });
 
   document.getElementById("client2").addEventListener("swiped-left", (e) => {
@@ -521,7 +522,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     document.querySelectorAll("#customer > i").forEach((e) => {
       e.classList.remove("pink");
     });
-    document.getElementById("dot6").addClass("pink");
+    document.getElementById("dot6").classList.add("pink");
   });
 
   document.getElementById("client3").addEventListener("swiped-right", (e) => {
@@ -532,7 +533,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     document.querySelectorAll("#customer > i").forEach((e) => {
       e.classList.remove("pink");
     });
-    document.getElementById("dot5").addClass("pink");
+    document.getElementById("dot5").classList.add("pink");
   });
 
   document.getElementById("client3").addEventListener("swiped-left", (e) => {
@@ -543,7 +544,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     document.querySelectorAll("#customer > i").forEach((e) => {
       e.classList.remove("pink");
     });
-    document.getElementById("dot7").addClass("pink");
+    document.getElementById("dot7").classList.add("pink");
   });
 
   document.getElementById("client4").addEventListener("swiped-right", (e) => {
@@ -554,7 +555,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     document.querySelectorAll("#customer > i").forEach((e) => {
       e.classList.remove("pink");
     });
-    document.getElementById("dot6").addClass("pink");
+    document.getElementById("dot6").classList.add("pink");
   });
 
 });
