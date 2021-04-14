@@ -15,11 +15,13 @@ html {
 @font-face {
     src: url("../fonts/ropasoftpro-regular.woff");
     font-family: "Ropa Soft Pro";
+    font-display: swap;
 }
 
 @font-face {
     src: url("../fonts/nps_1935.woff");
     font-family: "NPS 1935";
+    font-display: swap;
 }
 
 body {
