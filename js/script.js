@@ -97,251 +97,187 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
     document.getElementById("dot6").classList.add("pink");
   }, 50000);
-        
-        var slideshow7 = setInterval(function(){ 
-        
-            $(".client").hide();
-        
-            $("#client4").fadeIn(1000);
-        
-            $("#customer > i").removeClass("pink");
-        
-            $("#dot7").addClass("pink"); 
-            
-        }, 75000);
-        
-        var slideshow6 = setInterval(function(){ 
-        
-            $(".client").hide();
-        
-            $("#client1").fadeIn(1000);
-        
-            $("#customer > i").removeClass("pink");
-        
-            $("#dot4").addClass("pink"); 
-            
-        }, 100000);
-        
-    
+
+  const slideshow6 = setInterval(function(){ 
+    document.querySelectorAll(".client").forEach((e) => {
+      e.style.display = "none";
+    });
+    fadeIn(document.getElementById("client1"));
+    document.querySelectorAll("#customer > i").forEach((e) => {
+      e.classList.remove("pink");
+    });
+    document.getElementById("dot4").classList.add("pink");
+  }, 100000);
+
+  const slideshow7 = setInterval(function(){ 
+    document.querySelectorAll(".client").forEach((e) => {
+      e.style.display = "none";
+    });
+    fadeIn(document.getElementById("client4"));
+    document.querySelectorAll("#customer > i").forEach((e) => {
+      e.classList.remove("pink");
+    });
+    document.getElementById("dot7").classList.add("pink");
+  }, 75000);
+
     // Dot click team slideshow 
-    
-    $("#dot1").click(function(){
-    
-        clearInterval(slideshow1);
-        
-        clearInterval(slideshow2);
-        
-        clearInterval(slideshow3);
-        
-        clearInterval(slideshow8);
-        
-        clearInterval(slideshow9);
-        
-        $(".team").hide();
-        
-        $("#team1").fadeIn(300);
-        
-        $("#employee > i").removeClass("pink");
-        
-        $(this).addClass("pink");
-        
+    document.getElementById("dot1").addEventListener("click", (e) => { 
+      clearInterval(slideshow1);
+      clearInterval(slideshow2);
+      clearInterval(slideshow3);
+      clearInterval(slideshow8);
+      clearInterval(slideshow9);
+      document.querySelectorAll(".team").forEach((e) => {
+        e.style.display = "none";
+      });
+      fadeIn(document.getElementById("team1"));
+      document.querySelectorAll("#employee > i").forEach((e) => {
+        e.classList.remove("pink");
+      });
+      e.target.classList.add("pink");    
     });
     
-    
-    $("#dot2").click(function(){
-    
-        clearInterval(slideshow1);
-        
-        clearInterval(slideshow2);
-        
-        clearInterval(slideshow3);
-        
-        clearInterval(slideshow8);
-        
-        clearInterval(slideshow9);
-        
-        $(".team").hide();
-        
-        $("#team2").fadeIn(300);
-        
-        $("#employee > i").removeClass("pink");
-        
-        $(this).addClass("pink");
-        
+    document.getElementById("dot2").addEventListener("click", (e) => { 
+      clearInterval(slideshow1);
+      clearInterval(slideshow2);
+      clearInterval(slideshow3);
+      clearInterval(slideshow8);
+      clearInterval(slideshow9);
+      document.querySelectorAll(".team").forEach((e) => {
+        e.style.display = "none";
+      });
+      fadeIn(document.getElementById("team2"));
+      document.querySelectorAll("#employee > i").forEach((e) => {
+        e.classList.remove("pink");
+      });
+      e.target.classList.add("pink");    
     });
-    
-    
-    $("#dot3").click(function(){
-    
-        clearInterval(slideshow1);
-        
-        clearInterval(slideshow2);
-        
-        clearInterval(slideshow3);
-        
-        clearInterval(slideshow8);
-        
-        clearInterval(slideshow9);
-        
-        $(".team").hide();
-        
-        $("#team3").fadeIn(300);
-        
-        $("#employee > i").removeClass("pink");
-        
-        $(this).addClass("pink");
-        
+
+    document.getElementById("dot3").addEventListener("click", (e) => { 
+      clearInterval(slideshow1);
+      clearInterval(slideshow2);
+      clearInterval(slideshow3);
+      clearInterval(slideshow8);
+      clearInterval(slideshow9);
+      document.querySelectorAll(".team").forEach((e) => {
+        e.style.display = "none";
+      });
+      fadeIn(document.getElementById("team3"));
+      document.querySelectorAll("#employee > i").forEach((e) => {
+        e.classList.remove("pink");
+      });
+      e.target.classList.add("pink");    
     });
-    
-    $("#dot8").click(function(){
-    
-        clearInterval(slideshow1);
-        
-        clearInterval(slideshow2);
-        
-        clearInterval(slideshow3);
-        
-        clearInterval(slideshow8);
-        
-        clearInterval(slideshow9);
-        
-        $(".team").hide();
-        
-        $("#team4").fadeIn(300);
-        
-        $("#employee > i").removeClass("pink");
-        
-        $(this).addClass("pink");
-        
+
+    document.getElementById("dot8").addEventListener("click", (e) => { 
+      clearInterval(slideshow1);
+      clearInterval(slideshow2);
+      clearInterval(slideshow3);
+      clearInterval(slideshow8);
+      clearInterval(slideshow9);
+      document.querySelectorAll(".team").forEach((e) => {
+        e.style.display = "none";
+      });
+      fadeIn(document.getElementById("team4"));
+      document.querySelectorAll("#employee > i").forEach((e) => {
+        e.classList.remove("pink");
+      });
+      e.target.classList.add("pink");    
     });
-    
-    $("#dot9").click(function(){
-    
-        clearInterval(slideshow1);
-        
-        clearInterval(slideshow2);
-        
-        clearInterval(slideshow3);
-        
-        clearInterval(slideshow8);
-        
-        clearInterval(slideshow9);
-        
-        $(".team").hide();
-        
-        $("#team5").fadeIn(300);
-        
-        $("#employee > i").removeClass("pink");
-        
-        $(this).addClass("pink");
-        
+
+    document.getElementById("dot9").addEventListener("click", (e) => { 
+      clearInterval(slideshow1);
+      clearInterval(slideshow2);
+      clearInterval(slideshow3);
+      clearInterval(slideshow8);
+      clearInterval(slideshow9);
+      document.querySelectorAll(".team").forEach((e) => {
+        e.style.display = "none";
+      });
+      fadeIn(document.getElementById("team5"));
+      document.querySelectorAll("#employee > i").forEach((e) => {
+        e.classList.remove("pink");
+      });
+      e.target.classList.add("pink");    
     });
     
     // Dot click client slideshow 
-    
-    $("#dot4").click(function(){
-    
-        clearInterval(slideshow4);
-        
-        clearInterval(slideshow5);
-        
-        clearInterval(slideshow6);
-        
-        clearInterval(slideshow7);
-        
-        $(".client").hide();
-        
-        $("#client1").fadeIn(300);
-        
-        $("#customer > i").removeClass("pink");
-        
-        $(this).addClass("pink");
-        
+    document.getElementById("dot4").addEventListener("click", (e) => { 
+      clearInterval(slideshow4);
+      clearInterval(slideshow5);
+      clearInterval(slideshow6);
+      clearInterval(slideshow7);
+      document.querySelectorAll(".client").forEach((e) => {
+        e.style.display = "none";
+      });
+      fadeIn(document.getElementById("client1"));
+      document.querySelectorAll("#customer > i").forEach((e) => {
+        e.classList.remove("pink");
+      });
+      e.target.classList.add("pink");    
     });
     
-    
-    $("#dot5").click(function(){
-    
-        clearInterval(slideshow4);
-        
-        clearInterval(slideshow5);
-        
-        clearInterval(slideshow6);
-        
-        clearInterval(slideshow7);
-        
-        $(".client").hide();
-        
-        $("#client2").fadeIn(300);
-        
-        $("#customer > i").removeClass("pink");
-        
-        $(this).addClass("pink");
-        
+    document.getElementById("dot5").addEventListener("click", (e) => { 
+      clearInterval(slideshow4);
+      clearInterval(slideshow5);
+      clearInterval(slideshow6);
+      clearInterval(slideshow7);
+      document.querySelectorAll(".client").forEach((e) => {
+        e.style.display = "none";
+      });
+      fadeIn(document.getElementById("client2"));
+      document.querySelectorAll("#customer > i").forEach((e) => {
+        e.classList.remove("pink");
+      });
+      e.target.classList.add("pink");    
     });
     
-    
-    $("#dot6").click(function(){
-    
-        clearInterval(slideshow4);
-        
-        clearInterval(slideshow5);
-        
-        clearInterval(slideshow6);
-        
-        clearInterval(slideshow7);
-        
-        $(".client").hide();
-        
-        $("#client3").fadeIn(300);
-        
-        $("#customer > i").removeClass("pink");
-        
-        $(this).addClass("pink");
-        
+    document.getElementById("dot6").addEventListener("click", (e) => { 
+      clearInterval(slideshow4);
+      clearInterval(slideshow5);
+      clearInterval(slideshow6);
+      clearInterval(slideshow7);
+      document.querySelectorAll(".client").forEach((e) => {
+        e.style.display = "none";
+      });
+      fadeIn(document.getElementById("client3"));
+      document.querySelectorAll("#customer > i").forEach((e) => {
+        e.classList.remove("pink");
+      });
+      e.target.classList.add("pink");    
     });
-    
-    $("#dot7").click(function(){
-    
-        clearInterval(slideshow4);
-        
-        clearInterval(slideshow5);
-        
-        clearInterval(slideshow6);
-        
-        clearInterval(slideshow7);
-        
-        $(".client").hide();
-        
-        $("#client4").fadeIn(300);
-        
-        $("#customer > i").removeClass("pink");
-        
-        $(this).addClass("pink");
-        
+
+    document.getElementById("dot7").addEventListener("click", (e) => { 
+      clearInterval(slideshow4);
+      clearInterval(slideshow5);
+      clearInterval(slideshow6);
+      clearInterval(slideshow7);
+      document.querySelectorAll(".client").forEach((e) => {
+        e.style.display = "none";
+      });
+      fadeIn(document.getElementById("client4"));
+      document.querySelectorAll("#customer > i").forEach((e) => {
+        e.classList.remove("pink");
+      });
+      e.target.classList.add("pink");    
     });
 	
 	// Modal images
-
-var modal1 = document.getElementById('modal1');
-
-var img1 = document.getElementById('product1');
-var modalImg1 = document.getElementById("modalimg1");
-var captionText1 = document.getElementById("caption1");
-	
-img1.onclick = function(){
-  modal1.style.display = "block";
-  modalImg1.src = this.src;
-  captionText1.innerHTML = this.alt;
-    $("body").addClass("modal-open");
-}
-
-var span1 = document.getElementById("close1");
-
-span1.onclick = function() { 
-  modal1.style.display = "none";
-    $("body").removeClass("modal-open");
-}
+  const modal1 = document.getElementById('modal1');
+  const img1 = document.getElementById('product1');
+  const modalImg1 = document.getElementById("modalimg1");
+  const captionText1 = document.getElementById("caption1");
+  img1.addEventListener("click", (e) => { 
+    modal1.style.display = "block";
+    modalImg1.src = e.target.src;
+    captionText1.innerHTML = e.target.alt;
+    document.querySelector("body").classList.add("modal-open");
+  });
+  const span1 = document.getElementById("close1");
+  span1.addEventListener("click", (e) => { 
+    modal1.style.display = "none";
+    document.querySelector("body").classList.remove("modal-open");
+  });
  
 var modal2 = document.getElementById('modal2');
 
