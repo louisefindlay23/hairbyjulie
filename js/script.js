@@ -264,122 +264,76 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	
 	// Modal images
   const modal1 = document.getElementById('modal1');
-  const img1 = document.getElementById('product1');
-  const modalImg1 = document.getElementById("modalimg1");
-  const captionText1 = document.getElementById("caption1");
-  img1.addEventListener("click", (e) => { 
+  document.getElementById('product1').addEventListener("click", (e) => { 
     modal1.style.display = "block";
-    modalImg1.src = e.target.src;
-    captionText1.innerHTML = e.target.alt;
+    document.getElementById("modalimg1").src = e.target.src;
+    document.getElementById("caption1").innerHTML = e.target.alt;
     document.querySelector("body").classList.add("modal-open");
   });
-  const span1 = document.getElementById("close1");
-  span1.addEventListener("click", (e) => { 
+  document.getElementById("close1").addEventListener("click", (e) => { 
     modal1.style.display = "none";
     document.querySelector("body").classList.remove("modal-open");
   });
- 
-var modal2 = document.getElementById('modal2');
 
-var img2 = document.getElementById('product2');
-var modalImg2 = document.getElementById("modalimg2");
-var captionText2 = document.getElementById("caption2");
-	
-img2.onclick = function(){
-  modal2.style.display = "block";
-  modalImg2.src = this.src;
-  captionText2.innerHTML = this.alt;
-  $("body").addClass("modal-open");
-}
- 
-var span2 = document.getElementById("close2");
+  const modal2 = document.getElementById('modal2');
+  document.getElementById('product2').addEventListener("click", (e) => { 
+    modal2.style.display = "block";
+    document.getElementById("modalimg2").src = e.target.src;
+    document.getElementById("caption2").innerHTML = e.target.alt;
+    document.querySelector("body").classList.add("modal-open");
+  });
+  document.getElementById("close2").addEventListener("click", (e) => { 
+    modal1.style.display = "none";
+    document.querySelector("body").classList.remove("modal-open");
+  });
 
-span2.onclick = function() { 
-  modal2.style.display = "none";
-  $("body").removeClass("modal-open");
-} 
+  const modal3 = document.getElementById('modal3');
+  document.getElementById('product3').addEventListener("click", (e) => { 
+    modal1.style.display = "block";
+    document.getElementById("modalimg3").src = e.target.src;
+    document.getElementById("caption3").innerHTML = e.target.alt;
+    document.querySelector("body").classList.add("modal-open");
+  });
+  document.getElementById("close3").addEventListener("click", (e) => { 
+    modal1.style.display = "none";
+    document.querySelector("body").classList.remove("modal-open");
+  });
 
-var modal3 = document.getElementById('modal3');
+  const modal4 = document.getElementById('modal4');
+  document.getElementById('product4').addEventListener("click", (e) => { 
+    modal1.style.display = "block";
+    document.getElementById("modalimg4").src = e.target.src;
+    document.getElementById("caption4").innerHTML = e.target.alt;
+    document.querySelector("body").classList.add("modal-open");
+  });
+  document.getElementById("close4").addEventListener("click", (e) => { 
+    modal1.style.display = "none";
+    document.querySelector("body").classList.remove("modal-open");
+  });
 
-var img3 = document.getElementById('product3');
-var modalImg3 = document.getElementById("modalimg3");
-var captionText3 = document.getElementById("caption3");
-	
-img3.onclick = function(){
-  modal3.style.display = "block";
-  modalImg3.src = this.src;
-  captionText3.innerHTML = this.alt;
-    $("body").addClass("modal-open");
-}
+  const modal5 = document.getElementById('modal5');
+  document.getElementById('product5').addEventListener("click", (e) => { 
+    modal5.style.display = "block";
+    document.getElementById("modalimg5").src = e.target.src;
+    document.getElementById("caption5").innerHTML = e.target.alt;
+    document.querySelector("body").classList.add("modal-open");
+  });
+  document.getElementById("close5").addEventListener("click", (e) => { 
+    modal1.style.display = "none";
+    document.querySelector("body").classList.remove("modal-open");
+  });
 
-var span3 = document.getElementById("close3");
-
-span3.onclick = function() { 
-	modal3.style.display = "none";
-    $("body").removeClass("modal-open");
-}
-
-// Second row of modal images
-
-var modal4 = document.getElementById('modal4');
-
-var img4 = document.getElementById('product4');
-var modalImg4 = document.getElementById("modalimg4");
-var captionText4 = document.getElementById("caption4");
-	
-img4.onclick = function(){
-  modal4.style.display = "block";
-  modalImg4.src = this.src;
-  captionText4.innerHTML = this.alt;
-    $("body").addClass("modal-open");
-}
-
-var span4 = document.getElementById("close4");
-
-span4.onclick = function() { 
-	modal4.style.display = "none";
-    $("body").removeClass("modal-open");
-}
-
-var modal5 = document.getElementById('modal5');
-
-var img5 = document.getElementById('product5');
-var modalImg5 = document.getElementById("modalimg5");
-var captionText5 = document.getElementById("caption5");
-	
-img5.onclick = function(){
-  modal5.style.display = "block";
-  modalImg5.src = this.src;
-  captionText5.innerHTML = this.alt;
-    $("body").addClass("modal-open");
-}
-
-var span5 = document.getElementById("close5");
-
-span5.onclick = function() { 
-	modal5.style.display = "none";
-    $("body").removeClass("modal-open");
-}
-
-var modal6 = document.getElementById('modal6');
-
-var img6 = document.getElementById('product6');
-var modalImg6 = document.getElementById("modalimg6");
-var captionText6 = document.getElementById("caption6");
-	
-img6.onclick = function(){
-  modal6.style.display = "block";
-  modalImg6.src = this.src;
-  captionText6.innerHTML = this.alt;
-    $("body").addClass("modal-open");
-}
-
-var span6 = document.getElementById("close6");
-
-span6.onclick = function() { 
-	modal6.style.display = "none";
-    $("body").removeClass("modal-open");
-}
+  const modal6 = document.getElementById('modal6');
+  document.getElementById('product6').addEventListener("click", (e) => { 
+    modal1.style.display = "block";
+    document.getElementById("modalimg6").src = e.target.src;
+    document.getElementById("caption6").innerHTML = e.target.alt;
+    document.querySelector("body").classList.add("modal-open");
+  });
+  document.getElementById("close6").addEventListener("click", (e) => { 
+    modal1.style.display = "none";
+    document.querySelector("body").classList.remove("modal-open");
+  });
 	
 // Show all product images
 	
