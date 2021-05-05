@@ -291,9 +291,7 @@ hr {
     align-items: center;
 }
 
-iframe {
-    width: 50%;
-    height: 500px;
+#map img {
     overflow: auto;
     border: 0;
     margin-left: 25%;
