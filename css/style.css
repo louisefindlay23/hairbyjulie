@@ -333,14 +333,12 @@ nav,
 /* Media Queries */
 
 @media only screen and (max-width: 1400px) {
-
     .firsthide {
         display: none;
     }
 }
 
 @media only screen and (max-width: 1100px) {
-
     .secondhide {
         display: none;
     }
@@ -360,7 +358,6 @@ nav,
 }
 
 @media only screen and (max-width: 950px) {
-
     .thirdhide {
         display: none;
     }
@@ -371,7 +368,6 @@ nav,
 }
 
 @media only screen and (max-width: 890px) {
-
     .fourthhide {
         display: none;
     }
@@ -382,7 +378,6 @@ nav,
 }
 
 @media only screen and (max-width: 800px) {
-
     .fifthhide {
         display: none;
     }
@@ -393,7 +388,6 @@ nav,
 }
 
 @media only screen and (max-width: 750px) {
-
     nav,
     .team,
     .client {
@@ -419,15 +413,12 @@ nav,
 }
 
 @media only screen and (max-width: 700px) {
-
     .third {
         width: 70%;
     }
-
 }
 
 @media only screen and (max-width: 500px) {
-
     .sixthshow {
         display: block;
     }
@@ -448,11 +439,9 @@ nav,
     footer {
         padding-top: 7.5%;
     }
-
 }
 
 @media only screen and (max-width: 450px) {
-
     h1 {
         font-size: 30pt;
     }
@@ -484,11 +473,9 @@ nav,
         margin-top: 5%;
         margin-bottom: 10%;
     }
-
 }
 
 @media only screen and (max-width: 380px) {
-
     .seventhhide {
         display: none;
     }
@@ -513,5 +500,4 @@ nav,
     footer i {
         font-size: 25pt;
     }
-
 }
