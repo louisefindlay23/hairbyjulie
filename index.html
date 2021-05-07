@@ -11,9 +11,14 @@
         <meta name="keywords" content="Hair by Julie, hairdresser, hairdressing, beauty, Dufftown, Moray" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- CSS and Font Preloads -->
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <style>
+            :root{--bg-color:#3d5266;--main-color:#cfa8a5;--hover-color:#bc7c77}html{overflow-y:scroll}body{margin:0;padding:0;border:0;color:var(--main-color);background:var(--bg-color);font-family:"Ropa Soft Pro";max-width:1920px}div{width:100%;height:auto;overflow:auto}h1{text-align:center;font-size:40pt}h2{text-align:center;font-size:30pt;margin:3% 0}h3{font-size:25pt}p{font-size:16pt;padding:0 10%}a{text-decoration:none;color:inherit}nav{width:100%;display:flex;justify-content:space-between;text-align:center;padding-bottom:5%}nav i{font-size:40pt;height:auto;overflow:auto;padding:0 6%}#banner img{width:100%;height:auto;overflow:auto}#history{padding:2.5% 0}.half{width:50%;height:auto;overflow:auto;float:left}.half img{width:50%;height:auto;overflow:auto;border-radius:50%;margin-left:25%}.team{display:flex;justify-content:center;align-items:center;padding-bottom:1%}.dotrow{display:flex;justify-content:center;padding-top:2.5%;padding-bottom:2.5%}.dotrow i{font-size:30pt;color:var(--main-color);padding:0 2.5%;cursor:pointer}.pink{color:var(--hover-color)!important}#hair{font-family:"NPS 1935";margin-right:5px;text-decoration:underline}#products{padding:2.5% 0}button{display:none;width:25%;cursor:pointer;margin:2.5% 0 5% 37.5%;padding:1.5%;color:#000;background:var(--hover-color);border:none;font-family:"Ropa Soft Pro";font-size:16pt;box-sizing:border-box}a{cursor:pointer}#productcontainer{display:flex;flex-flow:row wrap;justify-content:center}.modal{display:none;position:fixed;z-index:1;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:var(--bg-color);opacity:.9}.third{width:30%;height:auto;overflow:auto;float:left;padding:2.5% 1.5%;transition:.3s}.third img{width:100%;height:auto;overflow:auto;cursor:pointer}footer{width:100%;display:flex;flex-flow:row wrap;text-align:center}.columns{width:50%;height:auto;overflow:auto;float:left;justify-content:space-between}.client{padding-top:5%;display:flex;justify-content:center;align-items:center}#map img{overflow:auto;border:0;margin-left:25%;padding-top:5%;padding-bottom:5%}footer{align-items:center}#footerimg{display:flex;justify-content:space-around;margin:2.5%}footer i{font-size:75pt}.fifthshow,.fourthshow,.secondshow,.sixthshow,.thirdshow,nav{display:none}
+        </style>
+        <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link rel="stylesheet" href="css/style.css" /></noscript>
         <link rel="preload" href="fonts/nps_1935.woff" as="font" type="font/woff" crossorigin />
         <link rel="preload" href="fonts/ropasoftpro-regular.woff" as="font" type="font/woff" crossorigin />
+        <link rel="preconnect" href="https://ka-f.fontawesome.com">
         <!-- Icon JS -->
         <script src="https://kit.fontawesome.com/59dd3e37d5.js" crossorigin="anonymous" async></script>
 
@@ -35,8 +40,8 @@
 
         <div id="banner">
             <picture>
-                <source srcset="../img/shop_outside.webp" type="image/webp" />
-                <source srcset="../img/shop_outside.jpg" type="image/jpeg" />
+                <source srcset="../img/shop_outside-small.webp 634w, ../img/shop_outside.webp 1920w" sizes="100vw" type="image/webp"/>
+                <source srcset="../img/shop_outside-small.jpg 634w, ../img/shop_outside.jpg 1920w" sizes="100vw"" type="image/jpeg" />
                 <img
                     src="img/shop_outside.jpg"
                     alt="The outside of Hair by Julie, the longest established hairdressers in Dufftown, Moray"
@@ -387,17 +392,17 @@
             <i id="dot7" class="fas fa-circle"></i>
         </div>
 
-        <picture id="map">
-            <a
-                href="https://www.google.com/maps/place/Hair+By+Julie/@57.444714,-3.127369,16z/data=!4m5!3m4!1s0x0:0x6a5022153df8f1ae!8m2!3d57.4447562!4d-3.1273805?hl=en-GB"
-                target="_blank"
-                rel="noopener"
-            >
+        <a
+            href="https://www.google.com/maps/place/Hair+By+Julie/@57.444714,-3.127369,16z/data=!4m5!3m4!1s0x0:0x6a5022153df8f1ae!8m2!3d57.4447562!4d-3.1273805?hl=en-GB"
+            target="_blank"
+            rel="noopener"
+        >
+            <picture id="map">
                 <source srcset="../img/map.webp" type="image/webp" />
                 <source srcset="../img/map.jpg" type="image/jpeg" />
                 <img src="img/map.jpg" alt="Google Map showing the location of Hair by Julie" />
-            </a>
-        </picture>
+            </picture>
+        </a>
 
         <footer>
             <div id="contact-times" class="columns">
